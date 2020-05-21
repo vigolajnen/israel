@@ -1,0 +1,53 @@
+@font-face {
+  font-family: $mainFont;
+  font-display: auto;
+  src: url("../fonts/Firasansregular.woff2") format("woff2"),
+    url("../fonts/Firasansregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $mainFontMedium;
+  font-display: auto;
+  src: url("../fonts/Firasansmedium.woff") format("woff2"),
+    url("../fonts/Firasansmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $titleFont;
+  font-display: auto;
+  src: url("../fonts/montserratbold.woff2") format("woff2"),
+    url("../fonts/montserratbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $mainFontMedium;
+  font-display: auto;
+  src: url("../fonts/Firasansmedium.woff") format("woff2"),
+    url("../fonts/Firasansmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $mainFontTitle;
+  font-display: auto;
+  src: url("../fonts/ralewaybold.woff2") format("woff2"),
+    url("../fonts/ralewaybold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $mainFontTitleBold;
+  font-display: auto;
+  src: url("../fonts/ralewayblack.woff2") format("woff2"),
+    url("../fonts/ralewayblack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}

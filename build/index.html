@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Израиль</title>
+    <meta name="description" content="Текст">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <div class="header-and-promo">
+      <header class="page-header container">
+        <a class="page-header__phone" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
+        <a class="page-header__logo logo">
+          <img src="img/logo.svg" alt="Логотип">
+        </a>
+        <button class="page-header__btn-modal" type="button">
+          Заказать звонок
+        </button>
+      </header>
+      <section class="promo container">
+        <div class="promo__info">
+          <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
+          <button class="promo__btn-scroll" type="button" aria-label="Подсказка скролл вниз">
+            <svg width="76" height="132">
+              <use xlink:href="img/sprite_auto.svg#icon-scroll"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+    <section class="video">
+      <div class="video__container container">
+        <div class="video__header">
+          <h2>О программе</h2>
+          <p>
+            «Маса» — совместный проект правительства Израиля и Еврейского
+            агентства Сохнут. Более 250 учебных программ (60 на русском) и
+            возможность стажировки в Израиле. В течение освоения программ
+            предусмотрен грант от 4200 до 8400$.
+          </p>
+        </div>
+        <div class="video__media">
+          <a href="#" class="video__link">
+            <img src="img/video/photo_about.jpg" alt="О программе">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="programs__container container">
+        <h2>Программы</h2>
+        <div class="programs__tabs tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <svg class="tabs__item-icon" width="28" height="33">
+                <use xlink:href="img/sprite_auto.svg#icon-1_w"></use>
+              </svg>
+              <span>Общие</span>
+            </li>
+            <li class="tabs__item tabs__item--active">
+              <svg class="tabs__item-icon" width="36" height="35">
+                <use xlink:href="img/sprite_auto.svg#icon-2_g"></use>
+              </svg>
+              <span>Академические</span>
+            </li>
+            <li class="tabs__item">
+              <svg class="tabs__item-icon" width="32" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-3_g"></use>
+              </svg>
+              <span>Стажировки</span>
+            </li>
+            <li class="tabs__item">
+              <svg class="tabs__item-icon" width="32" height="29">
+                <use xlink:href="img/sprite_auto.svg#icon-4_g"></use>
+              </svg>
+              <span>Волонтёрство</span>
+            </li>
+            <li class="tabs__item">
+              <svg class="tabs__item-icon" width="23" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-5_g"></use>
+              </svg>
+              <span>Религиозные</span>
+            </li>
+          </ul>
+          <div class="tabs__content">
+            <h3>Академические</h3>
+            <p>
+              Провести семестр или год за рубежом, знакомясь с различными
+              культурами и идеями, традициями и стилем жизни — вот что такое
+              учеба за границей! Израиль — это не только центр религиозного
+              мира, это также академический центр, живая лаборатория идей и
+              творческого исследования.
+            </p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира,
+              юриспруденции, биологии, сравнительной религии, законодательного и
+              делового администрирования или искусства? Здесь, в Израиле, Вы
+              сможете изучить все это в удивительной университетской среде.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promo-form">
+      <div class="container">
+        <div class="promo__header">
+          <h2>Хочу поехать!</h2>
+          <p>
+            Оставьте свой телефон и мы свяжемся с вами, подберём куратора и
+            ответим на все вопросы!
+          </p>
+        </div>
+        <form class="promo__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="phone" aria-label="Телефон">
+            <input id="phone" name="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+          </label>
+          <button type="submit">перезвоните мне</button>
+        </form>
+      </div>
+    </section>
+    <section class="guide container">
+      <div class="guide__pic"></div>
+      <div class="guide__info">
+        <h2>Как поехать</h2>
+        <p>
+          Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем
+          городе. Вы получите актуальные сведения о доступных программах и
+          городах, в которых можете пройти программу.
+        </p>
+        <div class="guide__list">
+          <p>
+            Чтобы иметь возможность получить грант на обучение  от 4200 до
+            8400$, вы должны:
+          </p>
+          <ul>
+            <li>Быть в возрасте от 16 до 30 лет</li>
+            <li>Иметь оконченное среднее образование</li>
+            <li>
+              Иметь документально подтверждённые еврейские корни и пройти
+              консульскую проверку
+            </li>
+            <li>
+              Иметь документально подтверждённые еврейские корни и пройти
+              консульскую проверку
+            </li>
+          </ul>
+        </div>
+        <div class="guide__warning">
+          Если вы не подходите по этим правилам, вы всё равно можете принять
+          участие в программе «Маса», оплатив её полную стоимость.
+        </div>
+      </div>
+    </section>
+    <section class="about container">
+      <div class="about__header">
+        <h2>Жизнь в израиле</h2>
+        <p>
+          Помимо учёбы, в рамках программе у вас будет возможность
+          путешествовать по стране и познакомиться с богатой
+          культурно-исторической жизнью Израиля и его жителей.
+        </p>
+      </div>
+      <div class="about__slider">
+        <div id="about" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide about__slide">
+              <h3>Экскурсии по Израилю и знакомство с его историей</h3>
+              <img src="img/about/excursions.png" alt="Экскурсии по Израилю и знакомство с его историей">
+            </div>
+            <div class="swiper-slide about__slide">
+              <h3>Изучение иврита</h3>
+              <img src="img/about/study.png" alt="Изучение иврита">
+            </div>
+            <div class="swiper-slide about__slide">
+              <h3>Обучение современным навыкам и профессиям</h3>
+              <img src="img/about/skills.png" alt="Обучение современным навыкам и профессиям">
+            </div>
+            <div class="swiper-slide about__slide">
+              <h3>Совместные творческие проекты  с израильской молодёжью</h3>
+              <img src="img/about/projects.png" alt="Совместные творческие проекты  с израильской молодёжью">
+            </div>
+            <div class="swiper-slide about__slide">
+              <h3>Развитие лидерства</h3>
+              <img src="img/about/leadership.png" alt="Развитие лидерства">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promo-photo container">
+      <div class="promo-photo__info">
+        <h2>#masaisrael</h2>
+        <p>
+          Познакомьтесь с программой от первого лица! Многие участники ведут
+          блоги и фотодневники о жизни, учёбе и путешествиях в Израиле. 
+        </p>
+        <a href="#">смотреть фото</a>
+      </div>
+    </section>
+    <section class="questions container">
+      <div class="questions__info">
+        <h2>Частые вопросы</h2>
+        <div class="accordion">
+          <div class="accordion__item" data-num="1">
+            <div class="accordion__item-header">
+              <h3>Кто организатор? Какие сроки у программы?</h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+          <div class="accordion__item" data-num="2">
+            <div class="accordion__item-header">
+              <h3>Что такое грант на обучение?</h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+          <div class="accordion__item" data-num="3">
+            <div class="accordion__item-header">
+              <h3>Как определяется стоимость программы?</h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+          <div class="accordion__item" data-num="4">
+            <div class="accordion__item-header">
+              <h3>Что такое грант на обучение?</h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+          <div class="accordion__item" data-num="5">
+            <div class="accordion__item-header">
+              <h3>
+                Признаётся ли учеба в рамках проекта для дальнейшего обучения?
+              </h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+          <div class="accordion__item" data-num="6">
+            <div class="accordion__item-header">
+              <h3>
+                Как выглдядит полный процесс регистрации на программу «Маса»?
+              </h3>
+              <button class="accordion__item-btn" type="button">
+                <svg class="accordion__item-icon" width="17" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion__item-text">
+              Полная стоимость определяется организаторами в зависимости от
+              направления. В большинстве случаев грант «Маса» не покрывает
+              полную стоимость программы, и поэтому предусматривается
+              определённая доля личного участия.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="questions__pic">
+        <img src="img/questions/bg.jpg" alt="Обсуждение вопросов">
+      </div>
+    </section>
+    <section class="reviews container">
+      <h2>Отзывы</h2>
+      <div class="reviews__slider">
+        <div id="reviews" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide review">
+              <div class="review__pic">
+                <img src="img/reviews/user.jpg" alt="user">
+              </div>
+              <div class="review__info">
+                <div class="review__header">
+                  <h3>Ольга Михайлова</h3>
+                  <div class="review__program">
+                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                  </div>
+                </div>
+                <div class="review__text">
+                  <p>
+                    Долго выбирая программу, на которую ехать - я определилась,
+                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
+                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
+                  </p>
+                  <p>
+                    С первой же встречи тебе дают понять - что ты не один, у
+                    тебя есть практически круглосуточная поддержка по любым
+                    вопросам. Тебе предоставляют готовое удобное расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей
+                    программой в разные уголки страны.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="review__bottom social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш fb">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш tw">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                        <svg class="social__icon" width="25" height="54">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts container">
+      <div class="contacts__info">
+        <h2>Узнать подробности</h2>
+        <div class="contacts__city">
+          <svg class="social__icon" width="12" height="18">
+            <use xlink:href="img/sprite.svg#icon-point"></use>
+          </svg>
+          <span>Ваш город:</span>
+          <a href="#">Новосибирск
+            <svg class="social__icon" width="16" height="15">
+              <use xlink:href="img/sprite.svg#icon-gps"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="contacts__manager">
+          <div class="contacts__manager-pic">
+            <img src="img/contacts/manager.jpg" alt="manager">
+          </div>
+          <div class="contacts__manager-info">
+            <div class="contacts__manager-name">
+              <span>Ваш куратор:</span> Анна Горелик
+            </div>
+            <p>
+              Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
+            </p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш fb">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш tw">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite.svg#icon-tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Куратор является опытным специалистом агентства Сохнут  и знает о
+          проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о
+          программах и выберите свою !
+        </p>
+      </div>
+      <div class="contacts__map"></div>
+      <div class="contacts__bottom">
+        <div class="contacts__text">
+          <p>
+            Оставьте ваши контакты, если у вас остались вопросы — мы на них
+            ответим!
+          </p>
+          <p>
+            Мы не передаём данные третьим лицам. Ваши данные будут в
+            безопасности и вам не придёт спам от нас!
+          </p>
+        </div>
+        <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="contact-name" aria-label="Имя">
+            <input id="contact-name" name="contact-name" type="text" placeholder="Имя" required="">
+          </label>
+          <label for="contact-phone" aria-label="Телефон">
+            <input id="contact-phone" name="contact-phone" type="text" placeholder="+7 (923) 41" onkeyup="javascript:mask('contact-phone', '+7 (000) 000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+          </label>
+          <button type="submit">перезвоните мне</button>
+        </form>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo logo">
+          <img src="img/logo-footer.svg" alt="Логотип">
+        </a>
+        <div class="page-footer__copyright">
+          Copyright someDesignCompany ©2019
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш fb">
+                <svg class="social__icon" width="25" height="54">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш tw">
+                <svg class="social__icon" width="25" height="54">
+                  <use xlink:href="img/sprite.svg#icon-tw"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                <svg class="social__icon" width="25" height="54">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

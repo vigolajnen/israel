@@ -1,0 +1,13 @@
+.page-footer {
+  border-top: 1px solid rgba(72, 72, 72, 0.2);
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+}

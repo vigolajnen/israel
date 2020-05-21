@@ -1,0 +1,102 @@
+.reviews {
+  background-image: url("../img/reviews/sketch.png");
+  background-size: 50%;
+  background-position: right 30%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+
+  & h2 {
+    margin-bottom: 58px;
+  }
+
+  &__slider {
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    & .swiper-container {
+      max-width: 100%;
+    }
+
+    & .swiper-button-prev {
+      top: 49%;
+      transform: rotate(180deg);
+
+      outline: none;
+
+      border: none;
+      background-color: transparent;
+
+      @media (max-width: $desktop) {
+        top: 50%;
+        left: -6px;
+      }
+
+      &::after {
+        content: "";
+      }
+
+      & svg {
+        fill: transparent;
+
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $desktop) {
+          width: 33px;
+          height: 33px;
+        }
+
+        @media (max-width: $table) {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    & .swiper-button-next {
+      top: 49%;
+
+      outline: none;
+
+      border: none;
+      background-color: transparent;
+
+      @media (max-width: $desktop) {
+        top: 50%;
+        right: -6px;
+      }
+
+      &::after {
+        content: "";
+      }
+
+      & svg {
+        fill: transparent;
+
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $desktop) {
+          width: 33px;
+          height: 33px;
+        }
+
+        @media (max-width: $table) {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  &__slider-wrapper {
+    box-sizing: border-box;
+  }
+
+  &__slide {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,59 @@
+.video {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 96px;
+
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 100%;
+
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url("../img/video/watercolor-bg.png");
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 80px;
+  }
+  &__container {
+    text-align: center;
+  }
+
+  &__header {
+    max-width: 720px;
+    margin: 0 auto;
+
+    & h2 {
+      margin-bottom: 24px;
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 48px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 170%;
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+  }
+
+  &__media {
+    max-width: 870px;
+    max-height: 460px;
+    margin: 0 auto;
+  }
+}

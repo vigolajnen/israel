@@ -1,0 +1,76 @@
+.week-days {
+  @media (max-width: $table) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 230px;
+  }
+
+  &--open {
+    position: absolute;
+    top: 62px;
+
+    max-width: 180px;
+    max-height: 360px;
+    overflow: auto;
+
+    & .week-days__item {
+      display: flex;
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    padding: 19px 10px;
+    width: 148px;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+    border: 2px solid #1c3374;
+    box-sizing: border-box;
+    background: $default-color;
+
+    &--active {
+      color: $default-color;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }
+
+    &--first {
+      order: 0;
+    }
+
+    @media (max-width: $desktop) {
+      width: 146px;
+      font-size: 18px;
+    }
+
+    @media (max-width: $table) {
+      display: none;
+      flex-direction: column;
+      padding: 16px 0;
+
+      width: 173px;
+
+      font-size: 16px;
+
+      &:not(:first-child) {
+        margin-top: -6px;
+      }
+
+      &:first-child {
+        padding: 16px 0 16px 14px;
+      }
+    }
+  }
+}

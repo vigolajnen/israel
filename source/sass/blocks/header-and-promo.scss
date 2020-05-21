@@ -1,0 +1,39 @@
+.header-and-promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  height: 100vmin;
+  background-color: #e9ad82;
+  background-image: url("../img/promo/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  box-sizing: border-box;
+
+  // @media (max-width: $desktop) {
+  //   padding-top: 40px;
+  //   padding-bottom: 75px;
+  //   background-image: url("../img/promo/bg-promo-table.jpg");
+  // }
+
+  // @media (max-width: $table) {
+  //   padding-top: 18px;
+  //   padding-bottom: 76px;
+  //   background-image: url("../img/promo/bg-promo-mob.jpg");
+  // }
+
+  // @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  //   background-image: url("../img/promo/bg-promo-mob@2x.jpg");
+  // }
+
+  // @media (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+  //   background-image: url("../img/promo/bg-promo-tablet@2x.jpg");
+  // }
+
+  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  //   background-image: url("../img/promo/bg-promo@2x.jpg");
+  // }
+}

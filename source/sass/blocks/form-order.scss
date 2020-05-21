@@ -1,0 +1,143 @@
+.form-order {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $primary-color;
+  color: $default-color;
+  box-sizing: border-box;
+
+  padding-left: 103px;
+  padding-right: 170px;
+  padding-bottom: 70px;
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 66px;
+  }
+
+  @media (max-width: 769px) {
+    max-width: 100%;
+    padding-left: 133px;
+    padding-right: 162px;
+    padding-bottom: 69px;
+    padding-top: 67px;
+  }
+
+  @media (max-width: 600px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 66px;
+  }
+
+  & h3 {
+    margin-bottom: 25px;
+    width: 100%;
+    color: inherit;
+    box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 38px;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 39px;
+    }
+  }
+
+  & label {
+    flex-grow: 1;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: calc(50% - 30px);
+    border-bottom: 1px solid #74819c;
+    box-sizing: border-box;
+
+    &[for="phone"] {
+      margin-right: 0;
+    }
+
+    @media (max-width: $desktop) {
+      margin-right: 60px;
+      margin-bottom: 20px;
+      width: calc(50% - 60px);
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: 500px) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  & input {
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: $default-color;
+
+    &::placeholder {
+      color: $default-color;
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  & input:valid {
+    border-color: green;
+  }
+
+  & input:invalid {
+    border-color: red;
+  }
+
+  & input:required:valid {
+    border-color: green;
+  }
+
+  & button {
+    padding: 10px;
+    margin-top: 7px;
+
+    width: 100%;
+    color: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid $default-color;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    outline: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @media (max-width: $desktop) {
+      padding: 16px;
+    }
+  }
+}
