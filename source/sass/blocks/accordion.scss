@@ -1,0 +1,72 @@
+.accordion {
+  &__item {
+    position: relative;
+
+    border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+
+    &--active {
+      & .accordion__item-text {
+        display: block;
+        animation-name: fadeInDown;
+      }
+
+      & .accordion__item-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__item-number {
+    height: auto;
+    width: 40px;
+    min-width: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 170%;
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & h3 {
+      margin: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 150%;
+      color: $primary-color;
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+  }
+
+  &__item-icon {
+    fill: transparent;
+    margin-left: auto;
+  }
+
+  &__item-text {
+    display: none;
+    animation-name: fadeInUp;
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+
+    color: $primary-color;
+    opacity: 0.74;
+  }
+}

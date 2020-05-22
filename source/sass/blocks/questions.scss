@@ -1,15 +1,48 @@
 .questions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
+
+  padding-top: 79px;
+  padding-bottom: 100px;
+
+  background-image: url("../img/questions/water-color-bg.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/questions/bag.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__pic {
     width: 40%;
     box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   &__info {
-    width: 60%;
+    width: 50%;
     box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 }

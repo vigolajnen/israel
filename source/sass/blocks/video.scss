@@ -4,6 +4,7 @@
   padding-bottom: 96px;
 
   box-sizing: border-box;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -24,6 +25,7 @@
   @media (max-width: $mobile) {
     padding-bottom: 80px;
   }
+
   &__container {
     text-align: center;
   }
@@ -55,5 +57,13 @@
     max-width: 870px;
     max-height: 460px;
     margin: 0 auto;
+
+    mask-border: url("../img/video/mask.png") 0 repeat;
+    mask-position: center;
+    mask-mode: match-source;
+    mask-size: 100px;
+
+    mask-clip: border-box;
+    mask-origin: border-box;
   }
 }

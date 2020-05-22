@@ -1,0 +1,245 @@
+/*stylelint-disable*/
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-1-b-name: 'icon-1_b';
+$icon-1-b-x: 351px;
+$icon-1-b-y: 327px;
+$icon-1-b-offset-x: -351px;
+$icon-1-b-offset-y: -327px;
+$icon-1-b-width: 28px;
+$icon-1-b-height: 33px;
+$icon-1-b-total-width: 593px;
+$icon-1-b-total-height: 581px;
+$icon-1-b-image: '../img/sprite-png.png';
+$icon-1-b: (351px, 327px, -351px, -327px, 28px, 33px, 593px, 581px, '../img/sprite-png.png', 'icon-1_b', );
+$icon-1-g-name: 'icon-1_g';
+$icon-1-g-x: 427px;
+$icon-1-g-y: 413px;
+$icon-1-g-offset-x: -427px;
+$icon-1-g-offset-y: -413px;
+$icon-1-g-width: 28px;
+$icon-1-g-height: 33px;
+$icon-1-g-total-width: 593px;
+$icon-1-g-total-height: 581px;
+$icon-1-g-image: '../img/sprite-png.png';
+$icon-1-g: (427px, 413px, -427px, -413px, 28px, 33px, 593px, 581px, '../img/sprite-png.png', 'icon-1_g', );
+$icon-1-w-name: 'icon-1_w';
+$icon-1-w-x: 389px;
+$icon-1-w-y: 370px;
+$icon-1-w-offset-x: -389px;
+$icon-1-w-offset-y: -370px;
+$icon-1-w-width: 28px;
+$icon-1-w-height: 33px;
+$icon-1-w-total-width: 593px;
+$icon-1-w-total-height: 581px;
+$icon-1-w-image: '../img/sprite-png.png';
+$icon-1-w: (389px, 370px, -389px, -370px, 28px, 33px, 593px, 581px, '../img/sprite-png.png', 'icon-1_w', );
+$icon-2-b-name: 'icon-2_b';
+$icon-2-b-x: 557px;
+$icon-2-b-y: 546px;
+$icon-2-b-offset-x: -557px;
+$icon-2-b-offset-y: -546px;
+$icon-2-b-width: 36px;
+$icon-2-b-height: 35px;
+$icon-2-b-total-width: 593px;
+$icon-2-b-total-height: 581px;
+$icon-2-b-image: '../img/sprite-png.png';
+$icon-2-b: (557px, 546px, -557px, -546px, 36px, 35px, 593px, 581px, '../img/sprite-png.png', 'icon-2_b', );
+$icon-2-g-name: 'icon-2_g';
+$icon-2-g-x: 511px;
+$icon-2-g-y: 501px;
+$icon-2-g-offset-x: -511px;
+$icon-2-g-offset-y: -501px;
+$icon-2-g-width: 36px;
+$icon-2-g-height: 35px;
+$icon-2-g-total-width: 593px;
+$icon-2-g-total-height: 581px;
+$icon-2-g-image: '../img/sprite-png.png';
+$icon-2-g: (511px, 501px, -511px, -501px, 36px, 35px, 593px, 581px, '../img/sprite-png.png', 'icon-2_g', );
+$icon-2-w-name: 'icon-2_w';
+$icon-2-w-x: 465px;
+$icon-2-w-y: 456px;
+$icon-2-w-offset-x: -465px;
+$icon-2-w-offset-y: -456px;
+$icon-2-w-width: 36px;
+$icon-2-w-height: 35px;
+$icon-2-w-total-width: 593px;
+$icon-2-w-total-height: 581px;
+$icon-2-w-image: '../img/sprite-png.png';
+$icon-2-w: (465px, 456px, -465px, -456px, 36px, 35px, 593px, 581px, '../img/sprite-png.png', 'icon-2_w', );
+$icon-3-b-name: 'icon-3_b';
+$icon-3-b-x: 183px;
+$icon-3-b-y: 175px;
+$icon-3-b-offset-x: -183px;
+$icon-3-b-offset-y: -175px;
+$icon-3-b-width: 32px;
+$icon-3-b-height: 25px;
+$icon-3-b-total-width: 593px;
+$icon-3-b-total-height: 581px;
+$icon-3-b-image: '../img/sprite-png.png';
+$icon-3-b: (183px, 175px, -183px, -175px, 32px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-3_b', );
+$icon-3-g-name: 'icon-3_g';
+$icon-3-g-x: 99px;
+$icon-3-g-y: 105px;
+$icon-3-g-offset-x: -99px;
+$icon-3-g-offset-y: -105px;
+$icon-3-g-width: 32px;
+$icon-3-g-height: 25px;
+$icon-3-g-total-width: 593px;
+$icon-3-g-total-height: 581px;
+$icon-3-g-image: '../img/sprite-png.png';
+$icon-3-g: (99px, 105px, -99px, -105px, 32px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-3_g', );
+$icon-3-w-name: 'icon-3_w';
+$icon-3-w-x: 141px;
+$icon-3-w-y: 140px;
+$icon-3-w-offset-x: -141px;
+$icon-3-w-offset-y: -140px;
+$icon-3-w-width: 32px;
+$icon-3-w-height: 25px;
+$icon-3-w-total-width: 593px;
+$icon-3-w-total-height: 581px;
+$icon-3-w-image: '../img/sprite-png.png';
+$icon-3-w: (141px, 140px, -141px, -140px, 32px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-3_w', );
+$icon-4-b-name: 'icon-4_b';
+$icon-4-b-x: 225px;
+$icon-4-b-y: 210px;
+$icon-4-b-offset-x: -225px;
+$icon-4-b-offset-y: -210px;
+$icon-4-b-width: 32px;
+$icon-4-b-height: 29px;
+$icon-4-b-total-width: 593px;
+$icon-4-b-total-height: 581px;
+$icon-4-b-image: '../img/sprite-png.png';
+$icon-4-b: (225px, 210px, -225px, -210px, 32px, 29px, 593px, 581px, '../img/sprite-png.png', 'icon-4_b', );
+$icon-4-g-name: 'icon-4_g';
+$icon-4-g-x: 267px;
+$icon-4-g-y: 249px;
+$icon-4-g-offset-x: -267px;
+$icon-4-g-offset-y: -249px;
+$icon-4-g-width: 32px;
+$icon-4-g-height: 29px;
+$icon-4-g-total-width: 593px;
+$icon-4-g-total-height: 581px;
+$icon-4-g-image: '../img/sprite-png.png';
+$icon-4-g: (267px, 249px, -267px, -249px, 32px, 29px, 593px, 581px, '../img/sprite-png.png', 'icon-4_g', );
+$icon-4-w-name: 'icon-4_w';
+$icon-4-w-x: 309px;
+$icon-4-w-y: 288px;
+$icon-4-w-offset-x: -309px;
+$icon-4-w-offset-y: -288px;
+$icon-4-w-width: 32px;
+$icon-4-w-height: 29px;
+$icon-4-w-total-width: 593px;
+$icon-4-w-total-height: 581px;
+$icon-4-w-image: '../img/sprite-png.png';
+$icon-4-w: (309px, 288px, -309px, -288px, 32px, 29px, 593px, 581px, '../img/sprite-png.png', 'icon-4_w', );
+$icon-5-b-name: 'icon-5_b';
+$icon-5-b-x: 66px;
+$icon-5-b-y: 70px;
+$icon-5-b-offset-x: -66px;
+$icon-5-b-offset-y: -70px;
+$icon-5-b-width: 23px;
+$icon-5-b-height: 25px;
+$icon-5-b-total-width: 593px;
+$icon-5-b-total-height: 581px;
+$icon-5-b-image: '../img/sprite-png.png';
+$icon-5-b: (66px, 70px, -66px, -70px, 23px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-5_b', );
+$icon-5-g-name: 'icon-5_g';
+$icon-5-g-x: 33px;
+$icon-5-g-y: 35px;
+$icon-5-g-offset-x: -33px;
+$icon-5-g-offset-y: -35px;
+$icon-5-g-width: 23px;
+$icon-5-g-height: 25px;
+$icon-5-g-total-width: 593px;
+$icon-5-g-total-height: 581px;
+$icon-5-g-image: '../img/sprite-png.png';
+$icon-5-g: (33px, 35px, -33px, -35px, 23px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-5_g', );
+$icon-5-w-name: 'icon-5_w';
+$icon-5-w-x: 0px;
+$icon-5-w-y: 0px;
+$icon-5-w-offset-x: 0px;
+$icon-5-w-offset-y: 0px;
+$icon-5-w-width: 23px;
+$icon-5-w-height: 25px;
+$icon-5-w-total-width: 593px;
+$icon-5-w-total-height: 581px;
+$icon-5-w-image: '../img/sprite-png.png';
+$icon-5-w: (0px, 0px, 0px, 0px, 23px, 25px, 593px, 581px, '../img/sprite-png.png', 'icon-5_w', );
+$spritesheet-width: 593px;
+$spritesheet-height: 581px;
+$spritesheet-image: '../img/sprite-png.png';
+$spritesheet-sprites: ($icon-1-b, $icon-1-g, $icon-1-w, $icon-2-b, $icon-2-g, $icon-2-w, $icon-3-b, $icon-3-g, $icon-3-w, $icon-4-b, $icon-4-g, $icon-4-w, $icon-5-b, $icon-5-g, $icon-5-w, );
+$spritesheet: (593px, 581px, '../img/sprite-png.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

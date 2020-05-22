@@ -5,6 +5,7 @@
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow: hidden;
 
   &__list {
     display: flex;
@@ -18,6 +19,14 @@
 
     width: 30%;
     box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
   }
 
   &__item {
@@ -40,8 +49,30 @@
 
     box-sizing: border-box;
 
-    &:hover {
-      opacity: 1;
+    &:not(.tabs__item--active):hover {
+      color: $warning-color;
+
+      & .tabs__icon {
+        &--star {
+          @include sprite($icon-1-g);
+        }
+
+        &--hat {
+          @include sprite($icon-2-g);
+        }
+
+        &--bag {
+          @include sprite($icon-3-g);
+        }
+
+        &--hand {
+          @include sprite($icon-4-g);
+        }
+
+        &--candles {
+          @include sprite($icon-5-g);
+        }
+      }
     }
 
     @media (max-width: $mobile) {
@@ -64,26 +95,75 @@
       }
 
       &::before {
-        border: 28px solid transparent; 
-        border-top: 28px solid $default-color; 
+        border: 28px solid transparent;
+        border-top: 28px solid $default-color;
         border-right: 28px solid $default-color;
       }
 
       &::after {
-        border: 28px solid transparent; 
-        border-right: 28px solid $default-color; 
+        border: 28px solid transparent;
+        border-right: 28px solid $default-color;
         border-bottom: 28px solid $default-color;
       }
 
-    }
-  }
+      & .tabs__icon {
+        &--star {
+          @include sprite($icon-1-w);
+        }
 
-  &__item-icon {
-    fill: red;
+        &--hat {
+          @include sprite($icon-2-w);
+        }
+
+        &--bag {
+          @include sprite($icon-3-w);
+        }
+
+        &--hand {
+          @include sprite($icon-4-w);
+        }
+
+        &--candles {
+          @include sprite($icon-5-w);
+        }
+      }
+    }
   }
 
   &__content {
     width: 60%;
     box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.tabs__icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+  box-sizing: border-box;
+
+  &--star {
+    @include sprite($icon-1-b);
+  }
+
+  &--hat {
+    @include sprite($icon-2-b);
+  }
+
+  &--bag {
+    @include sprite($icon-3-b);
+  }
+
+  &--hand {
+    @include sprite($icon-4-b);
+  }
+
+  &--candles {
+    @include sprite($icon-5-b);
   }
 }

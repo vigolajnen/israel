@@ -1,13 +1,29 @@
 .reviews {
+  position: relative;
+  padding-top: 40px;
+  margin-bottom: 60px;
   background-image: url("../img/reviews/sketch.png");
   background-size: 50%;
   background-position: right 30%;
   background-repeat: no-repeat;
   overflow: hidden;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/reviews/watercolor_bg.png");
+  }
 
   & h2 {
-    margin-bottom: 58px;
+    margin-bottom: 24px;
+    text-align: center;
   }
 
   &__slider {
@@ -19,76 +35,55 @@
       max-width: 100%;
     }
 
+    & .swiper-button-next,
     & .swiper-button-prev {
-      top: 49%;
-      transform: rotate(180deg);
-
-      outline: none;
-
-      border: none;
-      background-color: transparent;
-
-      @media (max-width: $desktop) {
-        top: 50%;
-        left: -6px;
-      }
-
-      &::after {
-        content: "";
-      }
-
-      & svg {
-        fill: transparent;
-
-        width: 30px;
-        height: 30px;
-
-        @media (max-width: $desktop) {
-          width: 33px;
-          height: 33px;
-        }
-
-        @media (max-width: $table) {
-          width: 25px;
-          height: 25px;
-        }
-      }
+      height: 0;
     }
 
-    & .swiper-button-next {
-      top: 49%;
+    // & .swiper-button-prev {
 
-      outline: none;
+    // }
 
-      border: none;
-      background-color: transparent;
+    // & .swiper-button-next {
+    //   top: 49%;
 
-      @media (max-width: $desktop) {
-        top: 50%;
-        right: -6px;
-      }
+    //   outline: none;
 
-      &::after {
-        content: "";
-      }
+    //   border: none;
+    //   background-color: transparent;
 
-      & svg {
-        fill: transparent;
+    //   @media (max-width: $desktop) {
+    //     top: 50%;
+    //     right: -6px;
+    //   }
 
-        width: 30px;
-        height: 30px;
+    //   &::after {
+    //     content: "";
+    //   }
 
-        @media (max-width: $desktop) {
-          width: 33px;
-          height: 33px;
-        }
+    //   & svg {
+    //     fill: transparent;
 
-        @media (max-width: $table) {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
+    //     width: 30px;
+    //     height: 30px;
+
+    //     @media (max-width: $desktop) {
+    //       width: 33px;
+    //       height: 33px;
+    //     }
+
+    //     @media (max-width: $table) {
+    //       width: 25px;
+    //       height: 25px;
+    //     }
+    //   }
+    // }
+  }
+
+  &__slider-nav {
+    position: relative;
+    width: 200px;
+    margin-left: 30%;
   }
 
   &__slider-wrapper {

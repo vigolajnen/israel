@@ -3,15 +3,71 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   padding: 0;
   height: 100vmin;
   background-color: #e9ad82;
   background-image: url("../img/promo/promo-bg.jpg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
   box-sizing: border-box;
+
+  // mask: url("../img/promo/mask.png");
+  // mask-border: url("../img/promo/mask.png") 0 repeat;
+  // mask-position: center;
+  // mask-mode: match-source;
+  // mask-size: 100px;
+
+  // mask-clip: border-box;
+  // mask-origin: border-box;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url("../img/promo/promo-girl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  & h1 {
+    z-index: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: $mainFontTitle;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 170%;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #000000;
+
+    // mask: url("../img/promo/promo-bg.png");
+    // mask-repeat: no-repeat;
+    // mask-size: auto;
+
+
+    clip-path: text;
+
+    @media (max-width: $mobile) {
+      font-size: 72px;
+      line-height: 170%;
+      letter-spacing: 0.01em;
+    }
+  }
 
   // @media (max-width: $desktop) {
   //   padding-top: 40px;

@@ -20,6 +20,7 @@
           Заказать звонок
         </button>
       </header>
+      <h1>Израиль</h1>
       <section class="promo container">
         <div class="promo__info">
           <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
@@ -37,8 +38,8 @@
           <h2>О программе</h2>
           <p>
             «Маса» — совместный проект правительства Израиля и Еврейского
-            агентства Сохнут. Более 250 учебных программ (60 на русском) и
-            возможность стажировки в Израиле. В течение освоения программ
+            агентства Сохнут. Более 250 учебных программ (60 на русском) и
+            возможность стажировки в Израиле. В течение освоения программ
             предусмотрен грант от 4200 до 8400$.
           </p>
         </div>
@@ -55,33 +56,23 @@
         <div class="programs__tabs tabs">
           <ul class="tabs__list">
             <li class="tabs__item">
-              <svg class="tabs__item-icon" width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon-1_w"></use>
-              </svg>
+              <span class="tabs__icon tabs__icon--star" aria-label="Иконка"></span>
               <span>Общие</span>
             </li>
             <li class="tabs__item tabs__item--active">
-              <svg class="tabs__item-icon" width="36" height="35">
-                <use xlink:href="img/sprite_auto.svg#icon-2_g"></use>
-              </svg>
+              <span class="tabs__icon tabs__icon--hat" aria-label="Иконка"></span>
               <span>Академические</span>
             </li>
             <li class="tabs__item">
-              <svg class="tabs__item-icon" width="32" height="25">
-                <use xlink:href="img/sprite_auto.svg#icon-3_g"></use>
-              </svg>
+              <span class="tabs__icon tabs__icon--bag" aria-label="Иконка"></span>
               <span>Стажировки</span>
             </li>
             <li class="tabs__item">
-              <svg class="tabs__item-icon" width="32" height="29">
-                <use xlink:href="img/sprite_auto.svg#icon-4_g"></use>
-              </svg>
+              <span class="tabs__icon tabs__icon--hand" aria-label="Иконка"></span>
               <span>Волонтёрство</span>
             </li>
             <li class="tabs__item">
-              <svg class="tabs__item-icon" width="23" height="25">
-                <use xlink:href="img/sprite_auto.svg#icon-5_g"></use>
-              </svg>
+              <span class="tabs__icon tabs__icon--candles" aria-label="Иконка"></span>
               <span>Религиозные</span>
             </li>
           </ul>
@@ -89,14 +80,14 @@
             <h3>Академические</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
-              культурами и идеями, традициями и стилем жизни — вот что такое
+              культурами и идеями, традициями и стилем жизни — вот что такое
               учеба за границей! Израиль — это не только центр религиозного
               мира, это также академический центр, живая лаборатория идей и
               творческого исследования.
             </p>
             <p>
               Может быть, Вы заинтересованы в изучении социологии, мира,
-              юриспруденции, биологии, сравнительной религии, законодательного и
+              юриспруденции, биологии, сравнительной религии, законодательного и
               делового администрирования или искусства? Здесь, в Израиле, Вы
               сможете изучить все это в удивительной университетской среде.
             </p>
@@ -105,24 +96,26 @@
       </div>
     </section>
     <section class="promo-form">
-      <div class="container">
-        <div class="promo__header">
+      <div class="promo-form__container container">
+        <div class="promo-form__info">
           <h2>Хочу поехать!</h2>
           <p>
             Оставьте свой телефон и мы свяжемся с вами, подберём куратора и
             ответим на все вопросы!
           </p>
+          <form class="promo__form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="phone" aria-label="телефон">
+              <input id="phone" name="phone" type="text" placeholder="телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+            </label>
+            <button type="submit">перезвоните мне</button>
+          </form>
         </div>
-        <form class="promo__form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="phone" aria-label="Телефон">
-            <input id="phone" name="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
-          </label>
-          <button type="submit">перезвоните мне</button>
-        </form>
       </div>
     </section>
     <section class="guide container">
-      <div class="guide__pic"></div>
+      <div class="guide__pic">
+        <img src="img/guide/bg.png" alt="">
+      </div>
       <div class="guide__info">
         <h2>Как поехать</h2>
         <p>
@@ -132,18 +125,18 @@
         </p>
         <div class="guide__list">
           <p>
-            Чтобы иметь возможность получить грант на обучение  от 4200 до
-            8400$, вы должны:
+            Чтобы иметь возможность получить грант на обучение от 4200 до 8400$,
+            вы должны:
           </p>
           <ul>
             <li>Быть в возрасте от 16 до 30 лет</li>
             <li>Иметь оконченное среднее образование</li>
             <li>
-              Иметь документально подтверждённые еврейские корни и пройти
+              Иметь документально подтверждённые еврейские корни и пройти
               консульскую проверку
             </li>
             <li>
-              Иметь документально подтверждённые еврейские корни и пройти
+              Иметь документально подтверждённые еврейские корни и пройти
               консульскую проверку
             </li>
           </ul>
@@ -159,7 +152,7 @@
         <h2>Жизнь в израиле</h2>
         <p>
           Помимо учёбы, в рамках программе у вас будет возможность
-          путешествовать по стране и познакомиться с богатой
+          путешествовать по стране и познакомиться с богатой
           культурно-исторической жизнью Израиля и его жителей.
         </p>
       </div>
@@ -167,147 +160,246 @@
         <div id="about" class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide about__slide">
-              <h3>Экскурсии по Израилю и знакомство с его историей</h3>
-              <img src="img/about/excursions.png" alt="Экскурсии по Израилю и знакомство с его историей">
+              <h3>Экскурсии по Израилю и знакомство с его историей</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    img/about/excursions.webp    1x,
+                    img/about/excursions@2x.webp 2x
+                  ">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/about/excursions-mob.png" srcset="img/about/excursions-mob@2x.png 2x" width="280" height="400" alt="Экскурсии по Израилю">
+              </picture>
             </div>
             <div class="swiper-slide about__slide">
               <h3>Изучение иврита</h3>
-              <img src="img/about/study.png" alt="Изучение иврита">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/about/study.webp 1x, img/about/study@2x.webp 2x">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/about/study-mob.png" srcset="img/about/study-mob@2x.png 2x" width="280" height="400" alt="Изучение иврита">
+              </picture>
             </div>
-            <div class="swiper-slide about__slide">
+            <div class="swiper-slide about__slide about__slide--horiz">
               <h3>Обучение современным навыкам и профессиям</h3>
-              <img src="img/about/skills.png" alt="Обучение современным навыкам и профессиям">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/about/skills.webp 1x, img/about/skills@2x.webp 2x">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/about/skills-mob.png" srcset="img/about/skills-mob@2x.png 2x" width="280" height="400" alt="Обучение современным навыкам и профессиям">
+              </picture>
+            </div>
+            <div class="swiper-slide about__slide about__slide--horiz">
+              <h3>Совместные творческие проекты с израильской молодёжью</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    img/about/projects.webp    1x,
+                    img/about/projects@2x.webp 2x
+                  ">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/about/projects-mob.png" srcset="img/about/projects-mob@2x.png 2x" width="280" height="400" alt="Совместные творческие проекты">
+              </picture>
             </div>
             <div class="swiper-slide about__slide">
-              <h3>Совместные творческие проекты  с израильской молодёжью</h3>
-              <img src="img/about/projects.png" alt="Совместные творческие проекты  с израильской молодёжью">
-            </div>
-            <div class="swiper-slide about__slide">
-              <h3>Развитие лидерства</h3>
-              <img src="img/about/leadership.png" alt="Развитие лидерства">
+              <h3>Развитие лидерства</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    img/about/leadership.webp    1x,
+                    img/about/leadership@2x.webp 2x
+                  ">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/about/leadership-mob.png" srcset="img/about/leadership-mob@2x.png 2x" width="280" height="400" alt="Развитие лидерства">
+              </picture>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="promo-photo container">
-      <div class="promo-photo__info">
-        <h2>#masaisrael</h2>
-        <p>
-          Познакомьтесь с программой от первого лица! Многие участники ведут
-          блоги и фотодневники о жизни, учёбе и путешествиях в Израиле. 
-        </p>
-        <a href="#">смотреть фото</a>
+    <section class="promo-photo">
+      <div class="promo-photo__container container">
+        <div class="promo-photo__info">
+          <h2>#masaisrael</h2>
+          <p>
+            Познакомьтесь с программой от первого лица! Многие участники ведут
+            блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.
+          </p>
+          <a href="#"><svg class="social__icon" width="25" height="54">
+              <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
+            </svg>
+            смотреть фото</a>
+        </div>
       </div>
     </section>
-    <section class="questions container">
-      <div class="questions__info">
-        <h2>Частые вопросы</h2>
-        <div class="accordion">
-          <div class="accordion__item" data-num="1">
-            <div class="accordion__item-header">
-              <h3>Кто организатор? Какие сроки у программы?</h3>
-              <button class="accordion__item-btn" type="button">
+    <section class="questions">
+      <div class="questions__container container">
+        <div class="questions__info">
+          <h2>Частые вопросы</h2>
+          <div class="accordion">
+            <div class="accordion__item accordion__item--active">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      1
+                    </text>
+                  </g>
+                </svg>
+                <h3>Кто организатор? Какие сроки у программы?</h3>
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
-            </div>
-          </div>
-          <div class="accordion__item" data-num="2">
-            <div class="accordion__item-header">
-              <h3>Что такое грант на обучение?</h3>
-              <button class="accordion__item-btn" type="button">
+            <div class="accordion__item">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      2
+                    </text>
+                  </g>
+                </svg>
+                <h3>Что такое грант на обучение?</h3>
+
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
-            </div>
-          </div>
-          <div class="accordion__item" data-num="3">
-            <div class="accordion__item-header">
-              <h3>Как определяется стоимость программы?</h3>
-              <button class="accordion__item-btn" type="button">
+            <div class="accordion__item">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      3
+                    </text>
+                  </g>
+                </svg>
+                <h3>Как определяется стоимость программы?</h3>
+
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
-            </div>
-          </div>
-          <div class="accordion__item" data-num="4">
-            <div class="accordion__item-header">
-              <h3>Что такое грант на обучение?</h3>
-              <button class="accordion__item-btn" type="button">
+            <div class="accordion__item">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      4
+                    </text>
+                  </g>
+                </svg>
+                <h3>Что такое грант на обучение?</h3>
+
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
-            </div>
-          </div>
-          <div class="accordion__item" data-num="5">
-            <div class="accordion__item-header">
-              <h3>
-                Признаётся ли учеба в рамках проекта для дальнейшего обучения?
-              </h3>
-              <button class="accordion__item-btn" type="button">
+            <div class="accordion__item">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      5
+                    </text>
+                  </g>
+                </svg>
+                <h3>
+                  Признаётся ли учеба в рамках проекта для дальнейшего обучения?
+                </h3>
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
-            </div>
-          </div>
-          <div class="accordion__item" data-num="6">
-            <div class="accordion__item-header">
-              <h3>
-                Как выглдядит полный процесс регистрации на программу «Маса»?
-              </h3>
-              <button class="accordion__item-btn" type="button">
+            <div class="accordion__item">
+              <div class="accordion__item-header">
+                <svg class="accordion__item-number" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                  <linearGradient id="grad-2">
+                    <stop class="stop" stop-color="#ffc341" offset="20.46%"></stop>
+                    <stop class="stop" stop-color="#ffd701" offset="65.31%"></stop>
+                  </linearGradient>
+
+                  <g>
+                    <text x="50%" y="50%" dy=".25em" text-anchor="middle" fill="url(#grad-2)">
+                      6
+                    </text>
+                  </g>
+                </svg>
+                <h3>
+                  Как выглдядит полный процесс регистрации на программу «Маса»?
+                </h3>
                 <svg class="accordion__item-icon" width="17" height="11">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
-              </button>
-            </div>
-            <div class="accordion__item-text">
-              Полная стоимость определяется организаторами в зависимости от
-              направления. В большинстве случаев грант «Маса» не покрывает
-              полную стоимость программы, и поэтому предусматривается
-              определённая доля личного участия.
+              </div>
+              <div class="accordion__item-text">
+                Полная стоимость определяется организаторами в зависимости от
+                направления. В большинстве случаев грант «Маса» не покрывает
+                полную стоимость программы, и поэтому предусматривается
+                определённая доля личного участия.
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="questions__pic">
-        <img src="img/questions/bg.jpg" alt="Обсуждение вопросов">
+        <div class="questions__pic">
+          <img src="img/questions/bg.jpg" alt="Обсуждение вопросов">
+        </div>
       </div>
     </section>
     <section class="reviews container">
@@ -341,26 +433,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -394,26 +486,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -447,26 +539,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -500,26 +592,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -553,26 +645,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -606,26 +698,26 @@
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
-                <div class="review__bottom social">
+                <div class="review__social social">
                   <ul class="social__list">
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш fb">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш tw">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-tw"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
                       <a class="social__link" href="#" aria-label="Наш Инстаграм">
                         <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                         </svg>
                       </a>
                     </li>
@@ -633,6 +725,11 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="reviews__slider-nav">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -642,12 +739,12 @@
         <h2>Узнать подробности</h2>
         <div class="contacts__city">
           <svg class="social__icon" width="12" height="18">
-            <use xlink:href="img/sprite.svg#icon-point"></use>
+            <use xlink:href="img/sprite_auto.svg#icon-point"></use>
           </svg>
           <span>Ваш город:</span>
           <a href="#">Новосибирск
             <svg class="social__icon" width="16" height="15">
-              <use xlink:href="img/sprite.svg#icon-gps"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-gps"></use>
             </svg>
           </a>
         </div>
@@ -662,34 +759,36 @@
             <p>
               Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
             </p>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#" aria-label="Наш fb">
-                  <svg class="social__icon" width="25" height="54">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#" aria-label="Наш tw">
-                  <svg class="social__icon" width="25" height="54">
-                    <use xlink:href="img/sprite.svg#icon-tw"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#" aria-label="Наш Инстаграм">
-                  <svg class="social__icon" width="25" height="54">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="contacts__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Наш fb">
+                    <svg class="social__icon" width="25" height="54">
+                      <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Наш wp">
+                    <svg class="social__icon" width="25" height="54">
+                      <use xlink:href="img/sprite_auto.svg#icon-wapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Наш телеграм">
+                    <svg class="social__icon" width="25" height="54">
+                      <use xlink:href="img/sprite_auto.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <p>
-          Куратор является опытным специалистом агентства Сохнут  и знает о
-          проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о
+          Куратор является опытным специалистом агентства Сохнут и знает о
+          проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о
           программах и выберите свою !
         </p>
       </div>
@@ -729,21 +828,21 @@
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Наш fb">
                 <svg class="social__icon" width="25" height="54">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Наш tw">
                 <svg class="social__icon" width="25" height="54">
-                  <use xlink:href="img/sprite.svg#icon-tw"></use>
+                  <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Наш Инстаграм">
                 <svg class="social__icon" width="25" height="54">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>

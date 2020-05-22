@@ -1,3 +1,144 @@
 .guide {
-  
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/guide/water-color-bg.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translateY(-50%);
+    background-image: url("../img/guide/icon-pass.png");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__pic {
+    width: 40%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    width: 55%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+    & h2 {
+      margin: 0;
+      margin-bottom: 24px;
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 32px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 170%;
+      color: $primary-color;
+      opacity: 0.87;
+
+      @media (max-width: $mobile) {
+        font-size: 14px;
+        line-height: 160%;
+      }
+    }
+  }
+
+  &__list {
+    & ul {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      counter-reset: li;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 22px;
+        opacity: 0.2;
+        height: 90%;
+        width: 1px;
+        border-left: 1px dashed #484848;
+      }
+    }
+
+    & li {
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 40px;
+
+      &::before {
+        counter-increment: li;
+        content: counter(li);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        padding: 7px 18px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 170%;
+
+        color: #ffc341;
+        background: #ffffff;
+
+        border-radius: 50%;
+
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 27px;
+      font-weight: 500;
+    }
+  }
+
+  &__warning {
+    position: relative;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+
+    color: $primary-color;
+    opacity: 0.5;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../img/icons/icon-warning-line.svg");
+    }
+  }
 }
