@@ -6,6 +6,9 @@
 
   box-sizing: border-box;
 
+  @media (max-width: $desktop) {
+    padding: 0 45px;
+  }
   @media (max-width: $mobile) {
     padding: 0 16px;
   }

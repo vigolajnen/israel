@@ -108,4 +108,12 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  &__mask {
+    max-width: 100%;
+
+    @media (max-width: $mobile) {
+      height: auto;
+    }
+  }
 }

@@ -7,8 +7,39 @@
     justify-content: space-between;
     align-items: center;
 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     @media (max-width: $mobile) {
       flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $mobile) {
+      margin-bottom: 14px;
+      width: 99px;
+    }
+  }
+
+  &__copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: rgba(72, 72, 72, 0.5);
+
+    @media (max-width: $mobile) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__social {
+    & svg {
+      fill: rgba(72, 72, 72, 0.2);
     }
   }
 }

@@ -11,7 +11,7 @@
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/promo-photo/bg.png");
+  background-image: url("../img/promo-photo/bg-min.png");
   box-sizing: border-box;
 
   @media (max-width: 1440px) {
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: $mobile) {
-    background-image: url("../img/promo-photo/bg-mob.png");
+    background-image: url("../img/promo-photo/bg-mob-min.png");
   }
 
   &__container {
@@ -55,27 +55,45 @@
         line-height: 160%;
       }
     }
+  }
 
-    & a {
-      display: inline-block;
-      vertical-align: middle;
-      padding: 20px 40px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 26px;
-      font-variant: small-caps;
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    font-variant: small-caps;
 
-      color: #ffffff;
+    color: #ffffff;
 
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 
-      background: linear-gradient(142.39deg, #ffc341 20.46%, #ffd701 65.31%);
-      border-radius: 80px;
+    background: linear-gradient(142.39deg, #ffc341 20.46%, #ffd701 65.31%);
+    border-radius: 80px;
 
-      text-decoration: none;
+    text-decoration: none;
 
-      box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+      background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+    }
+
+    &:active {
+      background: radial-gradient(
+          150% 119.49% at 50% 50.85%,
+          rgba(0, 0, 0, 0) 30.67%,
+          rgba(3, 3, 3, 0.24) 100%
+        ),
+        linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+    }
+
+    & svg {
+      margin-right: 10px;
     }
   }
 }

@@ -9,9 +9,21 @@
     background-position: 100% 0;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/promo-form/bg.png");
+    background-image: url("../img/promo-form/girl-flag-bg.png");
 
     box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      background-image: url("../img/promo-form/girl-flag-bg-mob.png");
+    }
+
+    @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+      background-image: url("../img/promo-form/girl-flag-bg-mob@2x.png");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/promo-form/girl-flag-bg@2x.png");
+    }
   }
 
   &__info {

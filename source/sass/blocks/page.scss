@@ -19,13 +19,16 @@
     font-size: 40px;
     line-height: 49px;
 
-    letter-spacing: -0.02em;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     color: $secondary-color;
+
+    @include fluidFontSize(32px, 40px, 767px, 1366px, 200px);
 
     @media (max-width: $mobile) {
       font-size: 32px;
       line-height: 39px;
+      text-align: center;
     }
   }
 

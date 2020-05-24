@@ -1,6 +1,7 @@
 // @import "../../node_modules/pixel-glass/styles.css";
 @import "swiper.scss";
 @import "sprite-png.scss";
+@import "mixin.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "base.scss";
@@ -26,3 +27,5 @@
 @import "blocks/questions.scss";
 @import "blocks/accordion.scss";
 @import "blocks/animated.scss";
+@import "blocks/modal.scss";
+@import "blocks/feedback.scss";

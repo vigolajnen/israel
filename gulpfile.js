@@ -126,7 +126,8 @@ gulp.task('scripts', function() {
     './node_modules/picturefill/dist/picturefill.js',
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',
-    './js/scroll.js'
+    './js/scroll.js',
+    './js/map.js',
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));

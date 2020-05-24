@@ -1,8 +1,8 @@
 .page-header {
+  z-index: 5;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-bottom: auto;
 
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,6 @@
     border: none;
     border-bottom: 1px dashed $primary-color;
     border-radius: 0;
-    text-transform: uppercase;
     cursor: pointer;
 
     @media (max-width: $mobile) {

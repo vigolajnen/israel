@@ -76,6 +76,7 @@
     }
 
     @media (max-width: $mobile) {
+      margin-right: 10px;
       font-size: 15px;
       line-height: 23px;
     }
@@ -85,6 +86,11 @@
       color: $default-color;
 
       background: linear-gradient(138.15deg, #ffc341 20.46%, #ffd701 65.31%);
+
+      @media (max-width: $mobile) {
+        border-radius: 35px;
+        padding-right: 25px;
+      }
 
       &::before,
       &::after {
@@ -104,6 +110,13 @@
         border: 28px solid transparent;
         border-right: 28px solid $default-color;
         border-bottom: 28px solid $default-color;
+      }
+
+      @media (max-width: $mobile) {
+        &::before,
+        &::after {
+          border: 0;
+        }
       }
 
       & .tabs__icon {

@@ -141,4 +141,12 @@
       background-image: url("../img/icons/icon-warning-line.svg");
     }
   }
+
+  &__mask {
+    max-width: 100%;
+
+    @media (max-width: $mobile) {
+      height: auto;
+    }
+  }
 }

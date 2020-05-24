@@ -11,7 +11,29 @@
   </head>
   <body class="page">
     <div class="header-and-promo">
-      <header class="page-header container">
+      <svg
+        class="header-and-promo__bg"
+        width="1366"
+        height="906"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <mask id="promosvgbg" class="header-and-promo__mask">
+            <image
+              width="100%"
+              height="100%"
+              xlink:href="img/promo/mask-light.png"
+            />
+          </mask>
+        </defs>
+        <image
+          mask="url(#promosvgbg)"
+          width="100%"
+          height="100%"
+          xlink:href="img/promo/promo-bg-min.jpg"
+        />
+      </svg>
+      <header class="header-and-promo__header page-header container">
         <a class="page-header__phone" href="tel:+97226216581"
           >+ (972) 2 – 621 – 6581</a
         >
@@ -19,26 +41,54 @@
           <img src="img/logo.svg" alt="Логотип" />
         </a>
         <button class="page-header__btn-modal" type="button">
-          Заказать звонок
+          заказать звонок
         </button>
       </header>
-      <h1>Израиль</h1>
-      <section class="promo container">
+      <svg
+        class="header-and-promo__text-svg"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <pattern
+          id="mypattern"
+          patternUnits="userSpaceOnUse"
+          width="1001"
+          height="146"
+        >
+          <image
+            width="1001"
+            height="146"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="../img/promo/text_overlay-min.jpg"
+          />
+        </pattern>
+        <text
+          class="header-and-promo__headline"
+          style="fill: url(#mypattern);"
+          x="0"
+          y="146"
+        >
+          Израиль
+        </text>
+      </svg>
+
+      <section class="header-and-promo__bottom promo container">
+        <!-- <h1>Израиль</h1> -->
+
         <div class="promo__info">
           <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
-          <button
+          <a
+            href="#video"
             class="promo__btn-scroll"
-            type="button"
             aria-label="Подсказка скролл вниз"
           >
             <svg width="76" height="132">
               <use xlink:href="img/sprite_auto.svg#icon-scroll"></use>
             </svg>
-          </button>
+          </a>
         </div>
       </section>
     </div>
-    <section class="video">
+    <section id="video" class="video">
       <div class="video__container container">
         <div class="video__header">
           <h2>О программе</h2>
@@ -51,7 +101,30 @@
         </div>
         <div class="video__media">
           <a href="#" class="video__link">
-            <img src="img/video/photo_about.jpg" alt="О программе" />
+            <svg
+              class="video__mask"
+              xmlns="http://www.w3.org/2000/svg"
+              height="100%"
+              width="100%"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+            >
+              <defs>
+                <mask id="videosvgbg">
+                  <image
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/video/mask-light-min.png"
+                  />
+                </mask>
+              </defs>
+              <image
+                mask="url(#videosvgbg)"
+                width="100%"
+                height="100%"
+                xlink:href="img/video/photo_about-min.jpg"
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -149,7 +222,28 @@
     </section>
     <section class="guide container">
       <div class="guide__pic">
-        <img src="img/guide/bg.png" alt="" />
+        <svg
+          class="guide__mask"
+          width="400"
+          height="600"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <mask id="guidesvgbg">
+              <image
+                width="100%"
+                height="100%"
+                xlink:href="img/guide/mask-light-min.png"
+              />
+            </mask>
+          </defs>
+          <image
+            mask="url(#guidesvgbg)"
+            width="100%"
+            height="100%"
+            xlink:href="img/guide/bg.jpg"
+          />
+        </svg>
       </div>
       <div class="guide__info">
         <h2>Как поехать</h2>
@@ -199,7 +293,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1340px)"
                   srcset="
                     img/about/excursions.webp    1x,
                     img/about/excursions@2x.webp 2x
@@ -220,7 +314,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1340px)"
                   srcset="img/about/study.webp 1x, img/about/study@2x.webp 2x"
                 />
                 <!-- 1х: 280px; 2x: 560px -->
@@ -238,7 +332,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1340px)"
                   srcset="img/about/skills.webp 1x, img/about/skills@2x.webp 2x"
                 />
                 <!-- 1х: 280px; 2x: 560px -->
@@ -256,7 +350,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1340px)"
                   srcset="
                     img/about/projects.webp    1x,
                     img/about/projects@2x.webp 2x
@@ -277,7 +371,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1340px)"
                   srcset="
                     img/about/leadership.webp    1x,
                     img/about/leadership@2x.webp 2x
@@ -294,6 +388,7 @@
               </picture>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -305,8 +400,8 @@
             Познакомьтесь с программой от первого лица! Многие участники ведут
             блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.
           </p>
-          <a href="#"
-            ><svg class="social__icon" width="25" height="54">
+          <a class="promo-photo__btn" href="#"
+            ><svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
             </svg>
             смотреть фото</a
@@ -593,7 +688,29 @@
           </div>
         </div>
         <div class="questions__pic">
-          <img src="img/questions/bg.jpg" alt="Обсуждение вопросов" />
+          <!-- <img src="img/questions/bg.jpg" alt="Обсуждение вопросов" /> -->
+          <svg
+            class="questions__mask"
+            width="400"
+            height="600"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <mask id="questionssvgbg">
+                <image
+                  width="100%"
+                  height="100%"
+                  xlink:href="img/questions/mask-light.png"
+                />
+              </mask>
+            </defs>
+            <image
+              mask="url(#questionssvgbg)"
+              width="100%"
+              height="100%"
+              xlink:href="img/questions/bg-min.jpg"
+            />
+          </svg>
         </div>
       </div>
     </section>
@@ -604,7 +721,29 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -663,7 +802,29 @@
             </div>
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -722,7 +883,29 @@
             </div>
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -781,7 +964,29 @@
             </div>
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -840,7 +1045,29 @@
             </div>
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -899,7 +1126,29 @@
             </div>
             <div class="swiper-slide review">
               <div class="review__pic">
-                <img src="img/reviews/user.jpg" alt="user" />
+                <!-- <img src="img/reviews/user.jpg" alt="user" /> -->
+                <svg
+                  class="review__mask"
+                  width="400"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <mask id="reviewsvgbg">
+                      <image
+                        width="100%"
+                        height="100%"
+                        xlink:href="img/reviews/mask-light.png"
+                      />
+                    </mask>
+                  </defs>
+                  <image
+                    mask="url(#reviewsvgbg)"
+                    width="100%"
+                    height="100%"
+                    xlink:href="img/reviews/user.jpg"
+                  />
+                </svg>
               </div>
               <div class="review__info">
                 <div class="review__header">
@@ -965,108 +1214,110 @@
         </div>
       </div>
     </section>
-    <section class="contacts container">
-      <div class="contacts__info">
+    <section class="contacts">
+      <div class="contacts__container container">
         <h2>Узнать подробности</h2>
-        <div class="contacts__city">
-          <svg class="social__icon" width="12" height="18">
-            <use xlink:href="img/sprite_auto.svg#icon-point"></use>
-          </svg>
-          <span>Ваш город:</span>
-          <a href="#"
-            >Новосибирск
-            <svg class="social__icon" width="16" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-gps"></use>
+        <div class="contacts__info">
+          <div class="contacts__city">
+            <svg class="social__icon" width="12" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
             </svg>
-          </a>
-        </div>
-        <div class="contacts__manager">
-          <div class="contacts__manager-pic">
-            <img src="img/contacts/manager.jpg" alt="manager" />
+            <span>Ваш город:</span>
+            <a href="#"
+              >Новосибирск
+              <svg class="social__icon" width="16" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-gps"></use>
+              </svg>
+            </a>
           </div>
-          <div class="contacts__manager-info">
-            <div class="contacts__manager-name">
-              <span>Ваш куратор:</span> Анна Горелик
+          <div class="contacts__manager">
+            <div class="contacts__manager-pic">
+              <img src="img/contacts/manager.jpg" alt="manager" />
             </div>
-            <p>
-              Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
-            </p>
-            <div class="contacts__social social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link" href="#" aria-label="Наш fb">
-                    <svg class="social__icon" width="25" height="54">
-                      <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="#" aria-label="Наш wp">
-                    <svg class="social__icon" width="25" height="54">
-                      <use xlink:href="img/sprite_auto.svg#icon-wapp"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="#" aria-label="Наш телеграм">
-                    <svg class="social__icon" width="25" height="54">
-                      <use xlink:href="img/sprite_auto.svg#icon-tg"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <div class="contacts__manager-info">
+              <div class="contacts__manager-name">
+                <span>Ваш куратор:</span> Анна Горелик
+              </div>
+              <p>
+                Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
+              </p>
+              <div class="contacts__manager-social social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Наш fb">
+                      <svg class="social__icon" width="25" height="54">
+                        <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Наш wp">
+                      <svg class="social__icon" width="25" height="54">
+                        <use xlink:href="img/sprite_auto.svg#icon-wapp"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Наш телеграм">
+                      <svg class="social__icon" width="25" height="54">
+                        <use xlink:href="img/sprite_auto.svg#icon-tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <p>
+            Куратор является опытным специалистом агентства Сохнут и знает о
+            проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о
+            программах и выберите свою !
+          </p>
         </div>
+      </div>
+      <div id="map" class="contacts__map"></div>
+    </section>
+    <div class="feedback container">
+      <div class="feedback__text">
         <p>
-          Куратор является опытным специалистом агентства Сохнут и знает о
-          проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о
-          программах и выберите свою !
+          Оставьте ваши контакты, если у вас остались вопросы — мы на них
+          ответим!
+        </p>
+        <p>
+          Мы не передаём данные третьим лицам. Ваши данные будут в безопасности
+          и вам не придёт спам от нас!
         </p>
       </div>
-      <div class="contacts__map"></div>
-      <div class="contacts__bottom">
-        <div class="contacts__text">
-          <p>
-            Оставьте ваши контакты, если у вас остались вопросы — мы на них
-            ответим!
-          </p>
-          <p>
-            Мы не передаём данные третьим лицам. Ваши данные будут в
-            безопасности и вам не придёт спам от нас!
-          </p>
-        </div>
-        <form
-          class="contacts__form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <label for="contact-name" aria-label="Имя">
-            <input
-              id="contact-name"
-              name="contact-name"
-              type="text"
-              placeholder="Имя"
-              required=""
-            />
-          </label>
-          <label for="contact-phone" aria-label="Телефон">
-            <input
-              id="contact-phone"
-              name="contact-phone"
-              type="text"
-              placeholder="+7 (923) 41"
-              onkeyup="javascript:mask('contact-phone', '+7 (000) 000-00-00', event);"
-              value=""
-              minlength="16"
-              maxlength="16"
-              required=""
-            />
-          </label>
-          <button type="submit">перезвоните мне</button>
-        </form>
-      </div>
-    </section>
+      <form
+        class="feedback__form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <label for="contact-name" aria-label="Имя">
+          <input
+            id="contact-name"
+            name="contact-name"
+            type="text"
+            placeholder="Имя"
+            required=""
+          />
+        </label>
+        <label for="contact-phone" aria-label="Телефон">
+          <input
+            id="contact-phone"
+            name="contact-phone"
+            type="text"
+            placeholder="+7 (923) 41"
+            onkeyup="javascript:mask('contact-phone', '+7 (000) 000-00-00', event);"
+            value=""
+            minlength="16"
+            maxlength="16"
+            required=""
+          />
+        </label>
+        <button type="submit">перезвоните мне</button>
+      </form>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__container container">
         <a class="page-footer__logo logo">
@@ -1102,6 +1353,70 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrapper">
+        <button
+          class="modal__btn-close"
+          type="button"
+          aria-label="Закрыть модальное окно"
+        >
+          <svg width="18" height="17">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3>Заказать звонок</h3>
+        <p>
+          Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего
+          дня и обязательно поможем найти ответ на ваш вопрос!
+        </p>
+        <form
+          class="modal__form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <label for="modal-name" aria-label="Имя">
+            <input
+              id="modal-name"
+              name="modal-name"
+              type="text"
+              placeholder="Имя"
+              required=""
+            />
+          </label>
+          <label for="modal-phone" aria-label="Телефон">
+            <input
+              id="modal-phone"
+              name="modal-phone"
+              type="text"
+              placeholder="+7 (923) 41"
+              onkeyup="javascript:mask('modal-phone', '+7 (000) 000-00-00', event);"
+              value=""
+              minlength="16"
+              maxlength="16"
+              required=""
+            />
+          </label>
+          <button type="submit">перезвоните мне</button>
+          <label for="check">
+            <input type="checkbox" name="check" id="check" />
+            Нажимая на кнопку, вы даёте согласие на обработку персональных
+            данных
+          </label>
+        </form>
+
+        <div class="modal__answer">
+          <svg width="66" height="64">
+            <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+          </svg>
+          <h3>Заявка принята</h3>
+          <p>
+            Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения
+            деталей!
+          </p>
+          <a href="#">Понятно</a>
+        </div>
+      </div>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/script.js"></script>
   </body>

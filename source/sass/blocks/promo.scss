@@ -1,14 +1,52 @@
 .promo {
+  z-index: 2;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  padding-top: 80px;
   box-sizing: border-box;
 
   overflow: hidden;
 
+
+
+  & h1,
+  & .promo__headline {
+    z-index: 0;
+    position: relative;
+
+    margin: 0;
+
+    font-family: $mainFontTitle;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 170%;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: transparent;
+
+    background-image: url("../img/promo/promo-bg.jpg");
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+
+    @include fluidFontSize(72px, 200px, 767px, 1366px, 200px);
+
+    @media (max-width: $mobile) {
+      font-size: 72px;
+      line-height: 170%;
+      letter-spacing: 0.01em;
+    }
+  }
+
   &__info {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +58,7 @@
 
     & p {
       margin: 0;
+      max-width: 100%;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
@@ -28,6 +67,13 @@
 
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
       box-sizing: border-box;
+
+      @include fluidFontSize(20px, 24px, 767px, 1366px, 24px);
+
+      @media (max-width: $mobile) {
+        font-size: 20px;
+        line-height: 31px;
+      }
     }
   }
 
@@ -40,4 +86,9 @@
       fill: none;
     }
   }
+}
+
+
+#mypattern {
+  height: 400px;
 }
