@@ -107,6 +107,10 @@
   &__social {
     display: flex;
     justify-content: flex-end;
+
+    & svg {
+      fill: rgba(72, 72, 72, 0.2);
+    }
   }
 
   &__mask {

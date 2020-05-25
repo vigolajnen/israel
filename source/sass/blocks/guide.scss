@@ -1,5 +1,6 @@
 .guide {
   position: relative;
+  padding-left: 0;
   padding-top: 90px;
   padding-bottom: 90px;
   display: flex;
@@ -9,6 +10,10 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url("../img/guide/water-color-bg.png");
+
+  @media (max-width: $mobile) {
+    padding-left: 16px;
+  }
 
   &::before {
     content: "";
@@ -26,6 +31,7 @@
 
   &__pic {
     width: 40%;
+    box-sizing: border-box;
 
     @media (max-width: $mobile) {
       width: 100%;
@@ -33,7 +39,12 @@
   }
 
   &__info {
-    width: 55%;
+    padding-left: 106px;
+    padding-right: 115px;
+
+    width: 60%;
+
+    box-sizing: border-box;
 
     @media (max-width: $mobile) {
       width: 100%;
@@ -47,6 +58,7 @@
     & p {
       margin: 0;
       margin-bottom: 32px;
+      padding-right: 50px;
       font-style: normal;
       font-weight: normal;
       font-size: 15px;
@@ -62,6 +74,8 @@
   }
 
   &__list {
+    padding-right: 60px;
+
     & ul {
       position: relative;
       padding: 0;
@@ -84,8 +98,11 @@
 
     & li {
       position: relative;
+      display: flex;
+      align-items: center;
       padding-left: 60px;
       margin-bottom: 40px;
+      min-height: 42px;
 
       &::before {
         counter-increment: li;
@@ -114,6 +131,7 @@
     & p {
       margin: 0;
       margin-bottom: 27px;
+      padding-right: 70px;
       font-weight: 500;
     }
   }

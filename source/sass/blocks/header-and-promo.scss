@@ -104,8 +104,6 @@
   // transform: translate(-50%, -50%);
   width: 1150px;
   max-width: 100%;
-
-  
 }
 
 .header-and-promo__headline {
@@ -119,6 +117,7 @@
   text-align: center;
 
   color: transparent;
+
   @include fluidFontSize(72px, 200px, 767px, 1366px, 200px);
 
   @media (max-width: $mobile) {
@@ -130,6 +129,7 @@
 
 .header-and-promo--border {
   position: relative;
+
   &::before,
   &::after {
     content: "";
@@ -156,8 +156,6 @@
   }
 }
 
-
 .text-svg-and-girl {
   position: relative;
-  
 }

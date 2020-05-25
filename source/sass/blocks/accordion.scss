@@ -28,9 +28,10 @@
 
   &__item-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-right: 24px;
 
     &:hover {
       cursor: pointer;
@@ -38,6 +39,7 @@
 
     & h3 {
       margin: 0;
+      width: 65%;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -45,6 +47,7 @@
       color: $primary-color;
 
       @media (max-width: $mobile) {
+        width: 75%;
         font-size: 16px;
         line-height: 160%;
       }
@@ -52,6 +55,8 @@
   }
 
   &__item-icon {
+    width: 20px;
+    height: 20px;
     fill: transparent;
     margin-left: auto;
   }

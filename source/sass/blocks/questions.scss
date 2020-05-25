@@ -12,7 +12,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -45px;
     left: 0;
     width: 200px;
     height: 200px;
@@ -26,10 +26,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 0;
+
+    @media (max-width: $mobile) {
+      padding-right: 16px;
+    }
   }
 
   &__pic {
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
 
     @media (max-width: $mobile) {
@@ -38,11 +43,13 @@
   }
 
   &__info {
-    width: 50%;
+    margin-right: 50px;
+    width: calc(50% - 50px);
     box-sizing: border-box;
 
     @media (max-width: $mobile) {
       width: 100%;
+      margin-right: 0;
     }
   }
 
