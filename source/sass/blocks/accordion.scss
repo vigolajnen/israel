@@ -28,10 +28,14 @@
 
   &__item-header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-right: 24px;
+    padding-right: 52px;
+
+    @media (max-width: $mobile) {
+      padding-right: 24px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -39,7 +43,7 @@
 
     & h3 {
       margin: 0;
-      width: 65%;
+      width: 75%;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;

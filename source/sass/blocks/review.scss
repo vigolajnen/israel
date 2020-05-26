@@ -10,11 +10,19 @@
   box-sizing: border-box;
 
   &__pic {
+    position: relative;
     width: 30%;
+    // max-width: 280px;
     box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    background-image: url("../img/reviews/mask-bd.png");
 
     @media (max-width: $table) {
       width: 100%;
+      max-width: 350px;
       align-items: center;
     }
 
@@ -42,7 +50,8 @@
 
   &__info {
     margin: 0;
-    width: 65%;
+    padding-top: 33px;
+    width: 66%;
 
     display: flex;
     flex-direction: column;
@@ -86,12 +95,19 @@
       opacity: 0.74;
 
       @media (max-width: $table) {
-        text-align: center;
+        text-align: left;
+      }
+      @media (max-width: $mobile) {
+        text-align: left;
+        font-size: 16px;
+        line-height: 160%;
       }
     }
   }
 
   &__text {
+    padding-right: 73px;
+
     & a {
       font-style: normal;
       font-weight: normal;
@@ -107,6 +123,9 @@
   &__social {
     display: flex;
     justify-content: flex-end;
+
+    padding-right: 73px;
+    padding-top: 55px;
 
     & svg {
       fill: rgba(72, 72, 72, 0.2);

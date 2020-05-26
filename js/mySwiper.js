@@ -61,7 +61,7 @@
 
   const enableSwiper = function() {
 
-    mySwiper = new Swiper ('#about', {
+    mySwiper = new Swiper ('#live', {
       slidesPerView: 1,
       loop: true,
       

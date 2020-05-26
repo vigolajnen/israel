@@ -1,18 +1,28 @@
 .programs {
   position: relative;
+
+  padding: 108px 210px 35px;
+
+  background-image: url("../img/programs/sketch-bg.png");
+  background-size: 680px;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 680px;
-    height: 426px;
-    background-image: url("../img/programs/sketch-bg.png");
-    background-size: contain;
-    background-position: 0;
-    background-repeat: no-repeat;
+  @media (max-width: 1300px) {
+    padding: 54px 105px;
+  }
+  @media (max-width: $desktop) {
+    padding: 54px 45px;
+  }
+
+  @media (max-width: $table) {
+    padding: 54px 25px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 54px 16px;
   }
 
   & h2 {

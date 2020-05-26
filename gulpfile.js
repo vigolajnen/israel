@@ -127,7 +127,6 @@ gulp.task('scripts', function() {
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',
     './js/scroll.js',
-    './js/map.js',
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
@@ -137,5 +136,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "sprite-png", "html", "scripts"));
 gulp.task("start", gulp.series("build", "server"));

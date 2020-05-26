@@ -1,25 +1,19 @@
 .questions {
   position: relative;
 
-  padding-top: 79px;
+  padding-top: 71px;
   padding-bottom: 100px;
 
-  background-image: url("../img/questions/water-color-bg-min.png");
-  background-position: 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../img/questions/bag.svg"),
+    url("../img/questions/water-color-bg-min.png");
+  background-position: left bottom, 0 0;
+  background-size: 12%, cover;
+  background-repeat: no-repeat, no-repeat;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    width: 200px;
-    height: 200px;
+  @media (max-width: $mobile) {
     background-image: url("../img/questions/bag.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0;
+    background-position: -7% 87%;
+    background-size: 194px;
   }
 
   &__container {
@@ -31,6 +25,10 @@
     @media (max-width: $mobile) {
       padding-right: 16px;
     }
+
+    & h2 {
+      margin-bottom: 20px;
+    }
   }
 
   &__pic {
@@ -38,6 +36,7 @@
     box-sizing: border-box;
 
     @media (max-width: $mobile) {
+      display: none;
       width: 100%;
     }
   }
@@ -50,14 +49,6 @@
     @media (max-width: $mobile) {
       width: 100%;
       margin-right: 0;
-    }
-  }
-
-  &__mask {
-    max-width: 100%;
-
-    @media (max-width: $mobile) {
-      height: auto;
     }
   }
 }

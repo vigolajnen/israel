@@ -5,9 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+
 
   margin-bottom: 57px;
+  padding-top: 8%;
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,6 +20,9 @@
   }
 
   @media (max-width: $mobile) {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    min-height: 224px;
     background-image: url("../img/promo-photo/bg-mob-min.png");
   }
 
@@ -27,6 +31,20 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    padding: 0 166px;
+
+    @media (max-width: $desktop) {
+      padding: 0 100px;
+    }
+
+    @media (max-width: $table) {
+      padding: 0 45px;
+    }
+
+
+    @media (max-width: $mobile) {
+      padding: 0 16px;
+    }
   }
 
   &__info {

@@ -1,66 +1,101 @@
 .page-header {
-  z-index: 5;
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  height: 100vh;
+  min-height: 888px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  background-color: linear-gradient(
+    0deg,
+    rgba(236, 188, 139, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: url("../img/promo/mask-top.png"),
+    url("../img/promo/mask-bottom.png"), url("../img/promo/promo-girl.png"),
+    url("../img/promo/text.png"), url("../img/promo/promo-bg.jpg");
+
+  background-position: top, bottom, 52% 50%, center 255px, top;
+  background-size: 100% 50%, 101% 50%, 381px, 73%, 100% 99%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  @media (max-width: $table) {
+    min-height: 700px;
+
+    background-position: top, bottom, bottom, center 200px, top;
+    background-size: 100% 50%, 101% 50%, 320px, 90%, cover;
+  }
+
   @media (max-width: $mobile) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 100%;
+    min-height: 605px;
+
+    background-image: url("../img/promo/mask-top-mob.png"),
+      url("../img/promo/mask-bottom-mob.png"),
+      url("../img/promo/promo-girl.png"), url("../img/promo/text.png"),
+      url("../img/promo/promo-bg-mob.jpg");
+
+    background-position: top, bottom, bottom, center 200px, top;
+    background-size: 100% 50%, 101% 50%, 240px, 110%, cover;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__bottom {
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
-  }
+    align-items: center;
+    max-width: 350px;
+    min-height: 350px;
+    margin: 0 auto;
+    color: $default-color;
 
-  &__logo {
-    @media (max-width: $mobile) {
-      position: absolute;
-      top: 50%;
-      left: 16px;
-      transform: translateY(-50%);
+    box-sizing: border-box;
+
+
+    @media (max-width: $table) { 
+      min-height: auto;
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 28px;
+      max-width: 100%;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+
+      @media (max-width: $mobile) {
+        font-size: 20px;
+        line-height: 31px;
+        text-align: center;
+      }
     }
   }
 
-  &__phone {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 23px;
-    color: $primary-color;
-    text-decoration: none;
-
-    @media (max-width: $mobile) {
-      font-size: 14px;
-      line-height: 22px;
-    }
-
-    &:focus,
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-
-  &__btn-modal {
-    position: relative;
-    padding: 0;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 23px;
-    font-variant: small-caps;
+  &__btn-scroll {
     background-color: transparent;
     border: none;
-    border-bottom: 1px dashed $primary-color;
     border-radius: 0;
-    cursor: pointer;
 
-    @media (max-width: $mobile) {
-      font-size: 14px;
-      line-height: 22px;
+    & svg {
+      fill: none;
     }
   }
 }

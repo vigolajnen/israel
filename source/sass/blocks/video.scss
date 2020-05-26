@@ -1,38 +1,33 @@
 .video {
   position: relative;
-  padding-top: 72px;
+  padding-top: 8px;
   padding-bottom: 96px;
 
   box-sizing: border-box;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 100%;
-    height: 100%;
-
-    background-size: contain;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-image: url("../img/video/watercolor-bg-min.png");
-  }
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/video/watercolor-bg-min.png");
 
   @media (max-width: $mobile) {
-    padding-bottom: 80px;
-  }
-
-  &__container {
-    text-align: center;
+    padding-top: 0;
+    padding-bottom: 50px;
+    background-image: url("../img/video/watercolor-bg-mob.png");
+    background-position: right 50%;
   }
 
   &__header {
     max-width: 720px;
     margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      padding: 0 16px;
+      text-align: left;
+    }
 
     & h2 {
       margin-bottom: 24px;
@@ -45,6 +40,8 @@
       font-weight: normal;
       font-size: 17px;
       line-height: 170%;
+
+      text-align: center;
 
       @media (max-width: $mobile) {
         font-size: 16px;
@@ -59,9 +56,26 @@
 
   &__media {
     position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     max-width: 870px;
-    max-height: 460px;
+    min-height: 460px;
     margin: 0 auto;
+
+    background-image: url("../img/video/video-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: $table) {
+      max-width: 700px;
+    }
+
+    @media (max-width: $mobile) {
+      min-height: 224px;
+      background-image: url("../img/video/video-bg-mob.png");
+    }
   }
 
   &__btn {

@@ -1,64 +1,67 @@
 .guide {
   position: relative;
   padding-left: 0;
-  padding-top: 90px;
+  padding-top: 145px;
   padding-bottom: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-size: contain;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-image: url("../img/guide/water-color-bg.png");
+
+  background-image: url("../img/guide/icon-pass.png"),
+    url("../img/guide/water-color-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, 96% 103%;
+  background-position: 109% 40%, 0;
 
   @media (max-width: $mobile) {
     padding-left: 16px;
-  }
+    padding-top: 80px;
+    padding-bottom: 80px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 300px;
-    height: 300px;
-    transform: translateY(-50%);
     background-image: url("../img/guide/icon-pass.png");
-    background-position: 0 0;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 175% 45%, 0;
   }
 
   &__pic {
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
 
     @media (max-width: $mobile) {
+      display: none;
       width: 100%;
     }
   }
 
   &__info {
-    padding-left: 106px;
-    padding-right: 115px;
-
-    width: 60%;
-
+    padding-top: 38px;
+    padding-left: 50px;
+    padding-right: 24px;
+    width: 50%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
     @media (max-width: $mobile) {
+      padding: 0;
       width: 100%;
     }
 
     & h2 {
       margin: 0;
       margin-bottom: 24px;
+      padding-left: 22px;
+
+      @media (max-width: $mobile) {
+        padding: 0;
+      }
     }
 
     & p {
       margin: 0;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
       padding-right: 50px;
+      padding-left: 22px;
       font-style: normal;
       font-weight: normal;
       font-size: 15px;
@@ -67,6 +70,7 @@
       opacity: 0.87;
 
       @media (max-width: $mobile) {
+        padding: 0;
         font-size: 14px;
         line-height: 160%;
       }
@@ -75,6 +79,11 @@
 
   &__list {
     padding-right: 60px;
+    margin-bottom: 50px;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
 
     & ul {
       position: relative;
@@ -87,7 +96,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 22px;
         opacity: 0.2;
         height: 90%;
@@ -100,9 +109,21 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding-left: 60px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       min-height: 42px;
+      padding-left: 65px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 140%;
+      color: #484848;
+      opacity: 0.87;
+
+      @media (max-width: $mobile) {
+        font-size: 14px;
+        line-height: 160%;
+      }
 
       &::before {
         counter-increment: li;
@@ -112,7 +133,7 @@
         top: 50%;
         transform: translateY(-50%);
 
-        padding: 7px 18px;
+        padding: 5px 17px;
 
         font-style: normal;
         font-weight: bold;
@@ -130,15 +151,24 @@
 
     & p {
       margin: 0;
-      margin-bottom: 27px;
-      padding-right: 70px;
+      margin-bottom: 23px;
+      padding-right: 10px;
       font-weight: 500;
+      font-size: 17px;
+      line-height: 170%;
+
+      @media (max-width: $mobile) {
+        padding: 0;
+        font-size: 16px;
+        line-height: 160%;
+      }
     }
   }
 
   &__warning {
     position: relative;
     padding-left: 20px;
+    margin-left: 18px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -146,6 +176,12 @@
 
     color: $primary-color;
     opacity: 0.5;
+
+    @media (max-width: $mobile) {
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 160%;
+    }
 
     &::before {
       position: absolute;
@@ -157,14 +193,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url("../img/icons/icon-warning-line.svg");
-    }
-  }
-
-  &__mask {
-    max-width: 100%;
-
-    @media (max-width: $mobile) {
-      height: auto;
     }
   }
 }

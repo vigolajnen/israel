@@ -1,7 +1,27 @@
 .promo-form {
   position: relative;
-  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 90px;
+
+  min-height: 594px;
+  background-position: 100% -10px;
+  background-size: 818px auto;
+  background-repeat: no-repeat;
+  background-image: url("../img/promo-form/girl-flag-bg.png");
+
+  box-sizing: border-box;
+
   overflow: hidden;
+
+  @media (max-width: $mobile) {
+    padding: 0 16px 350px 16px;
+    background-image: url("../img/promo-form/girl-flag-bg.png");
+    background-position: 100% 100%;
+    background-size: 424px auto;
+  }
 
   &::before {
     content: "";
@@ -18,55 +38,39 @@
     transform: rotate(15deg);
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 90px;
-    height: 100%;
-    min-height: 594px;
-    background-position: 100% 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../img/promo-form/girl-flag-bg.png");
-
-    box-sizing: border-box;
-
-    @media (max-width: $mobile) {
-      background-image: url("../img/promo-form/girl-flag-bg-mob.png");
-    }
-
-    @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
-      background-image: url("../img/promo-form/girl-flag-bg-mob@2x.png");
-    }
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/promo-form/girl-flag-bg@2x.png");
-    }
-  }
-
   &__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 15%;
+    padding-top: 14%;
     padding-left: 100px;
-    max-width: 477px;
+    max-width: 575px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
 
     & h2 {
       margin-bottom: 24px;
+      letter-spacing: 1.2px;
     }
 
     & p {
       margin: 0;
-      margin-bottom: 64px;
-      padding-right: 62px;
+      margin-bottom: 65px;
+      padding-right: 25px;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
       line-height: 170%;
       color: #484848;
       opacity: 0.87;
+
+      @media (max-width: $mobile) {
+        padding: 0;
+      }
     }
   }
 
@@ -75,8 +79,15 @@
     width: 100%;
     box-sizing: border-box;
 
+    & label {
+      display: block;
+      max-width: 100%;
+      margin-bottom: 8px;
+    }
+
     & input {
       padding: 10px 40px;
+      max-width: 100%;
       font-weight: 500;
       font-size: 17px;
       line-height: 26px;
@@ -98,9 +109,9 @@
         border-color: $primary-color;
       }
 
-      &:invalid {
-        border-color: #ff0000;
-      }
+      // &:invalid {
+      //   border-color: #ff0000;
+      // }
     }
 
     & button {
@@ -123,6 +134,11 @@
       box-sizing: border-box;
       cursor: pointer;
       outline: none;
+
+      @media (max-width: $mobile) {
+        position: relative;
+        width: 100%;
+      }
     }
   }
 }
