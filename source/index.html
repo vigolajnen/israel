@@ -25,7 +25,7 @@
           <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
           <a
             href="#video"
-            class="promo__btn-scroll"
+            class="page-header__btn-scroll"
             aria-label="Подсказка скролл вниз"
           >
             <svg width="76" height="132">
@@ -62,55 +62,63 @@
         </button>
       </div>
     </section>
-    <section class="programs container">
-      <h2>Программы</h2>
-      <div class="programs__tabs tabs">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <span
-              class="tabs__icon tabs__icon--star"
-              aria-label="Иконка"
-            ></span>
-            <span>Общие</span>
-          </li>
-          <li class="tabs__item tabs__item--active">
-            <span class="tabs__icon tabs__icon--hat" aria-label="Иконка"></span>
-            <span>Академические</span>
-          </li>
-          <li class="tabs__item">
-            <span class="tabs__icon tabs__icon--bag" aria-label="Иконка"></span>
-            <span>Стажировки</span>
-          </li>
-          <li class="tabs__item">
-            <span
-              class="tabs__icon tabs__icon--hand"
-              aria-label="Иконка"
-            ></span>
-            <span>Волонтёрство</span>
-          </li>
-          <li class="tabs__item">
-            <span
-              class="tabs__icon tabs__icon--candles"
-              aria-label="Иконка"
-            ></span>
-            <span>Религиозные</span>
-          </li>
-        </ul>
-        <div class="tabs__content">
-          <h3>Академические</h3>
-          <p>
-            Провести семестр или год за рубежом, знакомясь с различными
-            культурами и идеями, традициями и стилем жизни — вот что такое учеба
-            за границей! Израиль — это не только центр религиозного мира, это
-            также академический центр, живая лаборатория идей и творческого
-            исследования.
-          </p>
-          <p>
-            Может быть, Вы заинтересованы в изучении социологии, мира,
-            юриспруденции, биологии, сравнительной религии, законодательного и
-            делового администрирования или искусства? Здесь, в Израиле, Вы
-            сможете изучить все это в удивительной университетской среде.
-          </p>
+    <section class="programs">
+      <div class="programs__container container">
+        <h2>Программы</h2>
+        <div class="programs__tabs tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <span
+                class="tabs__icon tabs__icon--star"
+                aria-label="Иконка"
+              ></span>
+              <span>Общие</span>
+            </li>
+            <li class="tabs__item tabs__item--active">
+              <span
+                class="tabs__icon tabs__icon--hat"
+                aria-label="Иконка"
+              ></span>
+              <span>Академические</span>
+            </li>
+            <li class="tabs__item">
+              <span
+                class="tabs__icon tabs__icon--bag"
+                aria-label="Иконка"
+              ></span>
+              <span>Стажировки</span>
+            </li>
+            <li class="tabs__item">
+              <span
+                class="tabs__icon tabs__icon--hand"
+                aria-label="Иконка"
+              ></span>
+              <span>Волонтёрство</span>
+            </li>
+            <li class="tabs__item">
+              <span
+                class="tabs__icon tabs__icon--candles"
+                aria-label="Иконка"
+              ></span>
+              <span>Религиозные</span>
+            </li>
+          </ul>
+          <div class="tabs__content">
+            <h3>Академические</h3>
+            <p>
+              Провести семестр или год за рубежом, знакомясь с различными
+              культурами и идеями, традициями и стилем жизни — вот что такое
+              учеба за границей! Израиль — это не только центр религиозного
+              мира, это также академический центр, живая лаборатория идей и
+              творческого исследования.
+            </p>
+            <p>
+              Может быть, Вы заинтересованы в изучении социологии, мира,
+              юриспруденции, биологии, сравнительной религии, законодательного и
+              делового администрирования или искусства? Здесь, в Израиле, Вы
+              сможете изучить все это в удивительной университетской среде.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -143,38 +151,58 @@
         </form>
       </div>
     </section>
-    <section class="guide container">
-      <div class="guide__pic">
-        <img src="img/guide/guide-pic.png" alt="pic" />
-      </div>
-      <div class="guide__info">
-        <h2>Как поехать</h2>
-        <p>
-          Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем
-          городе. Вы получите актуальные сведения о доступных программах и
-          городах, в которых можете пройти программу.
-        </p>
-        <div class="guide__list">
-          <p>
-            Чтобы иметь возможность получить грант на обучение от 4200 до 8400$,
-            вы должны:
-          </p>
-          <ul>
-            <li>Быть в возрасте от 16 до 30 лет</li>
-            <li>Иметь оконченное среднее образование</li>
-            <li>
-              Иметь документально подтверждённые еврейские корни и пройти
-              консульскую проверку
-            </li>
-            <li>
-              За последние 2 года быть не больше 3х месяцев подряд непрерывно в
-              Израиле.
-            </li>
-          </ul>
+    <section class="guide">
+      <div class="guide__container container">
+        <div class="guide__pic guide__pic--mask">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/guide/bg.webp    1x,
+                img/guide/bg@2x.webp 2x
+              "
+            />
+            <!-- 1х: 581px; 2x: 1162px -->
+            <img
+              src="img/guide/bg.jpg"
+              srcset="img/guide/bg@2x.jpg 2x"
+              width="581"
+              height="707"
+              alt="Люди"
+              loading="lazy"
+            />
+          </picture>
         </div>
-        <div class="guide__warning">
-          Если вы не подходите по этим правилам, вы всё равно можете принять
-          участие в программе «Маса», оплатив её полную стоимость.
+        <div class="guide__info">
+          <h2>Как поехать</h2>
+          <p>
+            Чтобы узнать подробнее о программе, свяжитесь с координатором в
+            вашем городе. Вы получите актуальные сведения о доступных программах
+            и городах, в которых можете пройти программу.
+          </p>
+          <div class="guide__list">
+            <p>
+              Чтобы иметь возможность получить грант на обучение от 4200 до
+              8400$, вы должны:
+            </p>
+            <ul>
+              <li>Быть в возрасте от 16 до 30 лет</li>
+              <li>Иметь оконченное среднее образование</li>
+              <li>
+                Иметь документально подтверждённые еврейские корни и пройти
+                консульскую проверку
+              </li>
+              <li>
+                За последние 2 года быть не больше 3х месяцев подряд непрерывно
+                в Израиле.
+              </li>
+            </ul>
+          </div>
+          <div class="guide__warning">
+            Если вы не подходите по этим правилам, вы всё равно можете принять
+            участие в программе «Маса», оплатив её полную стоимость.
+          </div>
         </div>
       </div>
     </section>
@@ -195,19 +223,28 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1340px)"
+                  media="(min-width: 768px)"
                   srcset="
                     img/live/excursions.webp    1x,
                     img/live/excursions@2x.webp 2x
                   "
                 />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    img/live/excursions-mob.webp    1x,
+                    img/live/excursions-mob@2x.webp 2x
+                  "
+                />
                 <!-- 1х: 280px; 2x: 560px -->
                 <img
-                  src="img/live/excursions-mob.png"
-                  srcset="img/live/excursions-mob@2x.png 2x"
+                  src="img/live/min/excursions-mob-min.png"
+                  srcset="img/live/min/excursions-mob@2x-min.png 2x"
                   width="280"
                   height="400"
                   alt="Экскурсии по Израилю"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -216,8 +253,16 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1340px)"
+                  media="(min-width: 768px)"
                   srcset="img/live/study.webp 1x, img/live/study@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    img/live/study-mob.webp    1x,
+                    img/live/study-mob@2x.webp 2x
+                  "
                 />
                 <!-- 1х: 280px; 2x: 560px -->
                 <img
@@ -226,6 +271,7 @@
                   width="280"
                   height="400"
                   alt="Изучение иврита"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -234,8 +280,16 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1340px)"
+                  media="(min-width: 768px)"
                   srcset="img/live/skills.webp 1x, img/live/skills@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    img/live/skills-mob.webp    1x,
+                    img/live/skills-mob@2x.webp 2x
+                  "
                 />
                 <!-- 1х: 280px; 2x: 560px -->
                 <img
@@ -244,6 +298,7 @@
                   width="280"
                   height="400"
                   alt="Обучение современным навыкам и профессиям"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -252,10 +307,18 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1340px)"
+                  media="(min-width: 768px)"
                   srcset="
                     img/live/projects.webp    1x,
                     img/live/projects@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    img/live/projects-mob.webp    1x,
+                    img/live/projects-mob@2x.webp 2x
                   "
                 />
                 <!-- 1х: 280px; 2x: 560px -->
@@ -265,6 +328,7 @@
                   width="280"
                   height="400"
                   alt="Совместные творческие проекты"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -273,10 +337,18 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1340px)"
+                  media="(min-width: 768px)"
                   srcset="
                     img/live/leadership.webp    1x,
                     img/live/leadership@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="
+                    img/live/leadership-mob.webp    1x,
+                    img/live/leadership-mob@2x.webp 2x
                   "
                 />
                 <!-- 1х: 280px; 2x: 560px -->
@@ -286,6 +358,7 @@
                   width="280"
                   height="400"
                   alt="Развитие лидерства"
+                  loading="lazy"
                 />
               </picture>
             </div>
@@ -589,391 +662,573 @@
             </div>
           </div>
         </div>
-        <div class="questions__pic">
-          <img src="img/questions/questions-pic.png" alt="pic" />
+        <div class="questions__pic questions__pic--mask">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/questions/bg.webp    1x,
+                img/questions/bg@2x.webp 2x
+              "
+            />
+            <!-- 1х: 645px; 2x: 1290px -->
+            <img
+              src="img/questions/bg.jpg"
+              srcset="img/questions/bg@2x.jpg 2x"
+              width="645"
+              height="803"
+              alt="pic"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </section>
-    <section class="reviews container">
-      <h2>Отзывы</h2>
-      <div class="reviews__slider">
-        <div id="reviews" class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+    <section class="reviews">
+      <div class="reviews__container container">
+        <h2>Отзывы</h2>
+        <div class="reviews__slider">
+          <div id="reviews" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
+              </div>
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review">
+                <div class="review__pic review__pic--mask">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 320px)"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+                    <!-- 1х: 233px; 2x: 466px -->
+                    <img
+                      src="img/reviews/user-mob.jpg"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="233"
+                      height="352"
+                      alt="user"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="review__info">
+                  <div class="review__header">
+                    <h3>Ольга Михайлова</h3>
+                    <div class="review__program">
+                      <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
+                    </div>
+                  </div>
+                  <div class="review__text">
+                    <p>
+                      Долго выбирая программу, на которую ехать - я
+                      определилась, взяла на 5 месяцев «иврит как культура». Мне
+                      очень повезло оказаться в надежных и заботливых руках
+                      Анны, Юлии и Олега.
+                    </p>
+                    <p>
+                      С первой же встречи тебе дают понять - что ты не один, у
+                      тебя есть практически круглосуточная поддержка по любым
+                      вопросам. Тебе предоставляют готовое удобное расписание,
+                      жилье, приятные встречи, языковой курс а еще и поездки
+                      всей программой в разные уголки страны.
+                    </p>
+                    <a href="#">Читать подробнее</a>
+                  </div>
+                  <div class="review__social social">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш fb">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" aria-label="Наш tw">
+                          <svg class="social__icon" width="25" height="54">
+                            <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="Наш Инстаграм"
+                        >
+                          <svg class="social__icon" width="25" height="54">
+                            <use
+                              xlink:href="img/sprite_auto.svg#icon-insta"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
-                  </div>
-                </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
-                </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="reviews__slider-nav">
+              <div class="swiper-pagination"></div>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Кнопка назад"
+              >
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
+                </svg>
+              </button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Кнопка вперед"
+              >
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
+                </svg>
+              </button>
             </div>
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
-                  </div>
-                </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
-                </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
-                  </div>
-                </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
-                </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
-                  </div>
-                </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
-                </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide review">
-              <div class="review__pic">
-                <img src="img/reviews/user-mask.png" alt="user" />
-              </div>
-              <div class="review__info">
-                <div class="review__header">
-                  <h3>Ольга Михайлова</h3>
-                  <div class="review__program">
-                    <span>Программа:</span> Арт-Тель, февраль-сетнябрь 2017
-                  </div>
-                </div>
-                <div class="review__text">
-                  <p>
-                    Долго выбирая программу, на которую ехать - я определилась,
-                    взяла на 5 месяцев «иврит как культура». Мне очень повезло
-                    оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-                  </p>
-                  <p>
-                    С первой же встречи тебе дают понять - что ты не один, у
-                    тебя есть практически круглосуточная поддержка по любым
-                    вопросам. Тебе предоставляют готовое удобное расписание,
-                    жилье, приятные встречи, языковой курс а еще и поездки всей
-                    программой в разные уголки страны.
-                  </p>
-                  <a href="#">Читать подробнее</a>
-                </div>
-                <div class="review__social social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш fb">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" aria-label="Наш tw">
-                        <svg class="social__icon" width="25" height="54">
-                          <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        class="social__link"
-                        href="#"
-                        aria-label="Наш Инстаграм"
-                      >
-                        <svg class="social__icon" width="25" height="54">
-                          <use
-                            xlink:href="img/sprite_auto.svg#icon-insta"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="reviews__slider-nav">
-            <div class="swiper-pagination"></div>
-            <button
-              class="swiper-button-next"
-              type="button"
-              aria-label="Кнопка назад"
-            >
-              <svg class="social__icon" width="25" height="25">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
-              </svg>
-            </button>
-            <button
-              class="swiper-button-prev"
-              type="button"
-              aria-label="Кнопка вперед"
-            >
-              <svg class="social__icon" width="25" height="25">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
@@ -996,7 +1251,11 @@
           </div>
           <div class="contacts__manager">
             <div class="contacts__manager-pic">
-              <img src="img/contacts/manager.jpg" alt="manager" />
+              <img
+                src="img/contacts/manager.jpg"
+                alt="manager"
+                loading="lazy"
+              />
             </div>
             <div class="contacts__manager-info">
               <div class="contacts__manager-name">

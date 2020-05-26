@@ -4,18 +4,26 @@
   padding-top: 68px;
   padding-left: 52px;
   padding-bottom: 52px;
-  margin-bottom: 150px;
+  // margin-bottom: 150px;
 
-  background-image: url("../img/live/bg-watch.png"),
-    url("../img/live/water-color-bg.png");
+  background-image: url("../img/live/min/bg-watch-min.png"),
+    url("../img/live/min/water-color-bg-min.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 10%, 96% 103%;
-  background-position: 103% 80%, 0;
+  background-position: 100% 80%, 0;
 
   overflow: hidden;
 
+  @media (max-width: 1366px) {
+    background-size: 10%, 96% 103%;
+    background-position: 103% 80%, 0;
+  }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $mobile) {
-    margin-bottom: 50px;
     padding: 0 16px;
     background-image: none;
   }

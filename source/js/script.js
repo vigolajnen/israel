@@ -59,4 +59,28 @@
     }
   });
 
+  var page = document.querySelector('.page');
+  var modalOpenBtn = document.querySelector('.nav__btn-modal');
+  var modalCloseBtn = document.querySelector('.modal__btn-close');
+  var modal = document.querySelector('.modal');
+  if (modalOpenBtn) {
+    modalOpenBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      modal.classList.add('modal--active');
+      page.classList.add('page--overlay');
+      
+    });
+  }
+
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      modal.classList.remove('modal--active');
+      page.classList.remove('page--overlay');
+
+    });
+  }
+
 })();

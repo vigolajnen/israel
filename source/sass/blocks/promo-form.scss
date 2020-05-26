@@ -10,7 +10,7 @@
   background-position: 100% -10px;
   background-size: 818px auto;
   background-repeat: no-repeat;
-  background-image: url("../img/promo-form/girl-flag-bg.png");
+  background-image: url("../img/promo-form/girl-flag-bg-min.png");
 
   box-sizing: border-box;
 
@@ -18,7 +18,6 @@
 
   @media (max-width: $mobile) {
     padding: 0 16px 350px 16px;
-    background-image: url("../img/promo-form/girl-flag-bg.png");
     background-position: 100% 100%;
     background-size: 424px auto;
   }
@@ -27,7 +26,7 @@
     content: "";
     position: absolute;
     top: 35%;
-    left: -14.51px;
+    left: 10px;
     width: 167px;
     height: 226px;
     background-size: contain;
@@ -36,6 +35,11 @@
     background-image: url("../img/promo-form/bag.png");
 
     transform: rotate(15deg);
+
+
+    @media (max-width: 1366px) {
+      left: -14.51px;
+    }
   }
 
   &__info {

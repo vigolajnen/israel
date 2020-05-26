@@ -59,6 +59,13 @@
     border-radius: 0;
     cursor: pointer;
 
+    outline: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+
     @media (max-width: $mobile) {
       font-size: 14px;
       line-height: 22px;

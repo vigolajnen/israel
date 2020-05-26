@@ -1,7 +1,7 @@
 // @import "../../node_modules/pixel-glass/styles.css";
 @import "swiper.scss";
+@import "normalize.scss";
 @import "sprite-png.scss";
-@import "mixin.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "base.scss";
@@ -12,7 +12,6 @@
 @import "blocks/logo.scss";
 @import "blocks/social.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/promo.scss";
 @import "blocks/reviews.scss";
 @import "blocks/form-order.scss";
 @import "blocks/contacts.scss";

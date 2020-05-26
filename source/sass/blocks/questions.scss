@@ -7,8 +7,13 @@
   background-image: url("../img/questions/bag.svg"),
     url("../img/questions/water-color-bg-min.png");
   background-position: left bottom, 0 0;
-  background-size: 12%, cover;
+  background-size: 12%, 75% 100%;
   background-repeat: no-repeat, no-repeat;
+
+  @media (max-width: 1366px) {
+    background-position: left bottom, 0 0;
+    background-size: 12%, cover;
+  }
 
   @media (max-width: $mobile) {
     background-image: url("../img/questions/bag.svg");
@@ -33,11 +38,47 @@
 
   &__pic {
     width: 50%;
+    height: 100%;
     box-sizing: border-box;
+
+    @media (max-width: 1640px) {
+      position: absolute;
+      top: 8%;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
 
     @media (max-width: $mobile) {
       display: none;
       width: 100%;
+    }
+
+    &--mask {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 983px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("../img/questions/mask-bd.png");
+
+        overflow: hidden;
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      max-width: 98%;
+      max-height: 98%;
+      margin: 2px;
+      object-fit: contain;
     }
   }
 

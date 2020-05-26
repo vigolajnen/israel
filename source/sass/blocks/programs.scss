@@ -1,8 +1,6 @@
 .programs {
   position: relative;
 
-  padding: 108px 210px 35px;
-
   background-image: url("../img/programs/sketch-bg.png");
   background-size: 680px;
   background-position: 100% 0;
@@ -10,19 +8,28 @@
 
   overflow: hidden;
 
-  @media (max-width: 1300px) {
-    padding: 54px 105px;
-  }
-  @media (max-width: $desktop) {
-    padding: 54px 45px;
-  }
-
-  @media (max-width: $table) {
-    padding: 54px 25px;
-  }
-
   @media (max-width: $mobile) {
-    padding: 54px 16px;
+    background-position: 100% 50%;
+    background-size: contain;
+  }
+
+  &__container {
+    padding: 108px 210px 35px;
+
+    @media (max-width: 1300px) {
+      padding: 54px 105px;
+    }
+    @media (max-width: $desktop) {
+      padding: 54px 45px;
+    }
+
+    @media (max-width: $table) {
+      padding: 54px 25px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 54px 16px;
+    }
   }
 
   & h2 {
