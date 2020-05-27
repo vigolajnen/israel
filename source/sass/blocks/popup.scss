@@ -25,6 +25,7 @@
     max-width: 480px;
     background: #ffffff;
     border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 
     overflow-y: auto;
@@ -151,9 +152,13 @@
         border-color: $primary-color;
       }
 
-      // &:invalid {
-      //   border-color: #ff0000;
-      // }
+      &::placeholder {
+        font-family: $mainFontMedium;
+      }
+
+      &:focus:invalid {
+        outline: none;
+      }
     }
 
     & input[type="checkbox"] {

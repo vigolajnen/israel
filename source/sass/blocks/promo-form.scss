@@ -43,8 +43,7 @@
   }
 
   &.lazy {
-    background-image: none;
-    background: url("../img/dummy/dummy-girl-flag.png");
+    background-image: url("../img/dummy/dummy-girl-flag.png");
   }
 
   &__info {
@@ -124,9 +123,13 @@
         border-color: $primary-color;
       }
 
-      // &:invalid {
-      //   border-color: #ff0000;
-      // }
+      &::placeholder {
+        font-family: $mainFontMedium;
+      }
+
+      &:focus:invalid {
+        outline: none;
+      }
     }
 
     & button {

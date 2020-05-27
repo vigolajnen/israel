@@ -78,8 +78,7 @@
     }
 
     &.lazy {
-      background-image: none;
-      background: url("../img/dummy/dummy-video-bg.png");
+      background-image: url("../img/dummy/dummy-video-bg.png");
     }
   }
 

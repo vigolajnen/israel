@@ -92,7 +92,7 @@ gulp.task("sprite-png", function() {
       }));
 
     spriteData.img.pipe(gulp.dest("build/img/"));
-    spriteData.css.pipe(gulp.dest("source/sass/"));
+    spriteData.css.pipe(gulp.dest("sass/"));
 
   return spriteData;
 });

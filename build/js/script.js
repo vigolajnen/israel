@@ -28,17 +28,6 @@
     });
   }
 
-  // var phone = document.querySelector('#phone');
-  // if (phone) {
-  //   phone.addEventListener('input', function () {
-  //     if (phone.value.length < 16) {
-  //       phone.setCustomValidity('Введите номер телефона полностью');
-  //     } else {
-  //       phone.setCustomValidity('');
-  //     }
-  //   });
-  // }
-
   var accordion = document.querySelector('.accordion');
   var accItemActive = document.querySelector('.accordion__item.accordion__item--active');
 
@@ -79,6 +68,21 @@
     isStorageSupport = false;
   }
 
+  var phones = document.querySelectorAll('input[onkeyup]');
+  phones.forEach(function (phone) {
+    phone.addEventListener('input', function () {
+      phone.parentElement.classList.add('input-phone');
+      // console.log(phone.value.length);
+      if (phone.value.length < 17) {
+        phone.setCustomValidity('Введите номер телефона полностью');
+
+      } else {
+        phone.setCustomValidity('');
+      }
+    });
+
+  });
+
   if (popupOpenBtn) {
     popupOpenBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -86,17 +90,11 @@
 
       if (storageName) {
         inputName.value = storageName;
-        inputPhone.focus();
-      } else {
+      } else if (storagePhone) {
+        inputPhone.value = storagePhone;
         inputName.focus();
       }
 
-      if (storagePhone) {
-        inputPhone.value = storagePhone;
-        inputName.focus();
-      } else {
-        inputPhone.focus();
-      }
     });
   }
 
@@ -114,12 +112,14 @@
     page.classList.add('page--overlay');
   }
 
-  function popupClose(popup) {
+  function popupClose(popup, form) {
     document.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       if (evt.keyCode === 27) {
         popup.classList.remove('popup--active');
         page.classList.remove('page--overlay');
+        form.submit();
+        // form.reset();
       }
     });
 
@@ -127,19 +127,14 @@
       evt.preventDefault();
       var target = evt.target;
 
-      if (target.className === 'popup popup--active') {
+      if ((target.className === 'popup popup--active') || (target.className === 'popup__btn-close')) {
         popup.classList.remove('popup--active');
         page.classList.remove('page--overlay');
+
+        form.submit();
+        // form.reset();
       }
     });
-
-    if (popupCloseBtn) {
-      popupCloseBtn.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        popup.classList.remove('popup--active');
-        page.classList.remove('page--overlay');
-      });
-    }
   }
 
   forms.forEach(function (form) {
@@ -147,11 +142,12 @@
       evt.preventDefault();
       // валидируем форму;
 
-      if (!inputName.value || (!inputPhone.value && !inputPhone.value.length < 16)) {
+      if (!inputName.value || !inputPhone.value) {
         evt.preventDefault();
         inputName.setCustomValidity('Нужно ввести имя');
         inputPhone.setCustomValidity('Введите номер телефона полностью');
       } else {
+
         if (isStorageSupport) {
           localStorage.setItem('inputName', inputName.value);
           localStorage.setItem('inputPhone', inputPhone.value);
@@ -160,15 +156,14 @@
 
       // показываем попап;
       poupOpen(popupApplication);
-      popupClose(popupApplication);
 
-      // отправляем данные на сервер;
-      // form.submit();
+      if (popupApplication.classList.contains('popup--active') && popupForm.classList.contains('popup--active')) {
+        popupForm.classList.remove('popup--active');
+      }
+
+      popupClose(popupApplication, form);
+
       return false; // предотвращаем отправку формы и перезагрузку страницы
     });
   });
-
-
-
-
 })();

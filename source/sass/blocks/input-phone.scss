@@ -1,0 +1,18 @@
+.input-phone {
+  position: relative;
+
+  &::before {
+    content: "_____ ___ __ __";
+    position: absolute;
+    bottom: 8px;
+    left: 38px;
+    color: #484848;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  & input:focus::placeholder {
+    color: transparent;
+  }
+}

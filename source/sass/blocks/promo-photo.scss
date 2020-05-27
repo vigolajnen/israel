@@ -41,8 +41,7 @@
   }
 
   &.lazy {
-    background-image: none;
-    background: url("../img/dummy/dummy-promo-photo-bg.png");
+    background-image: url("../img/dummy/dummy-promo-photo-bg.png");
   }
 
   &__container {
