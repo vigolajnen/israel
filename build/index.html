@@ -41,7 +41,7 @@
           предусмотрен грант от 4200 до 8400$.
         </p>
       </div>
-      <div class="video__media container">
+      <div class="video__media container lazy">
         <button class="video__btn" type="button" aria-label="Кнопка play">
           <svg class="video__svg" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="video__svg-wrapper" cx="48" cy="48" r="48"></circle>
@@ -96,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="promo-form container">
+    <section class="promo-form container lazy">
       <div class="promo-form__info">
         <h2>Хочу поехать!</h2>
         <p>
@@ -111,14 +111,11 @@
         </form>
       </div>
     </section>
-    <section class="guide">
+    <section class="guide lazy">
       <div class="guide__container container">
         <div class="guide__pic guide__pic--mask">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/guide/bg.webp 1x, img/guide/bg@2x.webp 2x">
-            <!-- 1х: 581px; 2x: 1162px -->
-            <img src="img/guide/bg.jpg" srcset="img/guide/bg@2x.jpg 2x" width="581" height="707" alt="Люди" loading="lazy">
-          </picture>
+          <!-- 1х: 581px; 2x: 1162px -->
+          <img class="lazy" src="img/dummy/dummy-guide-pic.jpg" data-src="img/guide/bg.jpg" width="581" height="707" alt="Люди" loading="lazy">
         </div>
         <div class="guide__info">
           <h2>Как поехать</h2>
@@ -233,7 +230,7 @@
         </div>
       </div>
     </section>
-    <section class="promo-photo">
+    <section class="promo-photo lazy">
       <div class="promo-photo__container container">
         <div class="promo-photo__info">
           <h2>#masaisrael</h2>
@@ -419,11 +416,8 @@
           </div>
         </div>
         <div class="questions__pic questions__pic--mask">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/questions/bg.webp 1x, img/questions/bg@2x.webp 2x">
-            <!-- 1х: 645px; 2x: 1290px -->
-            <img src="img/questions/bg.jpg" srcset="img/questions/bg@2x.jpg 2x" width="645" height="803" alt="pic" loading="lazy">
-          </picture>
+          <!-- 1х: 645px; 2x: 1290px -->
+          <img class="lazy" src="img/dummy/dummy-questions.jpg" data-src="img/questions/bg.jpg" width="645" height="803" alt="pic" loading="lazy">
         </div>
       </div>
     </section>
@@ -445,7 +439,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -510,7 +504,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -575,7 +569,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -640,7 +634,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -705,7 +699,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -770,7 +764,7 @@
                         img/reviews/user-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img class="lazy" src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -858,7 +852,7 @@
           </div>
           <div class="contacts__manager">
             <div class="contacts__manager-pic">
-              <img src="img/contacts/manager.jpg" alt="manager" loading="lazy">
+              <img class="lazy" src="img/dummy/dummy-manager.jpg" data-src="img/contacts/manager.jpg" alt="manager" loading="lazy">
             </div>
             <div class="contacts__manager-info">
               <div class="contacts__manager-name">
@@ -977,7 +971,7 @@
           <button type="submit">перезвоните мне</button>
           <label for="check">
             <input id="check" type="checkbox" name="check" required=""><span>Нажимая на кнопку, вы даёте согласие на обработку персональных
-            данных</span></label>
+              данных</span></label>
         </form>
       </div>
     </div>

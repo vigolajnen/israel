@@ -69,12 +69,12 @@
   var forms = document.querySelectorAll('form');
 
   var isStorageSupport = true;
-  var storage_1 = "";
-  var storage_2 = "";
+  var storageName = '';
+  var storagePhone = '';
 
   try {
-    storage_1 = localStorage.getItem("inputName");
-    storage_2 = localStorage.getItem("inputPhone");
+    storageName = localStorage.getItem('inputName');
+    storagePhone = localStorage.getItem('inputPhone');
   } catch (err) {
     isStorageSupport = false;
   }
@@ -84,15 +84,15 @@
       evt.preventDefault();
       poupOpen(popupForm);
 
-      if (storage_1) {
-        inputName.value = storage_1;
+      if (storageName) {
+        inputName.value = storageName;
         inputPhone.focus();
       } else {
         inputName.focus();
       }
 
-      if (storage_2) {
-        inputPhone.value = storage_2;
+      if (storagePhone) {
+        inputPhone.value = storagePhone;
         inputName.focus();
       } else {
         inputPhone.focus();
@@ -117,11 +117,11 @@
   function popupClose(popup) {
     document.addEventListener('keydown', function (evt) {
       evt.preventDefault();
-      if (evt.keyCode == 27) {
+      if (evt.keyCode === 27) {
         popup.classList.remove('popup--active');
         page.classList.remove('page--overlay');
       }
-    }); 
+    });
 
     popup.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -132,7 +132,7 @@
         page.classList.remove('page--overlay');
       }
     });
-  
+
     if (popupCloseBtn) {
       popupCloseBtn.addEventListener('click', function (evt) {
         evt.preventDefault();
@@ -152,20 +152,23 @@
         inputName.setCustomValidity('Нужно ввести имя');
         inputPhone.setCustomValidity('Введите номер телефона полностью');
       } else {
-      if (isStorageSupport) {
-        localStorage.setItem("inputName", inputName.value);
-        localStorage.setItem("inputPhone", inputPhone.value);
+        if (isStorageSupport) {
+          localStorage.setItem('inputName', inputName.value);
+          localStorage.setItem('inputPhone', inputPhone.value);
+        }
       }
-    }
-      
+
       // показываем попап;
       poupOpen(popupApplication);
       popupClose(popupApplication);
 
       // отправляем данные на сервер;
       // form.submit();
-      return false // предотвращаем отправку формы и перезагрузку страницы
+      return false; // предотвращаем отправку формы и перезагрузку страницы
     });
   });
-  
+
+
+
+
 })();

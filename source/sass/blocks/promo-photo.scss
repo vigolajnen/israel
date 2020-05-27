@@ -40,6 +40,11 @@
     background-image: url("../img/promo-photo/bg-mob-min.png");
   }
 
+  &.lazy {
+    background-image: none;
+    background: url("../img/dummy/dummy-promo-photo-bg.png");
+  }
+
   &__container {
     display: flex;
     flex-direction: column;

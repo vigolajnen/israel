@@ -30,6 +30,11 @@
     background-position: 175% 45%, 0;
   }
 
+  &.lazy {
+    background-image: none;
+    background: url("../img/dummy/dummy-guide-water-color-bg.png");
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +81,7 @@
     }
 
     & img {
+      display: block;
       width: 100%;
       height: 100%;
       max-width: 98%;

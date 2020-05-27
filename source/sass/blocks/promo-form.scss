@@ -42,6 +42,11 @@
     }
   }
 
+  &.lazy {
+    background-image: none;
+    background: url("../img/dummy/dummy-girl-flag.png");
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
