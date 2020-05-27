@@ -65,12 +65,14 @@
       margin: 0;
       margin-bottom: 65px;
       padding-right: 25px;
+      max-width: 100%;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
       line-height: 170%;
       color: #484848;
       opacity: 0.87;
+      box-sizing: border-box;
 
       @media (max-width: $mobile) {
         padding: 0;
@@ -81,17 +83,21 @@
   &__form {
     position: relative;
     width: 100%;
+    max-width: 475px;
     box-sizing: border-box;
 
     & label {
       display: block;
       max-width: 100%;
       margin-bottom: 8px;
+      box-sizing: border-box;
     }
 
     & input {
       padding: 10px 40px;
+      width: 100%;
       max-width: 100%;
+      min-height: 50px;
       font-weight: 500;
       font-size: 17px;
       line-height: 26px;

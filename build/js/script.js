@@ -28,16 +28,16 @@
     });
   }
 
-  var phone = document.querySelector('#phone');
-  if (phone) {
-    phone.addEventListener('input', function () {
-      if (phone.value.length < 16) {
-        phone.setCustomValidity('Введите номер телефона полностью');
-      } else {
-        phone.setCustomValidity('');
-      }
-    });
-  }
+  // var phone = document.querySelector('#phone');
+  // if (phone) {
+  //   phone.addEventListener('input', function () {
+  //     if (phone.value.length < 16) {
+  //       phone.setCustomValidity('Введите номер телефона полностью');
+  //     } else {
+  //       phone.setCustomValidity('');
+  //     }
+  //   });
+  // }
 
   var accordion = document.querySelector('.accordion');
   var accItemActive = document.querySelector('.accordion__item.accordion__item--active');
@@ -60,27 +60,112 @@
   });
 
   var page = document.querySelector('.page');
-  var modalOpenBtn = document.querySelector('.nav__btn-modal');
-  var modalCloseBtn = document.querySelector('.modal__btn-close');
-  var modal = document.querySelector('.modal');
-  if (modalOpenBtn) {
-    modalOpenBtn.addEventListener('click', function (evt) {
+  var popupOpenBtn = document.querySelector('.nav__btn-popup');
+  var popupCloseBtn = document.querySelector('.popup__btn-close');
+  var popupForm = document.querySelector('#order-call');
+  var inputName = document.querySelector('input#popup-name');
+  var inputPhone = document.querySelector('input#popup-phone');
+  var popupApplication = document.querySelector('#application-accepted');
+  var forms = document.querySelectorAll('form');
+
+  var isStorageSupport = true;
+  var storage_1 = "";
+  var storage_2 = "";
+
+  try {
+    storage_1 = localStorage.getItem("inputName");
+    storage_2 = localStorage.getItem("inputPhone");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  if (popupOpenBtn) {
+    popupOpenBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      poupOpen(popupForm);
+
+      if (storage_1) {
+        inputName.value = storage_1;
+        inputPhone.focus();
+      } else {
+        inputName.focus();
+      }
+
+      if (storage_2) {
+        inputPhone.value = storage_2;
+        inputName.focus();
+      } else {
+        inputPhone.focus();
+      }
+    });
+  }
+
+  if (popupCloseBtn) {
+    popupCloseBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
 
-      modal.classList.add('modal--active');
-      page.classList.add('page--overlay');
+      popupClose(popupForm);
+
+    });
+  }
+
+  function poupOpen(popup) {
+    popup.classList.add('popup--active');
+    page.classList.add('page--overlay');
+  }
+
+  function popupClose(popup) {
+    document.addEventListener('keydown', function (evt) {
+      evt.preventDefault();
+      if (evt.keyCode == 27) {
+        popup.classList.remove('popup--active');
+        page.classList.remove('page--overlay');
+      }
+    }); 
+
+    popup.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var target = evt.target;
+
+      if (target.className === 'popup popup--active') {
+        popup.classList.remove('popup--active');
+        page.classList.remove('page--overlay');
+      }
+    });
+  
+    if (popupCloseBtn) {
+      popupCloseBtn.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        popup.classList.remove('popup--active');
+        page.classList.remove('page--overlay');
+      });
+    }
+  }
+
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      // валидируем форму;
+
+      if (!inputName.value || (!inputPhone.value && !inputPhone.value.length < 16)) {
+        evt.preventDefault();
+        inputName.setCustomValidity('Нужно ввести имя');
+        inputPhone.setCustomValidity('Введите номер телефона полностью');
+      } else {
+      if (isStorageSupport) {
+        localStorage.setItem("inputName", inputName.value);
+        localStorage.setItem("inputPhone", inputPhone.value);
+      }
+    }
       
+      // показываем попап;
+      poupOpen(popupApplication);
+      popupClose(popupApplication);
+
+      // отправляем данные на сервер;
+      // form.submit();
+      return false // предотвращаем отправку формы и перезагрузку страницы
     });
-  }
-
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', function (evt) {
-      evt.preventDefault();
-
-      modal.classList.remove('modal--active');
-      page.classList.remove('page--overlay');
-
-    });
-  }
-
+  });
+  
 })();

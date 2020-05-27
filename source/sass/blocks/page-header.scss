@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
+  height: 100vh;
   min-height: 888px;
 
   padding: 0;
@@ -13,9 +14,7 @@
 
   overflow: hidden;
 
-  background-image: url("../img/promo/mask-top.png"),
-    url("../img/promo/mask-bottom.png"), url("../img/promo/promo-girl.png"),
-    url("../img/promo/text-min.png"), url("../img/promo/promo-bg-min.jpg");
+  background-image: url("../img/promo/mask-top.png"), url("../img/promo/mask-bottom.png"), url("../img/promo/promo-girl.png"), url("../img/promo/text-min.png"), url("../img/promo/promo-bg-min.jpg");
 
   background-position: top, bottom, 52% 50%, center 255px, top;
   background-size: 100% 50%, 101% 50%, 381px, 73%, 100% 99%;
@@ -43,10 +42,7 @@
     height: 100%;
     min-height: 605px;
 
-    background-image: url("../img/promo/mask-top-mob.png"),
-      url("../img/promo/mask-bottom-mob.png"),
-      url("../img/promo/promo-girl.png"), url("../img/promo/text.png"),
-      url("../img/promo/promo-bg-mob.jpg");
+    background-image: url("../img/promo/mask-top-mob.png"), url("../img/promo/mask-bottom-mob.png"), url("../img/promo/promo-girl.png"), url("../img/promo/text.png"), url("../img/promo/promo-bg-mob.jpg");
 
     background-position: top, bottom, bottom, center 200px, top;
     background-size: 100% 50%, 101% 50%, 240px, 110%, cover;
@@ -54,6 +50,7 @@
 
   &__nav {
     width: 100%;
+    margin-bottom: auto;
   }
 
   &__bottom {
@@ -82,7 +79,7 @@
       font-size: 24px;
       line-height: 31px;
       text-align: center;
-      color: #fff;
+      color: #ffffff;
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 
       @media (max-width: $mobile) {
@@ -105,6 +102,7 @@
       top: 20%;
       left: 50%;
       transform: translate(-50%, -20%);
+
       @include sprite($iocn-mouse);
     }
 

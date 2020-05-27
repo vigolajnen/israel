@@ -25,16 +25,13 @@
 
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout
-  const breakpoint = window.matchMedia( '(min-width:1340px)' );
+  var breakpoint = window.matchMedia( '(min-width:1340px)' );
 
   // keep track of swiper instances to destroy later
-  let mySwiper;
+  var mySwiper;
 
-  //////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////
 
-  const breakpointChecker = function() {
+  var breakpointChecker = function() {
 
     // if larger viewport and multi-row layout needed
     if ( breakpoint.matches === true ) {
@@ -54,28 +51,15 @@
       }
 
   };
-  
-  //////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////
 
-  const enableSwiper = function() {
+  var enableSwiper = function() {
 
     mySwiper = new Swiper ('#live', {
       slidesPerView: 1,
       loop: true,
-      
-      slidesPerView: 'auto',
-
       centeredSlides: true,
-
-      a11y: true,
       keyboardControl: true,
       grabCursor: true,
-
-      // pagination
-      // pagination: '.swiper-pagination',
-      // paginationClickable: true,
 
       pagination: {
         el: '.swiper-pagination',

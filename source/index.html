@@ -16,7 +16,7 @@
         <a class="nav__logo logo">
           <img src="img/logo.svg" alt="Логотип" />
         </a>
-        <button class="nav__btn-modal" type="button">
+        <button class="nav__btn-popup" type="button">
           заказать звонок
         </button>
       </div>
@@ -158,10 +158,7 @@
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="
-                img/guide/bg.webp    1x,
-                img/guide/bg@2x.webp 2x
-              "
+              srcset="img/guide/bg.webp 1x, img/guide/bg@2x.webp 2x"
             />
             <!-- 1х: 581px; 2x: 1162px -->
             <img
@@ -280,12 +277,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="img/live/skills.webp 1x, img/live/skills@2x.webp 2x"
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 320px)"
+                  media="(max-width: 768px)"
                   srcset="
                     img/live/skills-mob.webp    1x,
                     img/live/skills-mob@2x.webp 2x
@@ -293,8 +285,8 @@
                 />
                 <!-- 1х: 280px; 2x: 560px -->
                 <img
-                  src="img/live/skills-mob.png"
-                  srcset="img/live/skills-mob@2x.png 2x"
+                  src="img/live/skills.png"
+                  srcset="img/live/skills@2x.png 2x"
                   width="280"
                   height="400"
                   alt="Обучение современным навыкам и профессиям"
@@ -307,15 +299,7 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/live/projects.webp    1x,
-                    img/live/projects@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 320px)"
+                  media="(max-width: 768px)"
                   srcset="
                     img/live/projects-mob.webp    1x,
                     img/live/projects-mob@2x.webp 2x
@@ -323,8 +307,8 @@
                 />
                 <!-- 1х: 280px; 2x: 560px -->
                 <img
-                  src="img/live/projects-mob.png"
-                  srcset="img/live/projects-mob@2x.png 2x"
+                  src="img/live/projects.png"
+                  srcset="img/live/projects@2x.png 2x"
                   width="280"
                   height="400"
                   alt="Совместные творческие проекты"
@@ -667,10 +651,7 @@
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="
-                img/questions/bg.webp    1x,
-                img/questions/bg@2x.webp 2x
-              "
+              srcset="img/questions/bg.webp 1x, img/questions/bg@2x.webp 2x"
             />
             <!-- 1х: 645px; 2x: 1290px -->
             <img
@@ -1376,43 +1357,39 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <div class="modal__wrapper">
+    <div id="order-call" class="popup">
+      <div class="popup__wrapper">
         <button
-          class="modal__btn-close"
+          class="popup__btn-close"
           type="button"
-          aria-label="Закрыть модальное окно"
-        >
-          <svg width="18" height="17">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
+          aria-label="Закрыть окно"
+        ></button>
         <h3>Заказать звонок</h3>
         <p>
           Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего
           дня и обязательно поможем найти ответ на ваш вопрос!
         </p>
         <form
-          class="modal__form"
+          class="popup__form"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <label for="modal-name" aria-label="Имя">
+          <label for="popup-name" aria-label="Имя">
             <input
-              id="modal-name"
-              name="modal-name"
+              id="popup-name"
+              name="popup-name"
               type="text"
               placeholder="Имя"
               required=""
             />
           </label>
-          <label for="modal-phone" aria-label="Телефон">
+          <label for="popup-phone" aria-label="Телефон">
             <input
-              id="modal-phone"
-              name="modal-phone"
+              id="popup-phone"
+              name="popup-phone"
               type="text"
               placeholder="+7 (923) 41"
-              onkeyup="javascript:mask('modal-phone', '+7 (000) 000-00-00', event);"
+              onkeyup="javascript:mask('popup-phone', '+7 (000) 000-00-00', event);"
               value=""
               minlength="16"
               maxlength="16"
@@ -1421,22 +1398,28 @@
           </label>
           <button type="submit">перезвоните мне</button>
           <label for="check">
-            <input type="checkbox" name="check" id="check" />
-            Нажимая на кнопку, вы даёте согласие на обработку персональных
-            данных
-          </label>
+            <input id="check" type="checkbox" name="check" required="" /><span
+              >Нажимая на кнопку, вы даёте согласие на обработку персональных
+            данных</span
+            ></label
+          >
         </form>
-
-        <div class="modal__answer">
-          <svg width="66" height="64">
-            <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
-          </svg>
+      </div>
+    </div>
+    <div id="application-accepted" class="popup">
+      <div class="popup__wrapper">
+        <button
+          class="popup__btn-close"
+          type="button"
+          aria-label="Закрыть окно"
+        ></button>
+        <div class="popup__info popup__info--icon">
           <h3>Заявка принята</h3>
           <p>
             Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения
             деталей!
           </p>
-          <a href="#">Понятно</a>
+          <button type="button">понятно</button>
         </div>
       </div>
     </div>
