@@ -7,9 +7,10 @@
   align-items: flex-end;
 
   margin-bottom: 57px;
-  padding-top: 8%;
+  padding-top: 15%;
+  padding-bottom: 14%;
   background-position: center bottom;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/promo-photo/bg-min.png");
   box-sizing: border-box;
@@ -35,8 +36,10 @@
   @media (max-width: $mobile-xs) {
     margin-bottom: 0;
     padding-bottom: 30px;
+    padding-top: 18%;
     min-height: 224px;
-    background-size: cover;
+    background-position-y: 50%;
+    background-size: 100% 50%;
     background-image: url("../img/promo-photo/bg-mob-min.png");
   }
 
@@ -71,6 +74,7 @@
 
   &__info {
     max-width: 400px;
+    width: 100%;
     // padding-top: 5%;
 
     // @media (max-width: $desktop) {
@@ -87,6 +91,12 @@
 
     & h2 {
       margin-bottom: 24px;
+      @media (max-width: $mobile) {
+        margin-bottom: 98px;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: -0.02em;
+      }
     }
 
     & p {
@@ -104,6 +114,8 @@
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 
       @media (max-width: $mobile) {
+        margin-bottom: 60px;
+        padding-left: 9px;
         font-size: 16px;
         line-height: 160%;
       }
@@ -131,13 +143,22 @@
 
     box-sizing: border-box;
 
+    @media (max-width: $mobile) {
+      padding: 16px 57px;
+      margin-left: 12px;
+    }
+
     &:focus,
     &:hover {
       background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
     }
 
     &:active {
-      background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
+      background: radial-gradient(
+          150% 119.49% at 50% 50.85%,
+          rgba(0, 0, 0, 0) 30.67%,
+          rgba(3, 3, 3, 0.24) 100%
+        ),
         linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
     }
 

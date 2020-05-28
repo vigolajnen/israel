@@ -77,7 +77,7 @@
     }
 
     & input {
-      padding: 16px 20px;
+      padding: 16px 20px 14px 38px;
       width: 100%;
       font-family: $mainFontMedium;
       font-style: normal;
@@ -93,9 +93,7 @@
       box-sizing: border-box;
       border-radius: 80px;
 
-      &:focus {
-        border-color: $warning-color;
-      }
+      
 
       &:valid {
         border-color: $primary-color;
@@ -109,9 +107,20 @@
         outline: none;
       }
 
+      &.invalid {
+        border-color: #ff0000;
+      }
+
       // &:required:focus:invalid {
       //   border-color: #ff0000;
       // }
+      &:focus:invalid {
+        border-color: #ff0000;
+      }
+
+      &:focus {
+        border-color: $warning-color;
+      }
     }
 
     & button {
@@ -141,7 +150,11 @@
       }
 
       &:active {
-        background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
+        background: radial-gradient(
+            150% 119.49% at 50% 50.85%,
+            rgba(0, 0, 0, 0) 30.67%,
+            rgba(3, 3, 3, 0.24) 100%
+          ),
           linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
       }
 

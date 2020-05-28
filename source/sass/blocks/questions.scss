@@ -1,7 +1,7 @@
 .questions {
   position: relative;
 
-  padding-top: 71px;
+  padding-top: 81px;
   padding-bottom: 100px;
 
   overflow: hidden;
@@ -29,8 +29,13 @@
     background-size: 194px;
   }
 
+  @media (max-width: $mobile-xs) {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
   &__pic {
-    width: 40%;
+    width: 48%;
     height: auto;
     align-self: flex-start;
     box-sizing: border-box;
@@ -91,7 +96,7 @@
   }
 
   &__accordion {
-    width: 50%;
+    width: 49%;
 
     @media (max-width: 959px) {
       width: 100%;
@@ -112,7 +117,7 @@
     box-sizing: border-box;
 
     & h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       width: 100%;
 
       @media (max-width: $table) {

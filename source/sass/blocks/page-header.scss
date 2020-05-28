@@ -14,7 +14,9 @@
 
   overflow: hidden;
 
-  background-image: url("../img/promo/mask-top.png"), url("../img/promo/mask-bottom.png"), url("../img/promo/promo-girl.png"), url("../img/promo/text-min.png"), url("../img/promo/promo-bg-min.jpg");
+  background-image: url("../img/promo/mask-top.png"),
+    url("../img/promo/mask-bottom.png"), url("../img/promo/promo-girl.png"),
+    url("../img/promo/text-min.png"), url("../img/promo/promo-bg-min.jpg");
 
   background-position: top, bottom, 52% 50%, center 255px, top;
   background-size: 100% 50%, 101% 50%, 381px, 73%, 100% 99%;
@@ -31,10 +33,18 @@
     height: 100%;
     min-height: 605px;
 
-    background-image: url("../img/promo/mask-top-mob.png"), url("../img/promo/mask-bottom-mob.png"), url("../img/promo/promo-girl.png"), url("../img/promo/text.png"), url("../img/promo/promo-bg-mob.jpg");
+    background-image: url("../img/promo/mask-top-mob.png"),
+      url("../img/promo/mask-bottom-mob.png"),
+      url("../img/promo/promo-girl.png"), url("../img/promo/text.png"),
+      url("../img/promo/promo-bg-mob.jpg");
 
     background-position: top, bottom, bottom, center 200px, top;
     background-size: 100% 50%, 101% 50%, 240px, 110%, cover;
+  }
+
+  @media (max-width: $mobile-xs) {
+    background-position: top, bottom, 70% 80%, center 200px, top;
+    background-size: 100% 50%, 101% 50%, 265px, 110%, cover;
   }
 
   // &.lazy {
@@ -50,6 +60,10 @@
 
   &__bottom {
     width: 100%;
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 43px;
+    }
   }
 
   &__info {

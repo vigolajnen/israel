@@ -27,6 +27,7 @@
   }
 
   @media (max-width: $mobile) {
+    padding-top: 82px;
     background-image: url("../img/guide/icon-pass.png");
     background-repeat: no-repeat;
     background-size: 264px 199px;
@@ -48,9 +49,7 @@
     padding-bottom: 90px;
 
     @media (max-width: $table) {
-      padding-left: 16px;
-      // padding-top: 80px;
-      padding-bottom: 80px;
+      padding: 0 0 80px;
     }
   }
 
@@ -58,7 +57,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 46%;
+    width: 43%;
     height: 100%;
     box-sizing: border-box;
 
@@ -110,7 +109,7 @@
   }
 
   &__info {
-    padding-top: 38px;
+    padding-top: 19px;
     padding-left: 50px;
     padding-right: 24px;
     width: 50%;
@@ -140,7 +139,7 @@
       width: 100%;
 
       @media (max-width: $table) {
-        padding: 0;
+        padding: 0 16px;
         text-align: center;
       }
     }
@@ -158,9 +157,13 @@
       opacity: 0.87;
 
       @media (max-width: $table) {
-        padding: 0;
+        padding: 0 16px;
         font-size: 14px;
         line-height: 160%;
+      }
+
+      @media (max-width: $mobile-xs) {
+        margin-bottom: 25px;
       }
     }
   }
@@ -177,6 +180,7 @@
 
     @media (max-width: $mobile-xs) {
       width: 100%;
+      margin-bottom: 18px;
     }
 
     & ul {
@@ -196,6 +200,14 @@
         height: 90%;
         width: 1px;
         border-left: 1px dashed #484848;
+
+        @media (max-width: $mobile) {
+          left: 25px;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        padding-left: 5px;
       }
     }
 
@@ -217,6 +229,15 @@
       @media (max-width: $table) {
         font-size: 14px;
         line-height: 160%;
+      }
+
+      @media (max-width: $mobile) {
+        padding-left: 58px;
+        min-height: 50px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       &::before {
@@ -252,7 +273,7 @@
       line-height: 170%;
 
       @media (max-width: $table) {
-        padding: 0;
+        padding: 0 16px;
         font-size: 16px;
         line-height: 160%;
       }
@@ -280,6 +301,8 @@
 
     @media (max-width: $mobile-xs) {
       width: 100%;
+      margin-left: 12px;
+      padding-right: 6px;
     }
 
     &::before {

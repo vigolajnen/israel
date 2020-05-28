@@ -29,11 +29,15 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 54px 16px;
+      padding: 34px 16px 67px;
     }
   }
 
   & h2 {
     margin-bottom: 70px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 15px;
+    }
   }
 }

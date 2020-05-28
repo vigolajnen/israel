@@ -26,7 +26,7 @@
     width: 43%;
     box-sizing: border-box;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $table) {
       width: 100%;
     }
 
@@ -181,7 +181,7 @@
     background-size: 100%;
     background-position: 0 48px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $table) {
       position: relative;
       width: 100%;
 

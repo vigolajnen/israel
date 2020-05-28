@@ -14,24 +14,44 @@
         transform: rotate(180deg);
       }
     }
+
+    &--big {
+      & .accordion__item-header {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        & h3 {
+          padding-top: 10px;
+        }
+      }
+
+      & .accordion__item-icon {
+        padding-top: 0;
+      }
+
+      & .accordion__item-number {
+        padding-top: 0;
+      }
+    }
   }
 
   &__item-number {
-    width: 40px;
-    min-width: 40px;
+    width: 17px;
     height: 40px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 85px;
+    padding-top: 4px;
     line-height: 170%;
   }
 
   &__item-header {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 52px;
+    padding-top: 29px;
+    
+    padding-bottom: 21px;
+    padding-right: 36px;
 
     @media (max-width: 959px) {
       padding-right: 0;
@@ -43,6 +63,7 @@
 
     & h3 {
       margin: 0;
+      padding-left: 10px;
       width: 75%;
       font-style: normal;
       font-weight: normal;
@@ -51,7 +72,7 @@
       color: $primary-color;
 
       @media (max-width: $mobile) {
-        width: 75%;
+        width: 85%;
         font-size: 16px;
         line-height: 160%;
       }
@@ -59,6 +80,7 @@
   }
 
   &__item-icon {
+    padding-top: 10px;
     width: 20px;
     height: 20px;
     fill: transparent;
@@ -68,7 +90,8 @@
   &__item-text {
     display: none;
     animation-name: fadeInUp;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
+    padding-right: 35px;
 
     font-style: normal;
     font-weight: normal;

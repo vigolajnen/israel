@@ -12,7 +12,7 @@
   background-image: url("../img/video/watercolor-bg-min.png");
 
   @media (max-width: $mobile) {
-    padding-top: 0;
+    padding-top: 28px;
     padding-bottom: 50px;
     background-image: url("../img/video/watercolor-bg-mob.png");
     background-position: right 50%;
@@ -44,8 +44,10 @@
       text-align: center;
 
       @media (max-width: $mobile) {
+        margin-bottom: 52px;
         font-size: 16px;
         line-height: 160%;
+        text-align: left;
       }
     }
   }
