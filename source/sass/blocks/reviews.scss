@@ -38,11 +38,17 @@
       max-width: 100%;
     }
 
+    & .swiper-pagination {
+      width: 50%;
+    }
+
     & .swiper-button-prev,
     & .swiper-button-next {
-      height: 0;
+      height: 50px;
 
       top: 49%;
+
+      width: 25%;
 
       outline: none;
 
@@ -61,26 +67,42 @@
       & svg {
         fill: transparent;
 
-        width: 30px;
-        height: 30px;
-
-        @media (max-width: $desktop) {
-          width: 33px;
-          height: 33px;
-        }
-
-        @media (max-width: $table) {
-          width: 25px;
-          height: 25px;
-        }
+        width: 25px;
+        height: 25px;
       }
+    }
+
+    & .swiper-button-prev {
+      left: 50%;
+    }
+
+    & .swiper-button-next {
+      top: 35%;
+      transform: rotate(-180deg);
     }
   }
 
   &__slider-nav {
-    position: relative;
-    width: 200px;
-    margin-left: 30%;
+    z-index: 5;
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    bottom: 0;
+    left: 33%;
+
+    @media (max-width: $mobile) {
+      bottom: auto;
+      top: 455px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: $mobile-xs) {
+      bottom: auto;
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__slider-wrapper {

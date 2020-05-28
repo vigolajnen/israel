@@ -133,6 +133,14 @@
 
       color: $primary-color;
       opacity: 0.74;
+
+      @media (max-width: $mobile) {
+        padding-right: 15px;
+      }
+
+      @media (max-width: $mobile-xs) {
+        padding-right: 0;
+      }
     }
   }
 

@@ -112,7 +112,10 @@
 
         <div class="promo-form__pic">
           <picture>
-            <source type="image/webp" media="(max-width: 768px)" srcset="img/promo-form/girl-flag-bg-mob.webp 1x, img/promo-form/girl-flag-bg-mob@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 768px)" srcset="
+                img/promo-form/girl-flag-bg-mob.webp    1x,
+                img/promo-form/girl-flag-bg-mob@2x.webp 2x
+              ">
             <!-- 1х: 818px; 2x: 1636px -->
             <img src="img/dummy/dummy-girl-flag.png" srcset="img/promo-form/girl-flag-bg@2x.png 2x" data-src="img/promo-form/girl-flag-bg.png" width="818" height="594" alt="user" loading="lazy">
           </picture>
@@ -128,9 +131,16 @@
             вашем городе. Вы получите актуальные сведения о доступных программах
             и городах, в которых можете пройти программу.
           </p>
-          <div class="guide__pic guide__pic--mask">
-            <!-- 1х: 581px; 2x: 1162px -->
-            <img class="lazy" src="img/dummy/dummy-guide-pic.jpg" data-src="img/guide/bg.jpg" width="581" height="707" alt="Люди" loading="lazy">
+
+          <div class="guide__pic">
+            <picture>
+              <source type="image/webp" srcset="
+                  img/guide/guide-pic.webp    1x,
+                  img/guide/guide-pic@2x.webp 2x
+                ">
+              <!-- 1х: 581px; 2x: 1162px -->
+              <img class="lazy" src="img/dummy/dummy-guide-pic.png" data-src="img/guide/guide-pic.png" srcset="img/guide/guide-pic@2x.png 2x" width="581" height="707" alt="Люди" loading="lazy">
+            </picture>
           </div>
           <div class="guide__list">
             <p>
@@ -421,9 +431,15 @@
             </div>
           </div>
         </div>
-        <div class="questions__pic questions__pic--mask">
-          <!-- 1х: 645px; 2x: 1290px -->
-          <img class="lazy" src="img/dummy/dummy-questions.jpg" data-src="img/questions/bg.jpg" width="645" height="803" alt="pic" loading="lazy">
+        <div class="questions__pic">
+          <picture>
+            <source type="image/webp" srcset="
+                img/questions/questions-pic.webp    1x,
+                img/questions/questions-pic@2x.webp 2x
+              ">
+            <!-- 1х: 645px; 2x: 1290px -->
+            <img class="lazy" src="img/dummy/dummy-questions-pic.png" data-src="img/questions/questions-pic.png" srcset="img/questions/questions-pic@2x.png 2x" width="581" height="707" alt="Люди" loading="lazy">
+          </picture>
         </div>
       </div>
     </section>
@@ -434,18 +450,14 @@
           <div id="reviews" class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/reviews/user.webp    1x,
-                        img/reviews/user@2x.webp 2x
-                      ">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="
-                        img/reviews/user-mob.webp    1x,
-                        img/reviews/user-mob@2x.webp 2x
+                        img/reviews/review-pic-mob.webp    1x,
+                        img/reviews/review-pic-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
+                    <img src="img/dummy/dummy-review-pic.png" srcset="img/reviews/review-pic@2x.png 2x" data-src="img/reviews/review-pic.png" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -499,18 +511,14 @@
                 </div>
               </div>
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/reviews/user.webp    1x,
-                        img/reviews/user@2x.webp 2x
-                      ">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="
-                        img/reviews/user-mob.webp    1x,
-                        img/reviews/user-mob@2x.webp 2x
+                        img/reviews/review-pic-mob.webp    1x,
+                        img/reviews/review-pic-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
+                    <img src="img/dummy/dummy-review-pic.png" srcset="img/reviews/review-pic@2x.png 2x" data-src="img/reviews/review-pic.png" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -564,18 +572,14 @@
                 </div>
               </div>
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/reviews/user.webp    1x,
-                        img/reviews/user@2x.webp 2x
-                      ">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="
-                        img/reviews/user-mob.webp    1x,
-                        img/reviews/user-mob@2x.webp 2x
+                        img/reviews/review-pic-mob.webp    1x,
+                        img/reviews/review-pic-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
+                    <img src="img/dummy/dummy-review-pic.png" srcset="img/reviews/review-pic@2x.png 2x" data-src="img/reviews/review-pic.png" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -629,18 +633,14 @@
                 </div>
               </div>
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/reviews/user.webp    1x,
-                        img/reviews/user@2x.webp 2x
-                      ">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="
-                        img/reviews/user-mob.webp    1x,
-                        img/reviews/user-mob@2x.webp 2x
+                        img/reviews/review-pic-mob.webp    1x,
+                        img/reviews/review-pic-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/dummy/dummy-user.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" data-src="img/reviews/user-mob.jpg" width="233" height="352" alt="user" loading="lazy">
+                    <img src="img/dummy/dummy-review-pic.png" srcset="img/reviews/review-pic@2x.png 2x" data-src="img/reviews/review-pic.png" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -694,18 +694,14 @@
                 </div>
               </div>
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/reviews/user.webp    1x,
-                        img/reviews/user@2x.webp 2x
-                      ">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="
-                        img/reviews/user-mob.webp    1x,
-                        img/reviews/user-mob@2x.webp 2x
+                        img/reviews/review-pic-mob.webp    1x,
+                        img/reviews/review-pic-mob@2x.webp 2x
                       ">
                     <!-- 1х: 233px; 2x: 466px -->
-                    <img src="img/reviews/user-mob.jpg" srcset="img/reviews/user-mob@2x.jpg 2x" width="233" height="352" alt="user" loading="lazy">
+                    <img src="img/dummy/dummy-review-pic.png" srcset="img/reviews/review-pic@2x.png 2x" data-src="img/reviews/review-pic.png" width="233" height="352" alt="user" loading="lazy">
                   </picture>
                 </div>
                 <div class="review__info">
@@ -759,7 +755,7 @@
                 </div>
               </div>
               <div class="swiper-slide review">
-                <div class="review__pic review__pic--mask">
+                <div class="review__pic">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="
                         img/reviews/user.webp    1x,
@@ -827,12 +823,12 @@
             <div class="reviews__slider-nav">
               <div class="swiper-pagination"></div>
               <button class="swiper-button-next" type="button" aria-label="Кнопка назад">
-                <svg class="social__icon" width="25" height="25">
+                <svg width="25" height="25">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
                 </svg>
               </button>
               <button class="swiper-button-prev" type="button" aria-label="Кнопка вперед">
-                <svg class="social__icon" width="25" height="25">
+                <svg width="25" height="25">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
                 </svg>
               </button>
