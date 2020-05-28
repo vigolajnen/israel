@@ -4,12 +4,12 @@
   background-image: url("../img/guide/icon-pass.png"),
     url("../img/guide/water-color-bg.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 20%, contain;
-  background-position: 109% 40%, 15vw;
+  background-size: 337px 254px, contain;
+  background-position: 100% 40%, 22vw;
 
   @media (max-width: 1920px) {
-    background-size: 20%, 100% 103%;
-    background-position: 109% 40%, 9vw;
+    background-size: 337px 254px, 100% 103%;
+    background-position: 100% 40%, 9vw;
   }
 
   @media (max-width: 1640px) {
@@ -19,15 +19,15 @@
   @media (max-width: $table) {
     background-image: url("../img/guide/icon-pass.png");
     background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: 105% 75%, 0;
+    background-size: 337px 254px;
+    background-position: 105% 45%, 0;
   }
 
   @media (max-width: $mobile) {
     background-image: url("../img/guide/icon-pass.png");
     background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 175% 45%, 0;
+    background-size: 264px 199px;
+    background-position: 115% 45%, 0;
   }
 
   &.lazy {
@@ -35,33 +35,49 @@
   }
 
   &__container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     padding-left: 0;
-    padding-top: 145px;
+    // padding-top: 145px;
     padding-bottom: 90px;
 
     @media (max-width: $table) {
       padding-left: 16px;
-      padding-top: 80px;
+      // padding-top: 80px;
       padding-bottom: 80px;
     }
   }
 
   &__pic {
-    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;
     height: 100%;
     box-sizing: border-box;
 
     @media (max-width: $table) {
+      align-self: flex-start;
+      position: relative;
+      width: 46%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $mobile-xs) {
       display: none;
       width: 100%;
     }
 
     &--mask {
-      position: relative;
+      position: absolute;
+
+      @media (max-width: $table) {
+        position: relative;
+      }
 
       &::before {
         content: "";
@@ -71,7 +87,7 @@
         width: 100%;
         height: 100%;
         max-height: 983px;
-        background-size: 100% 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-image: url("../img/guide/mask-bd.png");
 
@@ -82,7 +98,7 @@
     & img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: auto;
       max-width: 98%;
       max-height: 98%;
       margin: 2px;
@@ -98,17 +114,31 @@
     box-sizing: border-box;
 
     @media (max-width: $table) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 12px;
+    }
+
+    @media (max-width: $mobile-xs) {
       padding: 0;
       width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
     }
 
     & h2 {
       margin: 0;
       margin-bottom: 24px;
       padding-left: 22px;
+      width: 100%;
 
       @media (max-width: $table) {
         padding: 0;
+        text-align: center;
       }
     }
 
@@ -137,7 +167,13 @@
     margin-bottom: 50px;
 
     @media (max-width: $table) {
+      align-self: flex-start;
       padding: 0;
+      width: 50%;
+    }
+
+    @media (max-width: $mobile-xs) {
+      width: 100%;
     }
 
     & ul {
@@ -234,8 +270,13 @@
 
     @media (max-width: $table) {
       padding-left: 10px;
+      width: 70%;
       font-size: 14px;
       line-height: 160%;
+    }
+
+    @media (max-width: $mobile-xs) {
+      width: 100%;
     }
 
     &::before {
