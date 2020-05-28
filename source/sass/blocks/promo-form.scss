@@ -4,22 +4,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 90px;
-
-  min-height: 594px;
-  background-position: 100% -10px;
-  background-size: 818px auto;
-  background-repeat: no-repeat;
-  background-image: url("../img/promo-form/girl-flag-bg-min.png");
+  padding-bottom: 200px;
 
   box-sizing: border-box;
 
-  overflow: hidden;
+  @media (max-width: $table) {
+    padding-bottom: 50px;
+  }
 
   @media (max-width: $mobile) {
-    padding: 0 16px 350px 16px;
-    background-position: 100% 100%;
-    background-size: 424px auto;
+    padding: 0;
+    overflow: hidden;
   }
 
   &::before {
@@ -36,14 +31,9 @@
 
     transform: rotate(15deg);
 
-
     @media (max-width: 1366px) {
       left: -14.51px;
     }
-  }
-
-  &.lazy {
-    background-image: url("../img/dummy/dummy-girl-flag.png");
   }
 
   &__info {
@@ -53,16 +43,33 @@
     padding-top: 14%;
     padding-left: 100px;
     max-width: 575px;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      padding-left: 50px;
+      width: 60%;
+    }
+
+    @media (max-width: $table) {
+      padding-left: 25px;
+      width: 65%;
+    }
 
     @media (max-width: $mobile) {
       padding: 0;
+      margin: 0 auto;
+      width: 100%;
+      align-items: center;
     }
 
     & h2 {
       margin-bottom: 24px;
       letter-spacing: 1.2px;
+
+      @media (max-width: $mobile) {
+        padding: 0 16px;
+      }
     }
 
     & p {
@@ -78,17 +85,71 @@
       opacity: 0.87;
       box-sizing: border-box;
 
+      @media (max-width: $table) {
+        margin-bottom: 24px;
+      }
+
       @media (max-width: $mobile) {
-        padding: 0;
+        padding: 0 15%;
+      }
+
+      @media (max-width: $mobile-xs) {
+        padding: 0 16px;
+      }
+    }
+  }
+
+  &__pic {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: auto;
+
+    @media (max-width: $table) {
+      bottom: 0;
+      top: auto;
+      width: 50%;
+    }
+
+    @media (max-width: $mobile) {
+      z-index: 0;
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+
+      @media (max-width: $mobile) {
+        display: block;
+        margin-left: auto;
       }
     }
   }
 
   &__form {
     position: relative;
-    width: 100%;
-    max-width: 475px;
+    max-width: 100%;
+    width: 475px;
     box-sizing: border-box;
+
+    @media (max-width: 800px) {
+      width: 325px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 15%;
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-xs) {
+      padding: 0 16px;
+    }
 
     & label {
       display: block;
@@ -153,7 +214,7 @@
       cursor: pointer;
       outline: none;
 
-      @media (max-width: $mobile) {
+      @media (max-width: 800px) {
         position: relative;
         width: 100%;
       }

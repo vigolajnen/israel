@@ -122,7 +122,7 @@
         </div>
       </div>
     </section>
-    <section class="promo-form container lazy">
+    <section class="promo-form container">
       <div class="promo-form__info">
         <h2>Хочу поехать!</h2>
         <p>
@@ -149,6 +149,26 @@
           </label>
           <button type="submit">перезвоните мне</button>
         </form>
+
+        <div class="promo-form__pic">
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 768px)"
+              srcset="img/promo-form/girl-flag-bg-mob.webp 1x, img/promo-form/girl-flag-bg-mob@2x.webp 2x"
+            />
+            <!-- 1х: 818px; 2x: 1636px -->
+            <img
+              src="img/dummy/dummy-girl-flag.png"
+              srcset="img/promo-form/girl-flag-bg@2x.png 2x"
+              data-src="img/promo-form/girl-flag-bg.png"
+              width="818"
+              height="594"
+              alt="user"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
     </section>
     <section class="guide lazy">
