@@ -25,7 +25,7 @@
 
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout
-  var breakpoint = window.matchMedia( '(min-width:1340px)' );
+  var breakpoint = window.matchMedia( '(min-width:767px)' );
 
   // keep track of swiper instances to destroy later
   var mySwiper;
@@ -71,10 +71,6 @@
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-        },
-        960: {
-          slidesPerView: 4,
-          spaceBetween: 30,
         },
       }
 
