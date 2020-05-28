@@ -6,39 +6,31 @@
 
   background-image: url("../img/questions/bag.svg"),
     url("../img/questions/water-color-bg-min.png");
-  background-position: left bottom, 0 0;
-  background-size: 12%, 75% 100%;
+
+  background-position: left bottom, 100% 30%;
+  background-size: 12%, contain;
   background-repeat: no-repeat, no-repeat;
+
+  @media (max-width: 1640px) {
+    background-position: left bottom, 0 0;
+    background-size: 12%, 75% 100%;
+  }
 
   @media (max-width: 1366px) {
     background-position: left bottom, 0 0;
     background-size: 12%, cover;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 959px) {
     background-image: url("../img/questions/bag.svg");
     background-position: -7% 87%;
     background-size: 194px;
   }
 
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 0;
-
-    @media (max-width: $mobile) {
-      padding-right: 16px;
-    }
-
-    & h2 {
-      margin-bottom: 20px;
-    }
-  }
-
   &__pic {
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: auto;
+    align-self: flex-start;
     box-sizing: border-box;
 
     @media (max-width: 1640px) {
@@ -49,13 +41,27 @@
       justify-content: flex-end;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $table) {
+      position: relative;
+      top: 10%;
+      width: 40%;
+    }
+
+    @media (max-width: 959px) {
       display: none;
       width: 100%;
     }
 
     &--mask {
       position: relative;
+
+      @media (max-width: 1640px) {
+        position: absolute;
+      }
+
+      @media (max-width: $table) {
+        position: relative;
+      }
 
       &::before {
         content: "";
@@ -65,7 +71,7 @@
         width: 100%;
         height: 100%;
         max-height: 983px;
-        background-size: 100% 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-image: url("../img/questions/mask-bd.png");
 
@@ -74,22 +80,42 @@
     }
 
     & img {
-      width: 98%;
-      height: 99%;
-      margin: 2px;
-      margin-top: 2px;
+      display: block;
+      width: 99%;
+      height: auto;
+      margin: 3px;
       object-fit: contain;
     }
   }
 
+  &__accordion {
+    width: 50%;
+
+    @media (max-width: 959px) {
+      width: 100%;
+      padding: 0 10%;
+    }
+
+    @media (max-width: $mobile-xs) {
+      padding: 0;
+    }
+  }
+
   &__info {
-    margin-right: 50px;
-    width: calc(50% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
     box-sizing: border-box;
 
-    @media (max-width: $mobile) {
+    & h2 {
+      margin-bottom: 20px;
       width: 100%;
-      margin-right: 0;
+
+      @media (max-width: $table) {
+        text-align: center;
+      }
     }
   }
 }
