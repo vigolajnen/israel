@@ -179,8 +179,7 @@
       line-height: 26px;
       font-variant: small-caps;
 
-      color: #484848;
-      opacity: 0.5;
+      color: rgba(72, 72, 72, 0.5);
       border: 2px solid #e3e3e3;
       box-sizing: border-box;
       border-radius: 80px;
@@ -189,14 +188,16 @@
 
       &:focus {
         border-color: $warning-color;
+        color: rgba(72, 72, 72, 0.87);
       }
 
       &:valid {
-        border-color: $primary-color;
+        border-color: rgba(72, 72, 72, 0.5);
       }
 
       &::placeholder {
         font-family: $mainFontMedium;
+        color: rgba(72, 72, 72, 0.5);
       }
 
       &:focus:invalid {
