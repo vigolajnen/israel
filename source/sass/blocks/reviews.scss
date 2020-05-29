@@ -96,15 +96,35 @@
     overflow: hidden;
 
     @media (max-width: $mobile) {
-      top: 455px;
+      top: 470px;
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
     }
 
+    @media (max-width: 730px) {
+      top: 455px;
+    }
+
+    @media (max-width: 700px) {
+      top: 430px;
+    }
+
+    @media (max-width: 660px) {
+      top: 410px;
+    }
+
+    @media (max-width: 620px) {
+      top: 400px;
+    }
+
+    @media (max-width: 610px) {
+      top: 390px;
+    }
+
     @media (max-width: $mobile-xs) {
       bottom: auto;
-      top: 300px;
+      top: 320px;
       left: 50%;
       transform: translateX(-50%);
     }
