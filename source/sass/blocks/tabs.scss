@@ -56,23 +56,41 @@
 
       & .tabs__icon {
         &--star {
-          @include sprite($icon-1-g);
+          // @include sprite($icon-1-g);
+          width: 28px;
+          height: 33px;
+          background-position: -218px -63px;
         }
 
         &--hat {
-          @include sprite($icon-2-g);
+          // @include sprite($icon-2-g);
+          width: 36px;
+          height: 35px;
+          background-position: -106px -65px;
         }
 
         &--bag {
-          @include sprite($icon-3-g);
+          // @include sprite($icon-3-g);
+
+          width: 32px;
+          height: 25px;
+          background-position: -114px -162px;
         }
 
         &--hand {
-          @include sprite($icon-4-g);
+          // @include sprite($icon-4-g);
+
+          width: 32px;
+          height: 29px;
+          background-position: -10px -162px;
         }
 
         &--candles {
-          @include sprite($icon-5-g);
+          // @include sprite($icon-5-g);
+
+          width: 23px;
+          height: 25px;
+          background-position: -53px -211px;
         }
       }
     }
@@ -129,23 +147,38 @@
         }
 
         &--star {
-          @include sprite($icon-1-w);
+          // @include sprite($icon-1-w);
+          width: 28px;
+          height: 33px;
+          background-position: -218px -10px;
         }
 
         &--hat {
-          @include sprite($icon-2-w);
+          // @include sprite($icon-2-w);
+          width: 36px;
+          height: 35px;
+          background-position: -106px -10px;
         }
 
         &--bag {
-          @include sprite($icon-3-w);
+          // @include sprite($icon-3-w);
+          width: 32px;
+          height: 25px;
+          background-position: -162px -114px;
         }
 
         &--hand {
-          @include sprite($icon-4-w);
+          // @include sprite($icon-4-w);
+          width: 32px;
+          height: 29px;
+          background-position: -162px -65px;
         }
 
         &--candles {
-          @include sprite($icon-5-w);
+          // @include sprite($icon-5-w);
+          width: 23px;
+          height: 25px;
+          background-position: -10px -211px;
         }
       }
     }
@@ -207,24 +240,41 @@
   height: 20px;
   margin: 0 15px;
   box-sizing: border-box;
+  background-image: url("../img/css_sprites.png");
+  background-repeat: no-repeat;
 
   &--star {
-    @include sprite($icon-1-b);
+    // @include sprite($icon-1-b);
+    width: 28px;
+    height: 33px;
+    background-position: -218px -116px;
   }
 
   &--hat {
-    @include sprite($icon-2-b);
+    // @include sprite($icon-2-b);
+    width: 36px;
+    height: 35px;
+    background-position: -162px -10px;
   }
 
   &--bag {
-    @include sprite($icon-3-b);
+    // @include sprite($icon-3-b);
+    width: 32px;
+    height: 25px;
+    background-position: -166px -162px;
   }
 
   &--hand {
-    @include sprite($icon-4-b);
+    // @include sprite($icon-4-b);
+    width: 32px;
+    height: 29px;
+    background-position: -62px -162px;
   }
 
   &--candles {
-    @include sprite($icon-5-b);
+    // @include sprite($icon-5-b);
+    width: 23px;
+    height: 25px;
+    background-position: -96px -211px;
   }
 }

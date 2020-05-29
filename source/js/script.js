@@ -83,18 +83,6 @@
 
   });
 
-  function phoneCheck(form) {
-    var phone = form.querySelector('input[onkeyup]');
-    phone.parentElement.classList.add('input-phone');
-    console.log(phone.value.length);
-    if (phone.value.length < 17) {
-      phone.setCustomValidity('Введите номер телефона полностью');
-
-    } else {
-      phone.setCustomValidity('');
-    }
-  }
-
   if (popupOpenBtn) {
     popupOpenBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -150,47 +138,15 @@
   }
 
   forms.forEach(function (form) {
-    
-
     form.addEventListener('submit', function (evt) {
       evt.preventDefault();
       // валидируем форму;
-
-      var btn = form.querySelector('button');
-      btn.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        var target = evt.target;
-        var inputs = form.querySelectorAll('input');
-        console.log(target);
-    
-          var phone = form.querySelector('input[onkeyup]');
-          phone.parentElement.classList.add('input-phone');
-          console.log(phone.value.length);
-
-          inputs.forEach(function (input) {
-            if (!input.value) {
-              
-              form.classList.add('invalid');
-              input.setCustomValidity('Заполните поле');
-            } else {
-
-              if (phone.value.length < 17) {
-                phone.setCustomValidity('Введите номер телефона полностью');
-                form.classList.add('invalid');
-              } else {
-                form.classList.remove('invalid');
-              }
-
-            }
-
-          });
-      });
 
       if (!inputName.value) {
         evt.preventDefault();
         inputName.setCustomValidity('Нужно ввести имя');
         inputName.classList.add('invalid');
-        
+
       } else if (!inputPhone.value && inputPhone.value.length < 17) {
         inputPhone.setCustomValidity('Введите номер телефона полностью');
         inputPhone.classList.add('invalid');

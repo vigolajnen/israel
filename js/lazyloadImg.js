@@ -1,7 +1,4 @@
 window.onload = function () {
-  document.addEventListener('scroll', function () {
-    document.body.style.backgroundPosition = 'center ' + window.pageYOffset * 0.5 + 'px ';
-  });
 
   var images = document.querySelectorAll('[data-src]');
 

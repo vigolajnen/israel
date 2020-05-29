@@ -40,6 +40,7 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.watch("source/js/**/*.js", gulp.series("copy"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
@@ -121,14 +122,13 @@ gulp.task("copy", function () {
 
 gulp.task('scripts', function() {
   return gulp.src([
+    './js/lazyload.js',
     './js/svg4everybody.js',
     './js/mask.js',
     './node_modules/picturefill/dist/picturefill.js',
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',
     './js/scroll.js',
-    './js/lazyloadBg.js',
-    './js/lazyloadImg.js',
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
@@ -138,5 +138,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "sprite-png", "html", "scripts"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts"));
 gulp.task("start", gulp.series("build", "server"));
