@@ -13,14 +13,12 @@
   }
 
   var itemTabs = document.querySelectorAll('.tabs__item');
-  var itemTabsTitle = document.querySelector('.tabs__content h3');
 
   if (itemTabs) {
     itemTabs.forEach(function (item) {
       item.addEventListener('click', function (evt) {
-        var target = evt.target;
-        itemTabsTitle.innerText = target.innerText;
-
+        evt.preventDefault();
+        document.querySelector('.tabs__content h3').innerText = evt.currentTarget.innerText;
         var activeItem = document.querySelector('.tabs__item.tabs__item--active');
         activeItem.classList.remove('tabs__item--active');
         item.classList.add('tabs__item--active');
