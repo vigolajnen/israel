@@ -127,7 +127,7 @@
       evt.preventDefault();
       var target = evt.target;
 
-      if ((target.className === 'popup popup--active') || (target.className === 'popup__btn-close')) {
+      if ((target.className === 'popup popup--active') || (target.tagName === 'BUTTON')) {
         popup.classList.remove('popup--active');
         page.classList.remove('page--overlay');
 
@@ -161,10 +161,10 @@
 
       // показываем попап;
       poupOpen(popupApplication);
-      popupApplication.classList.add('popup--application');
 
       if (popupApplication.classList.contains('popup--active') && popupForm.classList.contains('popup--active')) {
         popupForm.classList.remove('popup--active');
+        popupApplication.classList.add('popup--application');
       }
 
       popupClose(popupApplication, form);

@@ -56,10 +56,11 @@
 
     mySwiper = new Swiper ('#live', {
       slidesPerView: 1,
+      grabCursor: true,
+      spaceBetween: 0,
       loop: true,
       centeredSlides: true,
       keyboardControl: true,
-      grabCursor: true,
 
       pagination: {
         el: '.swiper-pagination',

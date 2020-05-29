@@ -42,12 +42,6 @@
     background-size: 100% 50%, 101% 50%, 265px, 110%, cover;
   }
 
-  // &.lazy {
-  //   background-image: none;
-  //   background: url("../img/dummy/dummy-promo-bg.jpg");
-  //   background-size: cover;
-  // }
-
   &__nav {
     width: 100%;
     margin-bottom: auto;
@@ -74,6 +68,19 @@
 
     @media (max-width: $table) {
       min-height: auto;
+    }
+
+    & h1 {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      white-space: nowrap;
+      border: 0;
+      clip-path: inset(100%);
     }
 
     & p {
