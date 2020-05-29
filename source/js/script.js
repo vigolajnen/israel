@@ -182,7 +182,42 @@
     });
   }
 
+  function generateError(text) {
+    var error = document.createElement('div');
+    error.className = 'error__text';
+    error.innerText = text;
+    return error;
+  }
+
+  function checkFieldsPresence(inputs) {
+    for (var i = 0; i < inputs.length; i++) {
+      if (!inputs[i].value || (inputs[i].type === 'checkbox' && !inputs[i].checked)) {
+        inputs[i].parentElement.classList.add('error');
+        var error = generateError('Ошибка: заполните поле');
+        inputs[i].parentElement.appendChild(error, inputs[i]);
+      }
+
+    }
+  }
+
+  function removeValidation(form) {
+    var errors = form.querySelectorAll('.error__text');
+
+    for (var i = 0; i < errors.length; i++) {
+      errors[i].parentElement.classList.remove('error');
+      errors[i].remove();
+    }
+  }
+
   forms.forEach(function (form) {
+    var inputs = form.querySelectorAll('input');
+    form.addEventListener('click', function (evt) {
+      if (evt.target.tagName === 'BUTTON') {
+        removeValidation(form);
+        checkFieldsPresence(inputs);
+      }
+    });
+
     form.addEventListener('submit', function (evt) {
       evt.preventDefault();
       // валидируем форму;
@@ -190,12 +225,9 @@
       if (!inputName.value) {
         evt.preventDefault();
         inputName.setCustomValidity('Нужно ввести имя');
-        inputName.classList.add('invalid');
 
       } else if (!inputPhone.value && inputPhone.value.length < 17) {
         inputPhone.setCustomValidity('Введите номер телефона полностью');
-        inputPhone.classList.add('invalid');
-        inputName.classList.remove('invalid');
       } else {
         inputPhone.classList.remove('invalid');
         if (isStorageSupport) {
@@ -218,4 +250,5 @@
       return false; // предотвращаем отправку формы и перезагрузку страницы
     });
   });
+
 })();

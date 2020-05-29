@@ -49,6 +49,7 @@
   &__form {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     width: 67%;
     box-sizing: border-box;
@@ -80,6 +81,10 @@
           left: 55px;
           bottom: 10px;
         }
+      }
+
+      &.error::before {
+        bottom: 33px;
       }
     }
 
@@ -127,6 +132,7 @@
 
     & button {
       width: 27%;
+      min-height: 60px;
       margin-bottom: 20px;
       padding: 10px 20px;
       font-style: normal;
@@ -152,7 +158,8 @@
       }
 
       &:active {
-        background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+        background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
+          linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
       }
 
       @media (max-width: $mobile) {

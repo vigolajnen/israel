@@ -163,6 +163,10 @@
           left: 61px;
         }
       }
+
+      &.error::before {
+        bottom: 33px;
+      }
     }
 
     & input {
