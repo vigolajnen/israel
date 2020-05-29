@@ -19,6 +19,12 @@
     display: flex;
   }
 
+  &--application {
+    & .popup__wrapper {
+      padding: 100px 48px;
+    }
+  }
+
   &__wrapper {
     position: relative;
     padding: 100px 72px 100px 48px;
@@ -121,7 +127,6 @@
 
       color: #484848;
       opacity: 0.74;
-
 
       @media (max-width: $mobile) {
         padding: 0;

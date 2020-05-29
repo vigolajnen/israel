@@ -161,12 +161,14 @@
 
       // показываем попап;
       poupOpen(popupApplication);
+      popupApplication.classList.add('popup--application');
 
       if (popupApplication.classList.contains('popup--active') && popupForm.classList.contains('popup--active')) {
         popupForm.classList.remove('popup--active');
       }
 
       popupClose(popupApplication, form);
+      popupApplication.classList.remove('popup--application');
 
       return false; // предотвращаем отправку формы и перезагрузку страницы
     });

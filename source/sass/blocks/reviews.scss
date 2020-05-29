@@ -40,15 +40,18 @@
 
     & .swiper-pagination {
       width: 50%;
+      bottom: 0;
     }
 
     & .swiper-button-prev,
     & .swiper-button-next {
-      height: 50px;
+      height: 25px;
 
       top: 49%;
+      bottom: 0;
 
       width: 25%;
+      margin-top: 0;
 
       outline: none;
 
@@ -74,11 +77,12 @@
 
     & .swiper-button-prev {
       left: 50%;
+      top: 0;
     }
 
     & .swiper-button-next {
-      top: 35%;
-      transform: rotate(-180deg);
+      top: 0;
+      transform: rotate(-180deg) translateY(7px);
     }
   }
 
@@ -86,9 +90,10 @@
     z-index: 5;
     position: absolute;
     width: 128px;
-    height: 45px;
+    height: 25px;
     bottom: -2px;
     left: 33%;
+    overflow: hidden;
 
     @media (max-width: $mobile) {
       top: 455px;
