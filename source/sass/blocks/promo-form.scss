@@ -157,6 +157,12 @@
       max-width: 100%;
       margin-bottom: 8px;
       box-sizing: border-box;
+
+      &.input-phone {
+        &::before {
+          left: 61px;
+        }
+      }
     }
 
     & input {
