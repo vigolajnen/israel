@@ -1,7 +1,5 @@
 .questions {
   position: relative;
-
-  padding-top: 81px;
   padding-bottom: 100px;
 
   overflow: hidden;
@@ -42,7 +40,7 @@
 
     @media (max-width: 1640px) {
       position: absolute;
-      top: 8%;
+      top: 0;
       right: 0;
       display: flex;
       justify-content: flex-end;
@@ -113,6 +111,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 81px;
     width: 100%;
     box-sizing: border-box;
 
