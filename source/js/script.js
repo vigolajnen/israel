@@ -67,12 +67,12 @@
     isStorageSupport = false;
   }
 
-  var phones = document.querySelectorAll('input[onkeyup]');
+  var phones = document.querySelectorAll('input[name$="phone"]');
   phones.forEach(function (phone) {
     phone.addEventListener('input', function () {
       phone.parentElement.classList.add('input-phone');
       // console.log(phone.value.length);
-      if (phone.value.length < 17) {
+      if (phone.value.length < 16) {
         phone.setCustomValidity('Введите номер телефона полностью');
 
       } else {
@@ -204,5 +204,4 @@
       return false; // предотвращаем отправку формы и перезагрузку страницы
     });
   });
-
 })();
