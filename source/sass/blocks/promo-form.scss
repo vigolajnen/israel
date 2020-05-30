@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 18%;
   padding-bottom: 200px;
 
   box-sizing: border-box;
@@ -40,7 +41,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 18%;
     padding-left: 100px;
     max-width: 575px;
     width: 50%;
@@ -155,7 +155,6 @@
     & label {
       display: block;
       max-width: 100%;
-      margin-bottom: 8px;
       box-sizing: border-box;
 
       &.input-phone {

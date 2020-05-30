@@ -1,7 +1,7 @@
 .questions {
   position: relative;
+  padding-top: 100px;
   padding-bottom: 100px;
-
   overflow: hidden;
 
   background-image: url("../img/questions/bag.svg"),
@@ -40,7 +40,7 @@
 
     @media (max-width: 1640px) {
       position: absolute;
-      top: 0;
+      top: 100px;
       right: 0;
       display: flex;
       justify-content: flex-end;
@@ -111,7 +111,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 81px;
     width: 100%;
     box-sizing: border-box;
 
