@@ -195,6 +195,14 @@
       padding-top: 30px;
     }
 
+    &--show {
+      display: block;
+    }
+
+    &--hide {
+      display: none;
+    }
+
     & h3 {
       margin: 0;
       margin-bottom: 24px;

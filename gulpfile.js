@@ -122,9 +122,9 @@ gulp.task("copy", function () {
 
 gulp.task('scripts', function() {
   return gulp.src([
+    './js/mask.js',
     './js/lazyload.js',
     './js/svg4everybody.js',
-    './js/mask.js',
     './node_modules/picturefill/dist/picturefill.js',
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',

@@ -12,19 +12,44 @@
     };
   }
 
-  var itemTabs = document.querySelectorAll('.tabs__item');
 
-  if (itemTabs) {
-    itemTabs.forEach(function (item) {
-      item.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        document.querySelector('.tabs__content h3').innerText = evt.currentTarget.innerText;
+  var tab; // заголовок вкладки
+  var tabContent; // блок содержащий контент вкладки
 
-        var activeItem = document.querySelector('.tabs__item.tabs__item--active');
-        activeItem.classList.remove('tabs__item--active');
-        item.classList.add('tabs__item--active');
-      });
-    });
+  window.onload = function () {
+    tabContent = document.getElementsByClassName('tabs__content');
+    tab = document.getElementsByClassName('tabs__item');
+    hideTabsContent(1);
+    showTabsContent(1);
+  };
+
+  function hideTabsContent(a) {
+    for (var i = a; i < tabContent.length; i++) {
+      tabContent[i].classList.remove('tabs__content--show');
+      tabContent[i].classList.add('tabs__content--hide');
+      tab[i].classList.remove('tabs__item--active');
+    }
+  }
+
+  document.querySelector('.tabs').onclick = function (event) {
+    var target = event.target;
+    if (target.className === 'tabs__item') {
+      for (var i = 0; i < tab.length; i++) {
+        if (target === tab[i]) {
+          showTabsContent(i);
+          break;
+        }
+      }
+    }
+  };
+
+  function showTabsContent(b) {
+    if (tabContent[b].classList.contains('tabs__content--hide')) {
+      hideTabsContent(0);
+      tab[b].classList.add('tabs__item--active');
+      tabContent[b].classList.remove('tabs__content--hide');
+      tabContent[b].classList.add('tabs__content--show');
+    }
   }
 
   var accordion = document.querySelector('.accordion');

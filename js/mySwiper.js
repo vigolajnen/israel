@@ -18,6 +18,30 @@
 
 })();
 
+// (function () {
+
+//   var mySwiper = new Swiper('#live', {
+//     slidesPerView: 1,
+//     spaceBetween: 0,
+
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+//     breakpoints: {
+//         640: {
+//           slidesPerView: 2,
+//           spaceBetween: 20,
+//         },
+//         768: {
+//           slidesPerView: 5,
+//           spaceBetween: 20,
+//         },
+//       }
+//   });
+
+// })();
+
 
 (function() {
 
@@ -58,14 +82,10 @@
       slidesPerView: 1,
       grabCursor: true,
       spaceBetween: 0,
-      loop: true,
-      centeredSlides: true,
-      keyboardControl: true,
 
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        paginationClickable: true,
       },
 
       breakpoints: {
