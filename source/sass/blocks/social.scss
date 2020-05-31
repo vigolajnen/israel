@@ -11,6 +11,10 @@
   &__item {
     margin-right: 15px;
 
+    &:first-child {
+      margin-right: 7px;
+    }
+
     &:last-child {
       margin-right: 0;
     }

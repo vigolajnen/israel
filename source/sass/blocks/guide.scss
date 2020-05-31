@@ -1,6 +1,6 @@
 .guide {
   position: relative;
-  padding-top: 100px;
+  padding-top: 102px;
 
   overflow: hidden;
 
@@ -30,8 +30,8 @@
     padding-top: 82px;
     background-image: url("../img/guide/icon-pass.png");
     background-repeat: no-repeat;
-    background-size: 264px 199px;
-    background-position: 115% 45%, 0;
+    background-size: 238px 204px;
+    background-position: 135% 51%, 0;
   }
 
   &.lazy {
@@ -45,7 +45,6 @@
     justify-content: flex-end;
 
     padding-left: 0;
-    // padding-top: 145px;
     padding-bottom: 90px;
 
     @media (max-width: $table) {
@@ -55,8 +54,8 @@
 
   &__pic {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -19px;
+    left: 10px;
     width: 43%;
     height: 100%;
     box-sizing: border-box;
@@ -98,12 +97,8 @@
     }
 
     & img {
-      display: block;
       width: 100%;
       height: auto;
-      max-width: 98%;
-      max-height: 98%;
-      margin: 2px;
       object-fit: contain;
     }
   }
@@ -134,13 +129,17 @@
 
     & h2 {
       margin: 0;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       padding-left: 22px;
       width: 100%;
 
       @media (max-width: $table) {
         padding: 0 16px;
         text-align: center;
+      }
+
+      @media (max-width: $mobile) {
+        margin-bottom: 25px;
       }
     }
 
@@ -170,7 +169,7 @@
 
   &__list {
     padding-right: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 
     @media (max-width: $table) {
       align-self: flex-start;
@@ -200,7 +199,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding-bottom: 35px;
+      padding-bottom: 34px;
       min-height: 42px;
       padding-left: 65px;
 

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 18%;
+  padding-top: 14%;
   padding-bottom: 200px;
 
   box-sizing: border-box;
@@ -15,13 +15,14 @@
 
   @media (max-width: $mobile) {
     padding: 0;
+    padding-top: 30px;
     overflow: hidden;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 35%;
+    top: 22%;
     left: 10px;
     width: 167px;
     height: 226px;
@@ -33,7 +34,13 @@
     transform: rotate(15deg);
 
     @media (max-width: 1366px) {
-      left: -14.51px;
+      left: -45.51px;
+    }
+
+    @media (max-width: $mobile) {
+      top: -13px;
+      width: 131px;
+      height: 182px;
     }
   }
 
@@ -64,10 +71,11 @@
     }
 
     & h2 {
-      margin-bottom: 24px;
+      margin-bottom: 27px;
 
       @media (max-width: $mobile) {
         padding: 0 16px;
+        margin-bottom: 24px;
       }
     }
 
@@ -103,7 +111,7 @@
   &__pic {
     z-index: -1;
     position: absolute;
-    top: 0;
+    top: -16px;
     right: 0;
     width: 60%;
     height: auto;
@@ -157,6 +165,10 @@
       max-width: 100%;
       box-sizing: border-box;
 
+      @media (max-width: $mobile) {
+        margin-bottom: 8px;
+      }
+
       &.input-phone {
         &::before {
           left: 61px;
@@ -169,7 +181,7 @@
     }
 
     & input {
-      padding: 10px 40px;
+      padding: 14px 40px;
       width: 100%;
       max-width: 100%;
       min-height: 50px;
@@ -212,7 +224,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      padding: 12px 40px;
+      padding: 15px 35px;
       font-weight: 500;
       font-size: 17px;
       line-height: 26px;

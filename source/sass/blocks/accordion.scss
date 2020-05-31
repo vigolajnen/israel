@@ -43,6 +43,10 @@
     font-size: 85px;
     padding-top: 4px;
     line-height: 170%;
+
+    @media (max-width: $mobile) {
+      padding-top: 0;
+    }
   }
 
   &__item-header {
@@ -56,6 +60,11 @@
       padding-right: 0;
     }
 
+    @media (max-width: $mobile) {
+      padding-top: 31px;
+      padding-bottom: 15px;
+    }
+
     &:hover {
       cursor: pointer;
     }
@@ -63,7 +72,7 @@
     & h3 {
       margin: 0;
       padding-left: 10px;
-      width: 75%;
+      width: 72%;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -71,7 +80,7 @@
       color: $primary-color;
 
       @media (max-width: $mobile) {
-        width: 85%;
+        width: 83%;
         font-size: 16px;
         line-height: 160%;
       }
@@ -84,6 +93,10 @@
     height: 20px;
     fill: transparent;
     margin-left: auto;
+
+    @media (max-width: $mobile) {
+      padding-top: 0;
+    }
   }
 
   &__item-text {
@@ -99,5 +112,9 @@
 
     color: $primary-color;
     opacity: 0.74;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 6px;
+    }
   }
 }

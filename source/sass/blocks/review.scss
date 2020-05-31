@@ -36,25 +36,6 @@
       width: 100%;
     }
 
-    // &--mask {
-    //   position: relative;
-
-    //   &::before {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     max-height: 528px;
-    //     background-size: 100% 100%;
-    //     background-repeat: no-repeat;
-    //     background-image: url("../img/reviews/review-mask.png");
-
-    //     overflow: hidden;
-    //   }
-    // }
-
     & img {
       width: 100%;
       max-width: 354px;
@@ -77,6 +58,10 @@
     color: $primary-color;
     opacity: 0.74;
 
+    @media (max-width: $mobile) {
+      margin-bottom: 23px;
+    }
+
     & span {
       color: $secondary-color;
     }
@@ -97,6 +82,7 @@
     }
 
     @media (max-width: $mobile) {
+      padding-top: 57px;
       width: 100%;
       align-items: center;
     }
@@ -119,6 +105,7 @@
       }
 
       @media (max-width: $mobile) {
+        margin-bottom: 27px;
         text-align: left;
         font-size: 16px;
         line-height: 160%;
@@ -129,6 +116,10 @@
   &__header {
     @media (max-width: $mobile) {
       text-align: center;
+    }
+
+    @media (max-width: $mobile-xs) {
+      text-align: left;
     }
 
     & h3 {

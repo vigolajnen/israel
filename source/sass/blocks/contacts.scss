@@ -5,17 +5,18 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding-bottom: 50px;
-  padding-top: 45px;
+  padding-top: 23px;
 
   @media (max-width: $mobile) {
     padding-bottom: 0;
+    padding-top: 37px;
   }
 
   & h2 {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 
-    letter-spacing: 1.5px;
+    letter-spacing: -0.02em;
 
     @media (max-width: $mobile) {
       margin-bottom: 24px;
@@ -42,6 +43,8 @@
       opacity: 0.87;
 
       @media (max-width: $mobile) {
+        margin-bottom: 0;
+        padding-right: 35px;
         font-size: 16px;
         line-height: 160%;
       }
@@ -120,6 +123,7 @@
 
     @media (max-width: $mobile) {
       width: 100%;
+      padding-top: 14px;
     }
 
     & p {
@@ -170,7 +174,7 @@
 
   &__map {
     position: absolute;
-    top: 0;
+    top: -18px;
     right: 0;
     width: 51%;
     min-height: 448px;
@@ -183,6 +187,7 @@
 
     @media (max-width: $table) {
       position: relative;
+      top: 0;
       width: 100%;
 
       background-image: url("../img/contacts/map-mob.png");

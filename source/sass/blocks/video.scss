@@ -1,6 +1,5 @@
 .video {
   position: relative;
-  padding-top: 8px;
   padding-bottom: 96px;
 
   box-sizing: border-box;
@@ -12,8 +11,8 @@
   background-image: url("../img/video/watercolor-bg-min.png");
 
   @media (max-width: $mobile) {
-    padding-top: 28px;
-    padding-bottom: 50px;
+    padding-top: 33px;
+    padding-bottom: 46px;
     background-image: url("../img/video/watercolor-bg-mob.png");
     background-position: right 50%;
   }
@@ -30,7 +29,8 @@
     }
 
     & h2 {
-      margin-bottom: 24px;
+      line-height: 29px;
+      margin-bottom: 32px;
     }
 
     & p {

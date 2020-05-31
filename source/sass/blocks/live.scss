@@ -34,12 +34,18 @@
   }
 
   &__header {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     text-align: center;
 
     & h2 {
-      margin-bottom: 24px;
+      margin-bottom: 26px;
+
+      & span {
+        @media (max-width: $mobile) {
+          display: block;
+        }
+      }
     }
 
     & p {
@@ -62,6 +68,16 @@
   }
 
   &__slider {
+    margin-top: -16px;
+
+    @media (max-width: $desktop) {
+      margin-top: 0;
+    }
+
+    & .swiper-pagination {
+      bottom: 0;
+    }
+
     & .swiper-pagination-bullet-active {
       background-color: $warning-color;
     }
@@ -71,7 +87,7 @@
       flex-wrap: wrap;
       align-items: bottom;
       justify-content: center;
-      padding-left: 37%;
+      padding-left: 43%;
       padding-top: 60px;
       box-sizing: border-box;
 
@@ -80,7 +96,8 @@
       }
 
       @media (max-width: 767px) {
-        padding-bottom: 40px;
+        padding-top: 48px;
+        padding-bottom: 3px;
         flex-wrap: nowrap;
         align-items: flex-start;
         justify-content: flex-start;
@@ -91,16 +108,42 @@
   &__slide {
     position: relative;
     width: auto;
+    margin-bottom: 24px;
 
     &:first-child {
       position: absolute;
-      top: 0;
+      top: -18px;
       left: 0;
-      width: 41%;
+      width: 42%;
 
       @media (max-width: 1340px) {
         position: relative;
         width: 30%;
+      }
+
+      & h3 {
+        padding: 0 30px 49px 29px;
+
+        @media (max-width: $mobile) {
+          padding: 0 4px 35px;
+          font-weight: 700;
+        }
+
+        & span {
+          display: block;
+
+          @media (max-width: $mobile) {
+            display: contents;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      margin-right: 30px;
+
+      @media (max-width: 767px) {
+        margin-right: 0;
       }
     }
 
@@ -111,6 +154,7 @@
     @media (max-width: 767px) {
       order: 0;
       width: 100%;
+      margin-bottom: 0;
     }
 
     &--horiz {
@@ -133,18 +177,18 @@
 
     & h3 {
       position: absolute;
-      bottom: 10%;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
 
       margin: 0;
       width: 95%;
 
-      padding: 0 0 0 10px;
+      padding: 0 20px 40px 18px;
 
       font-family: $mainFontTitle;
       font-style: normal;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 21px;
       line-height: 25px;
 
@@ -155,7 +199,7 @@
       box-sizing: border-box;
 
       @media (max-width: $mobile) {
-        padding: 0;
+        padding: 0 0 45px;
         width: auto;
         min-width: 215px;
         font-weight: 800;

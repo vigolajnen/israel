@@ -1,6 +1,6 @@
 .questions {
   position: relative;
-  padding-top: 100px;
+  padding-top: 132px;
   padding-bottom: 100px;
   overflow: hidden;
 
@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $mobile-xs) {
-    padding-top: 53px;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 
@@ -40,7 +40,7 @@
 
     @media (max-width: 1640px) {
       position: absolute;
-      top: 100px;
+      top: 130px;
       right: 0;
       display: flex;
       justify-content: flex-end;
