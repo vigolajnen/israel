@@ -90,66 +90,74 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 96px;
-    height: 96px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
-    background-color: transparent;
+    background-color: #ffffff;
     border-radius: 50%;
 
     outline: none;
+    cursor: pointer;
+
+    @media (max-width: $mobile) {
+      width: 53.33px;
+      height: 53.33px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 96px;
+      height: 96px;
+      background-color: #ffffff;
+      opacity: 0.32;
+      border-radius: 50%;
+
+      @media (max-width: $mobile) {
+        width: 80px;
+        height: 80px;
+      }
+    }
 
     &:focus,
     &:hover {
-      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 
-      & .video__svg-inner {
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-      }
-
-      & .video__svg-play {
+      & .video__svg {
         fill: #63d3fd;
       }
     }
 
     &:active {
-      & .video__svg-inner {
-        opacity: 0.32;
-        fill: #f4f4f4;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-      }
+      background-color: #f4f4f4;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 
-      & .video__svg-play {
-        fill: $secondary-color;
+      & .video__svg {
+        fill: #1fc0fc;
       }
     }
   }
 
   &__svg {
-    width: 100%;
-    height: 100%;
-  }
+    z-index: 1;
+    position: relative;
 
-  &__svg-wrapper {
-    opacity: 0.32;
-    fill: $default-color;
-  }
-
-  &__svg-inner {
-    fill: $default-color;
-    box-shadow: none;
-  }
-
-  &__svg-play {
+    width: 15px;
+    height: 19px;
     fill: $secondary-color;
-  }
 
-  &__mask {
-    width: 700px;
-    height: 400px;
-    max-width: 100%;
+    box-sizing: border-box;
 
     @media (max-width: $mobile) {
-      height: auto;
+      width: 12.5px;
+      height: 15.83px;
     }
   }
 }

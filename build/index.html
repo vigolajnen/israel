@@ -41,10 +41,8 @@
       </div>
       <div class="video__media container lazy">
         <button class="video__btn" type="button" aria-label="Кнопка play">
-          <svg class="video__svg" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="video__svg-wrapper" cx="48" cy="48" r="48"></circle>
-            <circle class="video__svg-inner" cx="48" cy="48" r="32"></circle>
-            <path class="video__svg-play" d="M58 47.5L43 57V38L58 47.5Z"></path>
+          <svg class="video__svg" width="15" height="19">
+            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
           </svg>
         </button>
       </div>
@@ -242,7 +240,9 @@
         <div id="live" class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide live__slide">
-              <h3><span>Экскурсии по Израилю</span> и знакомство с его историей</h3>
+              <h3>
+                <span>Экскурсии по Израилю</span> и знакомство с его историей
+              </h3>
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                     img/live/excursions.webp    1x,
@@ -263,10 +263,7 @@
             <div class="swiper-slide live__slide live__slide--horiz">
               <h3>Обучение современным навыкам и профессиям</h3>
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/live/skills.webp    1x,
-                    img/live/skills@2x.webp 2x
-                  ">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/live/skills.webp 1x, img/live/skills@2x.webp 2x">
                 <!-- 1х: 280px; 2x: 560px -->
                 <img src="img/live/skills-mob.png" srcset="img/live/skills-mob@2x.png 2x" width="280" height="400" alt="Обучение современным навыкам и профессиям" loading="lazy">
               </picture>

@@ -95,8 +95,7 @@
   var phones = document.querySelectorAll('input[name$="phone"]');
   phones.forEach(function (phone) {
     phone.addEventListener('input', function () {
-      
-      console.log(phone.value.length);
+      // console.log(phone.value.length);
       if (phone.value.length < 18) {
         phone.setCustomValidity('Введите 222 номер телефона полностью');
 
