@@ -2,14 +2,17 @@
   position: relative;
 
   &::before {
-    content: "_____ ___ __ __";
+    content: " ";
     position: absolute;
-    bottom: 6px;
+    top: 40px;
     left: 40px;
-    color: rgba(72, 72, 72, 0.5);
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0;
+
+    width: 240px;
+    height: 3px;
+    background-size: 36px, 24px, 16px, 16px;
+    background-image: url("../img/icons/icon-tel-bd.svg"), url("../img/icons/icon-tel-bd-1.svg"), url("../img/icons/icon-tel-bd-2.svg"), url("../img/icons/icon-tel-bd-3.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 23px 0, 65px 0, 95px 0, 117px 0;
   }
 
   & input:focus::placeholder {

@@ -171,7 +171,9 @@
 
       &.input-phone {
         &::before {
-          left: 61px;
+          top: 42px;
+          left: 45px;
+          background-position: 23px 0, 70px 0, 100px 0, 125px 0;
         }
       }
 

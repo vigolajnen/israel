@@ -95,14 +95,24 @@
   var phones = document.querySelectorAll('input[name$="phone"]');
   phones.forEach(function (phone) {
     phone.addEventListener('input', function () {
-      phone.parentElement.classList.add('input-phone');
-      // console.log(phone.value.length);
-      if (phone.value.length < 16) {
-        phone.setCustomValidity('Введите номер телефона полностью');
+      
+      console.log(phone.value.length);
+      if (phone.value.length < 18) {
+        phone.setCustomValidity('Введите 222 номер телефона полностью');
 
       } else {
         phone.setCustomValidity('');
       }
+    });
+
+    phone.addEventListener('focus', function (evt) {
+      evt.preventDefault();
+      phone.parentElement.classList.add('input-phone');
+    });
+
+    phone.addEventListener('blur', function (evt) {
+      evt.preventDefault();
+      phone.parentElement.classList.remove('input-phone');
     });
 
   });
@@ -175,7 +185,13 @@
         var error = generateError('Ошибка: заполните поле');
         inputs[i].parentElement.appendChild(error, inputs[i]);
       }
-
+      if (inputs[i].getAttribute('placeholder') === 'телефон') {
+        if (inputs[i].value.length < 18) {
+          inputs[i].setCustomValidity('Введите номер телефона полностью');
+        } else {
+          inputs[i].setCustomValidity('');
+        }
+      }
     }
   }
 

@@ -3,7 +3,7 @@
   phoneInputs.forEach(function (phoneInput) {
     phoneInput.addEventListener('keydown', function (event) {
       if (!(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace' || event.key == 'Tab')) { event.preventDefault() }
-      var mask = '+7 (111) 111-11-11'; // Задаем маску
+      var mask = '+7 (111) 111 11 11'; // Задаем маску
     
       if (/[0-9\+\ \-\(\)]/.test(event.key)) {
         // Здесь начинаем сравнивать this.value и mask

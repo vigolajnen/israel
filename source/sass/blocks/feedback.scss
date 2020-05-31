@@ -77,6 +77,10 @@
       margin-bottom: 20px;
       box-sizing: border-box;
 
+      @media (max-width: $table) {
+        width: 32%;
+      }
+
       @media (max-width: $mobile) {
         width: 100%;
         margin-bottom: 8px;
@@ -85,8 +89,7 @@
 
       &.input-phone {
         &::before {
-          left: 55px;
-          bottom: 10px;
+          background-position: 23px 0, 65px 0, 100px 0, 122px 0;
         }
       }
 
@@ -96,7 +99,7 @@
     }
 
     & input {
-      padding: 16px 20px 14px 38px;
+      padding: 16px 35px 14px 38px;
       width: 100%;
       font-family: $mainFontMedium;
       font-style: normal;

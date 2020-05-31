@@ -75,7 +75,12 @@
     }
 
     & .swiper-pagination {
+      display: none;
       bottom: 0;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
     }
 
     & .swiper-pagination-bullet-active {
@@ -90,6 +95,10 @@
       padding-left: 43%;
       padding-top: 60px;
       box-sizing: border-box;
+
+      @media (max-width: 1363px) {
+        padding-left: 40%;
+      }
 
       @media (max-width: 1340px) {
         padding-left: 0;
@@ -158,6 +167,12 @@
     }
 
     &--horiz {
+      &:nth-of-type(even) {
+        @media (max-width: 1340px) {
+          margin-right: 0;
+        }
+      }
+
       @media (max-width: 1340px) {
         order: 2;
         width: 50%;
