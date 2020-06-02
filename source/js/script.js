@@ -92,12 +92,55 @@
     isStorageSupport = false;
   }
 
+  function maskPhone(inputPhoneName, mask) {
+    var textArr = document.querySelectorAll(inputPhoneName);
+
+    textArr.forEach(function (text) {
+      // var text = document.querySelector(inputPhoneName);
+      var value = text.value;
+
+      var literalPattern = /[0\*]/;
+      var numberPattern = /[0-9]/;
+      var newValue = '';
+
+      for (var vId = 0, mId = 0; mId < mask.length;) {
+
+        if (mId >= value.length) {
+          break;
+        }
+
+        if (mask[mId] === '0' && value[vId].match(numberPattern) === null) {
+          break;
+        }
+
+        // Found a literal
+        while (mask[mId].match(literalPattern) === null) {
+          if (value[vId] === mask[mId]) {
+            break;
+          }
+
+          newValue += mask[mId++];
+        }
+
+        newValue += value[vId++];
+        mId++;
+
+      }
+
+      text.value = newValue;
+    });
+
+  }
+
   var phones = document.querySelectorAll('input[name$="phone"]');
   phones.forEach(function (phone) {
+    phone.addEventListener('keyup', function () {
+      maskPhone('input[name$="phone"]', '+7(000) 000 00 00');
+    });
     phone.addEventListener('input', function () {
       // console.log(phone.value.length);
-      if (phone.value.length < 18) {
-        phone.setCustomValidity('Введите 222 номер телефона полностью');
+      if (phone.value.length < 17) {
+        phone.setCustomValidity('Введите номер телефона полностью');
 
       } else {
         phone.setCustomValidity('');
@@ -185,7 +228,7 @@
         inputs[i].parentElement.appendChild(error, inputs[i]);
       }
       if (inputs[i].getAttribute('placeholder') === 'телефон') {
-        if (inputs[i].value.length < 18) {
+        if (inputs[i].value.length < 17) {
           inputs[i].setCustomValidity('Введите номер телефона полностью');
         } else {
           inputs[i].setCustomValidity('');
