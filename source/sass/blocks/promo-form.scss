@@ -165,7 +165,7 @@
       max-width: 100%;
       box-sizing: border-box;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $table) {
         margin-bottom: 8px;
       }
 
@@ -173,7 +173,7 @@
         &::before {
           top: 42px;
           left: 45px;
-          background-position: 23px 0, 70px 0, 100px 0, 125px 0;
+          background-position: 18px 0, 65px 0, 95px 0, 120px 0;
         }
       }
 
