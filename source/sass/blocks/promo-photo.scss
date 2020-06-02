@@ -16,6 +16,7 @@
 
   @media (max-width: 1920px) {
     padding-top: 14.2%;
+    padding-bottom: 15%;
     min-height: 660px;
   }
 
@@ -27,6 +28,7 @@
 
   @media (max-width: $desktop) {
     min-height: 400px;
+    padding-bottom: 2%;
   }
 
   @media (max-width: $table) {
