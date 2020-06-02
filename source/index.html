@@ -56,35 +56,35 @@
         <h2>Программы</h2>
         <div class="programs__tabs tabs">
           <ul class="tabs__list">
-            <li class="tabs__item">
+            <li class="tabs__item" data-tab="1">
               <span
                 class="tabs__icon tabs__icon--star"
                 aria-label="Иконка"
               ></span>
               Общие
             </li>
-            <li class="tabs__item tabs__item--active">
+            <li class="tabs__item tabs__item--active" data-tab="2">
               <span
                 class="tabs__icon tabs__icon--hat"
                 aria-label="Иконка"
               ></span>
               Академические
             </li>
-            <li class="tabs__item">
+            <li class="tabs__item" data-tab="3">
               <span
                 class="tabs__icon tabs__icon--bag"
                 aria-label="Иконка"
               ></span>
               Стажировки
             </li>
-            <li class="tabs__item">
+            <li class="tabs__item" data-tab="4">
               <span
                 class="tabs__icon tabs__icon--hand"
                 aria-label="Иконка"
               ></span>
               Волонтёрство
             </li>
-            <li class="tabs__item">
+            <li class="tabs__item" data-tab="5">
               <span
                 class="tabs__icon tabs__icon--candles"
                 aria-label="Иконка"
@@ -92,7 +92,7 @@
               Религиозные
             </li>
           </ul>
-          <div class="tabs__content">
+          <div class="tabs__content" data-tab="1">
             <h3>Общие</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
@@ -108,7 +108,7 @@
               сможете изучить все это в удивительной университетской среде.
             </p>
           </div>
-          <div class="tabs__content">
+          <div class="tabs__content tabs__content--show" data-tab="2">
             <h3>Академические</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
@@ -124,7 +124,7 @@
               сможете изучить все это в удивительной университетской среде.
             </p>
           </div>
-          <div class="tabs__content">
+          <div class="tabs__content" data-tab="3">
             <h3>Стажировки</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
@@ -140,7 +140,7 @@
               сможете изучить все это в удивительной университетской среде.
             </p>
           </div>
-          <div class="tabs__content">
+          <div class="tabs__content" data-tab="4">
             <h3>Волонтёрство</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
@@ -156,7 +156,7 @@
               сможете изучить все это в удивительной университетской среде.
             </p>
           </div>
-          <div class="tabs__content">
+          <div class="tabs__content" data-tab="5">
             <h3>Религиозные</h3>
             <p>
               Провести семестр или год за рубежом, знакомясь с различными
@@ -214,8 +214,7 @@
             />
             <!-- 1х: 818px; 2x: 1636px -->
             <img
-              src="img/dummy/dummy-girl-flag.png"
-              data-src="img/promo-form/girl-flag-bg-mob.png"
+              src="img/promo-form/girl-flag-bg-mob.png"
               srcset="img/promo-form/girl-flag-bg-mob@2x.png 2x"
               width="818"
               height="594"
@@ -742,8 +741,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      data-src="img/reviews/review-pic-mob.png"
+                      src="img/reviews/review-pic-mob.png"
                       srcset="img/reviews/review-pic-mob@2x.png 2x"
                       width="233"
                       height="352"
@@ -821,8 +819,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      srcset="img/reviews/review-pic@2x.png 2x"
+                      t="img/reviews/review-pic@2x.png 2x"
                       data-src="img/reviews/review-pic.png"
                       width="233"
                       height="352"
@@ -900,8 +897,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      srcset="img/reviews/review-pic@2x.png 2x"
+                      t="img/reviews/review-pic@2x.png 2x"
                       data-src="img/reviews/review-pic.png"
                       width="233"
                       height="352"
@@ -979,8 +975,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      srcset="img/reviews/review-pic@2x.png 2x"
+                      t="img/reviews/review-pic@2x.png 2x"
                       data-src="img/reviews/review-pic.png"
                       width="233"
                       height="352"
@@ -1058,8 +1053,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      srcset="img/reviews/review-pic@2x.png 2x"
+                      t="img/reviews/review-pic@2x.png 2x"
                       data-src="img/reviews/review-pic.png"
                       width="233"
                       height="352"
@@ -1137,8 +1131,7 @@
                     />
                     <!-- 1х: 233px; 2x: 466px -->
                     <img
-                      src="img/dummy/dummy-review-pic.png"
-                      srcset="img/reviews/review-pic@2x.png 2x"
+                      t="img/reviews/review-pic@2x.png 2x"
                       data-src="img/reviews/review-pic.png"
                       width="233"
                       height="352"
@@ -1258,8 +1251,7 @@
                 />
                 <!-- 1х: 112px; 2x: 224px -->
                 <img
-                  src="img/dummy/dummy-manager.jpg"
-                  data-src="img/contacts/manager.jpg"
+                  src="img/contacts/manager.jpg"
                   srcset="img/contacts/manager@2x.jpg 2x"
                   width="112"
                   height="112"
