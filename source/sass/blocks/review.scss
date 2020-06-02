@@ -42,7 +42,7 @@
       height: auto;
       object-fit: contain;
 
-      @media (max-width: $mobile-xs) {
+      @media (max-width: $mobile) {
         max-width: 233px;
       }
     }

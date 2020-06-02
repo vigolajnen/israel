@@ -99,35 +99,15 @@
     position: absolute;
     width: 128px;
     height: 25px;
-    bottom: 55px;
+    bottom: 0;
     left: 33%;
     overflow: hidden;
 
     @media (max-width: $mobile) {
-      top: 470px;
+      top: 340px;
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
-    }
-
-    @media (max-width: 730px) {
-      top: 455px;
-    }
-
-    @media (max-width: 700px) {
-      top: 430px;
-    }
-
-    @media (max-width: 660px) {
-      top: 410px;
-    }
-
-    @media (max-width: 620px) {
-      top: 400px;
-    }
-
-    @media (max-width: 610px) {
-      top: 390px;
     }
 
     @media (max-width: $mobile-xs) {
