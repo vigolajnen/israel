@@ -7,21 +7,19 @@
   align-items: flex-end;
 
   padding-top: 25%;
-  // padding-bottom: 14%;
+  padding-bottom: 15%;
   background-position: center bottom;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/promo-photo/bg-min.png");
   box-sizing: border-box;
 
   @media (max-width: 1920px) {
     padding-top: 14.2%;
-    padding-bottom: 15%;
     min-height: 660px;
   }
 
   @media (max-width: 1340px) {
-    // min-height: 583px;
     background-size: contain;
     background-position: right 0;
   }
